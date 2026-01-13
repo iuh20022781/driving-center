@@ -1,0 +1,26 @@
+/* Tailwind v4 - BẮT BUỘC */
+@import "tailwindcss";
+
+/* =========================
+   Base
+========================= */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(249 250 251); /* gray-50 */
+  color: rgb(31 41 55); /* gray-800 */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* =========================
+   Common utilities (KHÔNG dùng @apply utilities)
+========================= */
+.container {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}

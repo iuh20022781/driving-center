@@ -1,0 +1,130 @@
+{
+  "TopBar": {
+    "email": "info@daylaixesongtien.vn",
+    "hotline": "Hotline: 0919 555 678"
+  },
+  "Header": {
+    "menu": {
+      "gioi-thieu": "Introduction",
+      "khoa-hoc": "Courses",
+      "dang-ky-hoc": "Register",
+      "tin-tuc": "News",
+      "hoc-vien": "Students",
+      "lien-he": "Contact",
+      "dang-nhap": "Login"
+    },
+    "dropdown": {
+      "khoa-hoc": {
+        "title": "All Courses",
+        "a1": "A1 – Motorcycle under 125cc (Automatic / Semi-automatic)",
+        "a": "A – Motorcycle over 125cc (Manual / Automatic)",
+        "b1": "B1 – Car up to 9 seats (Automatic / Non-professional)",
+        "b": "B – Car up to 8 seats + truck under 3.5 tons (Professional)",
+        "c1": "C1 – Truck under 7.5 tons",
+        "c": "C – Truck over 7.5 tons + Tractor unit"
+      },
+      "dang-ky-hoc": {
+        "nop-ho-so-truc-tuyen": "Online Application",
+        "hoi-dap": "FAQ",
+        "tra-cuu-thong-tin-hoc-vien": "Student Information Lookup"
+      },
+      "tin-tuc": {
+        "thong-bao": "News & Announcements",
+        "lich-thi": "Exam Schedule",
+        "so-bao-danh": "Exam Candidate List"
+      },
+      "hoc-vien": {
+        "on-tap-o-to": "Car Theory Review",
+        "on-tap-mo-to": "Motorcycle Theory Review",
+        "tai-lieu-phan-mem": "Materials & Software",
+        "dang-ky-cabin": "Cabin Registration",
+        "dang-ky-xe-cam-bien": "Sensor Car Registration"
+      },
+      "lien-he": {
+        "lien-he": "Contact Us",
+        "tuyen-dung": "Recruitment"
+      }
+    }
+  },
+  "HeroBanner": {
+    "san-thi-title": "Largest car driving test field in former Tien Giang province",
+    "san-thi-desc": "Only 12km from Trung Luong"
+  },
+  "FeaturesGrid": {
+    "title1": "FLEXIBLE SCHEDULE",
+    "desc1": "Learn and test right in Tien Giang",
+    "title2": "START LEARNING IMMEDIATELY",
+    "desc2": "New courses open regularly",
+    "title3": "CLEAR & TRANSPARENT",
+    "desc3": "All fees listed, no hidden costs",
+    "title4": "DEDICATED & ENTHUSIASTIC",
+    "desc4": "Experienced instructors help you learn quickly"
+  },
+  "EnrollmentTable": {
+  "title": "Enrollment Notice",
+  "motorcycle-title": "MOTORCYCLE CATEGORIES",
+  "tuition": "Tuition",
+  "exam-fee": "Exam fee",
+  "license-fee": "License fee",
+  "csgt": "collected by CSGT",
+  "total": "TOTAL",
+  "a1-title": "A1 (Under 125 cc)",
+  "a1-desc": "Automatic / Semi-automatic",
+  "a-title": "A (Over 125 cc)",
+  "a-desc": "Manual / Automatic",
+  "car-title": "CAR CATEGORIES",
+  "practice-in-office-hours": "Practice during office hours",
+  "mon-fri": "Monday to Friday",
+  "practice-outside-office-hours": "Practice outside office hours",
+  "sat-sun": "Saturday & Sunday",
+  "vip-package": "VIP Package",
+  "vip-desc": "Practice on demand & with pick-up/drop-off",
+  "b-auto": "B (Automatic)",
+  "b-manual": "B (Manual)",
+  "c1": "C1 (Truck under 7.5 tons)",
+  "upgrade-title": "CAR LICENSE UPGRADE",
+  "requirement": "Driving experience requirement",
+  "b-to-c": "B to C",
+  "req-b-2years": "B license for at least 2 years",
+  "c1-to-c": "C1 to C",
+  "req-c1-2years": "C1 license for at least 2 years",
+  "note": "*Car driving course fees do not include: Health check, Final test fee, Exam & license issuance fees"
+  },
+  "CarCourses": {
+  "title": "Car Driving Courses",
+  "view-detail": "View Details",
+
+  "b-auto-title": "B Automatic Transmission",
+  "b-auto-price": "19,000,000 VND",
+
+  "b-manual-title": "B Manual Transmission",
+  "b-manual-price": "19,000,000 VND",
+
+  "c1-title": "C1 – Truck Under 7.5 Tons",
+  "c1-price": "21,000,000 VND",
+
+  "c-upgrade-title": "Upgrade to C – Truck Over 7.5 Tons",
+  "c-upgrade-price": "8,500,000 – 10,500,000 VND"
+  },
+  "LatestPosts": {
+    "title": "Latest Posts"
+  },
+  "RegisterForm": {
+    "title": "REGISTER FOR CONSULTATION",
+    "subtitle": "Update promotional information",
+    "name": "Full Name",
+    "email": "Email",
+    "phone": "Phone Number",
+    "course": "Course",
+    "submit": "Submit"
+  },
+  "LargeFieldInfo": {
+    "title": "Largest car driving test field in Tien Giang province",
+    "distance": "Only 12km from Trung Luong"
+  },
+  "Footer": {
+    "main-office": "MAIN OFFICE & SONG TIEN DRIVING TEST FIELD",
+    "my-tho-office": "REGISTRATION OFFICE IN MY THO CITY",
+    "copyright": "Song Tien Driving School"
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "TopBar": {
+    "email": "info@daylaixesongtien.vn",
+    "hotline": "Số liên hệ: 0919.555.678"
+  },
+  "Header": {
+    "menu": {
+      "gioi-thieu": "Giới thiệu",
+      "khoa-hoc": "Khóa học",
+      "dang-ky-hoc": "Đăng ký học",
+      "tin-tuc": "Tin tức",
+      "hoc-vien": "Học viên",
+      "lien-he": "Liên hệ",
+      "dang-nhap": "Đăng nhập"
+    },
+    "dropdown": {
+      "khoa-hoc": {
+        "title": "Tất cả khóa học",
+        "a1": "A1 – Mô tô hai bánh dưới 125cc (Số / tay ga)",
+        "a": "A – Mô tô hai bánh trên 125cc (Côn / tay ga)",
+        "b1": "B1 – Ô tô chở người đến 9 chỗ (số tự động / không hành nghề)",
+        "b": "B – Ô tô chở người đến 8 chỗ + tải dưới 3.500kg (hành nghề)",
+        "c1": "C1 – Ô tô tải dưới 7.500kg",
+        "c": "C – Ô tô tải trên 7.500kg + đầu kéo"
+      },
+      "dang-ky-hoc": {
+        "nop-ho-so-truc-tuyen": "Nộp hồ sơ trực tuyến",
+        "hoi-dap": "Hỏi đáp",
+        "tra-cuu-thong-tin-hoc-vien": "Tra cứu thông tin học viên"
+      },
+      "tin-tuc": {
+        "thong-bao": "Tin tức & Thông báo",
+        "lich-thi": "Lịch thi",
+        "so-bao-danh": "Sổ báo danh ngày thi"
+      },
+      "hoc-vien": {
+        "on-tap-o-to": "Ôn tập ô tô",
+        "on-tap-mo-to": "Ôn tập mô tô",
+        "tai-lieu-phan-mem": "Tài liệu & Phần mềm",
+        "dang-ky-cabin": "Đăng ký cabin",
+        "dang-ky-xe-cam-bien": "Đăng ký xe cảm biến"
+      },
+      "lien-he": {
+        "lien-he": "Liên hệ",
+        "tuyen-dung": "Tuyển dụng"
+      }
+    }
+  },
+  "HeroBanner": {
+    "san-thi-title": "Sân thi bằng lái ô tô lớn nhất tỉnh Tiền Giang cũ",
+    "san-thi-desc": "Chỉ cách Trung Lương 12 km"
+  },
+  "FeaturesGrid": {
+    "title1": "CHỦ ĐỘNG LỊCH HỌC",
+    "desc1": "Học, thi bằng lái ngay tại Tiền Giang",
+    "title2": "HỌC NGAY KHI ĐĂNG KÝ",
+    "desc2": "Khai giảng khóa học mới thường xuyên",
+    "title3": "RÕ RÀNG, MINH BẠCH",
+    "desc3": "Mọi chi phí được niêm yết, không phí phát sinh",
+    "title4": "TẬN TÂM, NHIỆT TÌNH",
+    "desc4": "Giáo viên kinh nghiệm giúp bạn nhanh tiếp thu"
+  },
+  "EnrollmentTable": {
+  "title": "Thông báo tuyển sinh",
+  "motorcycle-title": "HẠNG XE MÔ TÔ",
+  "tuition": "Học phí",
+  "exam-fee": "Lệ phí thi",
+  "license-fee": "Lệ phí cấp bằng",
+  "csgt": "thu hộ CSGT",
+  "total": "TỔNG CỘNG",
+  "a1-title": "A1 (dưới 125 cc)",
+  "a1-desc": "Số / tay ga",
+  "a-title": "A (trên 125 cc)",
+  "a-desc": "Côn / tay ga",
+  "car-title": "HẠNG XE Ô TÔ",
+  "practice-in-office-hours": "Thực hành trong giờ hành chính",
+  "mon-fri": "Thứ 2 đến thứ 6",
+  "practice-outside-office-hours": "Thực hành ngoài giờ hành chính",
+  "sat-sun": "Thứ 7 & chủ nhật",
+  "vip-package": "Gói VIP",
+  "vip-desc": "Thực hành theo thời gian yêu cầu & xe đưa đón",
+  "b-auto": "B (số tự động)",
+  "b-manual": "B (số sàn)",
+  "c1": "C1 (ô tô tải)",
+  "upgrade-title": "NÂNG HẠNG XE Ô TÔ",
+  "requirement": "Yêu cầu thâm niên lái xe",
+  "b-to-c": "B lên C",
+  "req-b-2years": "Bằng lái các hạng B từ 2 năm trở lên",
+  "c1-to-c": "C1 lên C",
+  "req-c1-2years": "Bằng lái hạng C1 từ 2 năm trở lên",
+  "note": "*Học phí các khóa học lái xe ô tô chưa bao gồm: Phí khám sức khỏe, Phí kiểm tra cuối khóa, Lệ phí thi & cấp bằng lái xe"
+  },
+  "CarCourses": {
+  "title": "Các khóa học lái xe ô tô",
+  "view-detail": "Xem chi tiết",
+
+  "b-auto-title": "Hạng B số tự động",
+  "b-auto-price": "19.000.000 VNĐ",
+
+  "b-manual-title": "Hạng B số sàn",
+  "b-manual-price": "19.000.000 VNĐ",
+
+  "c1-title": "Hạng C1 – Ô tô tải dưới 7.5 tấn",
+  "c1-price": "21.000.000 VNĐ",
+
+  "c-upgrade-title": "Nâng hạng C – Ô tô tải trên 7.5 tấn",
+  "c-upgrade-price": "8.500.000 – 10.500.000 VNĐ"
+  },
+  "LatestPosts": {
+    "title": "Bài đăng mới nhất"
+  },
+  "RegisterForm": {
+    "title": "ĐĂNG KÝ NHẬN TƯ VẤN",
+    "subtitle": "Cập nhật thông tin khuyến mãi",
+    "name": "Họ & Tên",
+    "email": "Email",
+    "phone": "Số điện thoại",
+    "course": "Khóa Học",
+    "submit": "Yêu cầu"
+  },
+  "LargeFieldInfo": {
+    "title": "Sân thi bằng lái ô tô lớn nhất tỉnh Tiền Giang",
+    "distance": "Chỉ cách Trung Lương 12 km"
+  },
+  "Footer": {
+    "main-office": "TRỤ SỞ CHÍNH & SÂN THI SÁT HẠCH SÔNG TIỀN",
+    "my-tho-office": "VĂN PHÒNG GHI DANH TẠI TP. MỸ THO",
+    "copyright": "Day Lai xe Song Tien"
+  }
+}
