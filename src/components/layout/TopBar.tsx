@@ -5,6 +5,8 @@ import { usePathname, useRouter } from 'next/navigation';
 import { useLocale, useTranslations } from 'next-intl';
 import { Mail, Phone, Facebook, Youtube, Globe } from 'lucide-react';
 
+import AuthEntry from "@/components/auth/AuthEntry";
+
 export default function TopBar() {
   const t = useTranslations('TopBar');
   const locale = useLocale();
@@ -55,7 +57,11 @@ export default function TopBar() {
             >
               EN
             </button>
+
+            
           </div>
+
+          <AuthEntry />
         </div>
       </div>
     </div>

@@ -1,14 +1,36 @@
 "use client";
 
+import React from "react";
 import Link from "next/link";
-import { LogIn, ChevronDown } from "lucide-react";
+import { useParams } from "next/navigation";
+import { ChevronDown } from "lucide-react";
 import { useTranslations } from "next-intl";
+
 import SearchBox from "./SearchBox";
+import AuthEntry from "@/components/auth/AuthEntry";
+
 
 type DropdownBlock = {
   title?: string;
   [key: string]: any;
 };
+
+function withLocalePath(locale: string, href: string) {
+  // Nếu href đã là absolute (http...) thì không đụng
+  if (/^https?:\/\//.test(href)) return href;
+
+  // normalize
+  const safe = href.startsWith("/") ? href : `/${href}`;
+
+  // Trang home
+  if (safe === "/") return `/${locale}`;
+
+  // Nếu đã có locale ở đầu rồi thì giữ nguyên
+  if (safe.startsWith(`/${locale}/`) || safe === `/${locale}`) return safe;
+
+  // Gắn locale
+  return `/${locale}${safe}`;
+}
 
 function Dropdown({
   label,
@@ -21,7 +43,10 @@ function Dropdown({
 }) {
   return (
     <div className="relative group">
-      <button className="flex items-center gap-1 hover:text-blue-600 transition whitespace-nowrap">
+      <button
+        type="button"
+        className="flex items-center gap-1 hover:text-blue-600 transition whitespace-nowrap"
+      >
         {label}
         <ChevronDown className="w-5 h-5 transition group-hover:rotate-180" />
       </button>
@@ -41,8 +66,43 @@ function Dropdown({
   );
 }
 
+function DropdownTitle({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="font-bold text-lg mb-3 border-b pb-2">{children}</div>
+  );
+}
+
+function DropdownList({ children }: { children: React.ReactNode }) {
+  return (
+    <ul className="space-y-3 text-gray-800 whitespace-normal">{children}</ul>
+  );
+}
+
+function NavItem({
+  href,
+  locale,
+  children,
+}: {
+  href: string;
+  locale: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <li>
+      <Link
+        href={withLocalePath(locale, href)}
+        className="hover:text-blue-600 transition"
+      >
+        {children}
+      </Link>
+    </li>
+  );
+}
+
 export default function NavBar() {
   const t = useTranslations("Header");
+  const params = useParams();
+  const locale = (params?.locale as string) || "vi";
 
   const courses = t.raw("dropdown.khoa-hoc") as DropdownBlock;
   const register = t.raw("dropdown.dang-ky-hoc") as DropdownBlock;
@@ -52,64 +112,107 @@ export default function NavBar() {
 
   return (
     <nav className="flex items-center gap-6 text-base font-medium whitespace-nowrap">
-      <Link href="/" className="hover:text-blue-600 transition whitespace-nowrap">
+      {/* Giới thiệu */}
+      <Link
+        href={withLocalePath(locale, "/about")}
+        className="hover:text-blue-600 transition whitespace-nowrap"
+      >
         {t("menu.gioi-thieu")}
       </Link>
 
+      {/* Khóa học */}
       <Dropdown label={t("menu.khoa-hoc")} widthClass="w-80">
-        <div className="font-bold text-lg mb-3 border-b pb-2">{courses.title}</div>
-        <ul className="space-y-3 text-gray-800 whitespace-normal">
-          <li><Link href="/khoa-hoc/a1" className="hover:text-blue-600 transition">{courses.a1}</Link></li>
-          <li><Link href="/khoa-hoc/a" className="hover:text-blue-600 transition">{courses.a}</Link></li>
-          <li><Link href="/khoa-hoc/b1" className="hover:text-blue-600 transition">{courses.b1}</Link></li>
-          <li><Link href="/khoa-hoc/b" className="hover:text-blue-600 transition">{courses.b}</Link></li>
-          <li><Link href="/khoa-hoc/c1" className="hover:text-blue-600 transition">{courses.c1}</Link></li>
-          <li><Link href="/khoa-hoc/c" className="hover:text-blue-600 transition">{courses.c}</Link></li>
-        </ul>
+        {courses.title ? <DropdownTitle>{courses.title}</DropdownTitle> : null}
+        <DropdownList>
+          <NavItem locale={locale} href="/courses/a1">
+            {courses.a1}
+          </NavItem>
+          <NavItem locale={locale} href="/courses/a">
+            {courses.a}
+          </NavItem>
+          <NavItem locale={locale} href="/courses/b1">
+            {courses.b1}
+          </NavItem>
+          <NavItem locale={locale} href="/courses/b">
+            {courses.b}
+          </NavItem>
+          <NavItem locale={locale} href="/courses/c1">
+            {courses.c1}
+          </NavItem>
+          <NavItem locale={locale} href="/courses/c">
+            {courses.c}
+          </NavItem>
+        </DropdownList>
       </Dropdown>
 
+      {/* Đăng ký học */}
       <Dropdown label={t("menu.dang-ky-hoc")} widthClass="w-64">
-        <ul className="space-y-3 text-gray-800 whitespace-normal">
-          <li><Link href="/dang-ky/nop-ho-so" className="hover:text-blue-600 transition">{register["nop-ho-so-truc-tuyen"]}</Link></li>
-          <li><Link href="/dang-ky/hoi-dap" className="hover:text-blue-600 transition">{register["hoi-dap"]}</Link></li>
-          <li><Link href="/dang-ky/tra-cuu" className="hover:text-blue-600 transition">{register["tra-cuu-thong-tin-hoc-vien"]}</Link></li>
-        </ul>
+        <DropdownList>
+          <NavItem locale={locale} href="/registration/nop-ho-so">
+            {register["nop-ho-so-truc-tuyen"]}
+          </NavItem>
+          <NavItem locale={locale} href="/registration/hoi-dap">
+            {register["hoi-dap"]}
+          </NavItem>
+          <NavItem locale={locale} href="/registration/tra-cuu">
+            {register["tra-cuu-thong-tin-hoc-vien"]}
+          </NavItem>
+        </DropdownList>
       </Dropdown>
 
+      {/* Tin tức */}
       <Dropdown label={t("menu.tin-tuc")} widthClass="w-64">
-        <ul className="space-y-3 text-gray-800 whitespace-normal">
-          <li><Link href="/tin-tuc/thong-bao" className="hover:text-blue-600 transition">{news["thong-bao"]}</Link></li>
-          <li><Link href="/tin-tuc/lich-thi" className="hover:text-blue-600 transition">{news["lich-thi"]}</Link></li>
-          <li><Link href="/tin-tuc/so-bao-danh" className="hover:text-blue-600 transition">{news["so-bao-danh"]}</Link></li>
-        </ul>
+        <DropdownList>
+          <NavItem locale={locale} href="/news/thong-bao">
+            {news["thong-bao"]}
+          </NavItem>
+          <NavItem locale={locale} href="/news/lich-thi">
+            {news["lich-thi"]}
+          </NavItem>
+          <NavItem locale={locale} href="/news/so-bao-danh">
+            {news["so-bao-danh"]}
+          </NavItem>
+        </DropdownList>
       </Dropdown>
 
+      {/* Học viên */}
       <Dropdown label={t("menu.hoc-vien")} widthClass="w-64">
-        <ul className="space-y-3 text-gray-800 whitespace-normal">
-          <li><Link href="/hoc-vien/on-tap-o-to" className="hover:text-blue-600 transition">{students["on-tap-o-to"]}</Link></li>
-          <li><Link href="/hoc-vien/on-tap-mo-to" className="hover:text-blue-600 transition">{students["on-tap-mo-to"]}</Link></li>
-          <li><Link href="/hoc-vien/tai-lieu" className="hover:text-blue-600 transition">{students["tai-lieu-phan-mem"]}</Link></li>
-          <li><Link href="/hoc-vien/dang-ky-cabin" className="hover:text-blue-600 transition">{students["dang-ky-cabin"]}</Link></li>
-          <li><Link href="/hoc-vien/dang-ky-xe-cam-bien" className="hover:text-blue-600 transition">{students["dang-ky-xe-cam-bien"]}</Link></li>
-        </ul>
+        <DropdownList>
+          <NavItem locale={locale} href="/account/on-tap-o-to">
+            {students["on-tap-o-to"]}
+          </NavItem>
+          <NavItem locale={locale} href="/account/on-tap-mo-to">
+            {students["on-tap-mo-to"]}
+          </NavItem>
+          <NavItem locale={locale} href="/account/tai-lieu">
+            {students["tai-lieu-phan-mem"]}
+          </NavItem>
+          <NavItem locale={locale} href="/account/dang-ky-cabin">
+            {students["dang-ky-cabin"]}
+          </NavItem>
+          <NavItem locale={locale} href="/account/dang-ky-xe-cam-bien">
+            {students["dang-ky-xe-cam-bien"]}
+          </NavItem>
+        </DropdownList>
       </Dropdown>
 
+      {/* Liên hệ */}
       <Dropdown label={t("menu.lien-he")} widthClass="w-48">
-        <ul className="space-y-3 text-gray-800 whitespace-normal">
-          <li><Link href="/lien-he" className="hover:text-blue-600 transition">{contact["lien-he"]}</Link></li>
-          <li><Link href="/tuyen-dung" className="hover:text-blue-600 transition">{contact["tuyen-dung"]}</Link></li>
-        </ul>
+        <DropdownList>
+          <NavItem locale={locale} href="/contact">
+            {contact["lien-he"]}
+          </NavItem>
+          <NavItem locale={locale} href="/tuyen-dung">
+            {contact["tuyen-dung"]}
+          </NavItem>
+        </DropdownList>
       </Dropdown>
 
+      {/* Search */}
       <SearchBox />
 
-      <Link
-        href="/dang-nhap"
-        className="flex items-center gap-2 rounded-lg bg-blue-600 px-5 py-2 text-white hover:bg-blue-700 transition whitespace-nowrap shrink-0"
-      >
-        <LogIn className="w-5 h-5" />
-        {t("menu.dang-nhap")}
-      </Link>
+     
+
     </nav>
   );
 }

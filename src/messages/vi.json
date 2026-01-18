@@ -1,17 +1,61 @@
 {
+  "FloatingRegister": {
+    "label": "Đăng ký ngay",
+    "aria": "Cuộn đến form đăng ký"
+  },
+  "Auth": {
+    "login": "Đăng nhập",
+    "loggingIn": "Đang đăng nhập...",
+    "logout": "Đăng xuất",
+    "loggingOut": "Đang đăng xuất...",
+    "account": "Tài khoản",
+    "settings": "Cài đặt",
+    "email": "Email",
+    "password": "Mật khẩu",
+    "forgotPassword": "Quên mật khẩu?",
+    "loginTitle": "Đăng nhập",
+    "loginFailed": "Đăng nhập thất bại",
+    "errorOccurred": "Có lỗi xảy ra",
+    "placeholderEmail": "you@email.com",
+    "placeholderPassword": "••••••••",
+    "unknownUser": "Tài khoản"
+  },
   "TopBar": {
     "email": "info@daylaixesongtien.vn",
     "hotline": "Số liên hệ: 0919.555.678"
   },
   "Header": {
+    "brand": {
+      "line1": "Trung tâm đào tạo &",
+      "line2": "sát hạch lái xe",
+      "line3": "Sông Tiền"
+    },
+    "Search": {
+    "placeholder": "Nhập tìm kiếm..."
+  },
+    "floating": {
+      "help": "Hỗ trợ",
+      "close": "Đóng",
+      "open_help": "Mở menu hỗ trợ",
+      "live_chat": "Chat trực tuyến",
+      "online": "Online",
+      "close_chat": "Đóng chat",
+      "zalo": "Zalo",
+      "facebook": "Facebook",
+      "hotline": "Hotline",
+      "placeholder": "Nhập tin nhắn...",
+      "send": "Gửi",
+      "chat_welcome": "Xin chào! Mình có thể hỗ trợ gì cho bạn?",
+      "chat_auto_reply": "Mình đã nhận được, bạn chờ chút nhé!",
+      "register_now": "Đăng ký ngay"
+    },
     "menu": {
       "gioi-thieu": "Giới thiệu",
       "khoa-hoc": "Khóa học",
       "dang-ky-hoc": "Đăng ký học",
       "tin-tuc": "Tin tức",
       "hoc-vien": "Học viên",
-      "lien-he": "Liên hệ",
-      "dang-nhap": "Đăng nhập"
+      "lien-he": "Liên hệ"
     },
     "dropdown": {
       "khoa-hoc": {
@@ -116,15 +160,41 @@
     "email": "Email",
     "phone": "Số điện thoại",
     "course": "Khóa Học",
-    "submit": "Yêu cầu"
+    "submit": "ĐĂNG KÝ NGAY"
   },
   "LargeFieldInfo": {
     "title": "Sân thi bằng lái ô tô lớn nhất tỉnh Tiền Giang",
-    "distance": "Chỉ cách Trung Lương 12 km"
+    "distance": "Chỉ cách Trung Lương 12 km",
+    "studyCorner": "GÓC HỌC TẬP",
+    "car": "Ô TÔ B, C1",
+    "motorbike": "MÔ TÔ A1, A",
+    "videoTitle": "Video giới thiệu trung tâm đào tạo & sát hạch lái xe Sông Tiền",
+    "imageAlt": "Hội trường học lý thuyết Sông Tiền"
   },
-  "Footer": {
-    "main-office": "TRỤ SỞ CHÍNH & SÂN THI SÁT HẠCH SÔNG TIỀN",
-    "my-tho-office": "VĂN PHÒNG GHI DANH TẠI TP. MỸ THO",
-    "copyright": "Day Lai xe Song Tien"
+  "footer": {
+    "main_office": {
+      "title": "TRỤ SỞ CHÍNH & SÂN THI SÁT HẠCH SÔNG TIỀN",
+      "address": "Lô Dây Thép, Long Hòa B, Long Định, Đồng Tháp (Tiền Giang cũ)",
+      "office_hours_label": "VP ghi danh",
+      "office_hours": "07:30 - 17:00",
+      "practice_hours_label": "Sân tập lái",
+      "practice_hours": "07:30 - 18:00",
+      "phone": "0273.386.8888 - 0919.555.678",
+      "email": "info@daylaixesongtien.vn",
+      "map_title": "Bản đồ Trụ sở chính"
+    },
+    "my_tho_office": {
+      "title": "VĂN PHÒNG GHI DANH TẠI TP. MỸ THO",
+      "address": "Căn PG 02-10, khu Vincom, 1A, Hùng Vương, Mỹ Tho, Đồng Tháp (Tiền Giang cũ)",
+      "hours": "07:30 - 17:00",
+      "phone": "0273.383.9999 - 0919.555.678",
+      "email": "info@daylaixesongtien.vn",
+      "map_title": "Bản đồ Văn phòng Mỹ Tho"
+    },
+    "social": {
+      "facebook_link": "#",
+      "youtube_link": "#"
+    },
+    "copyright": "Trung tâm Đào tạo & Sát hạch Lái xe Sông Tiền"
   }
 }

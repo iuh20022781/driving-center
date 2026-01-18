@@ -1,13 +1,16 @@
 "use client";
 
 import { Search } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function SearchBox() {
+  const t = useTranslations("Header.Search");
+
   return (
     <div className="relative flex items-center shrink-0">
       <input
         type="text"
-        placeholder="Nhập tìm kiếm..."
+        placeholder={t("placeholder")}
         className="
           w-48 xl:w-56
           rounded-lg border border-gray-300

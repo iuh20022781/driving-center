@@ -1,17 +1,62 @@
 {
+  "FloatingRegister": {
+    "label": "Register now",
+    "aria": "Scroll to registration form"
+  },
+  "Auth": {
+    "login": "Sign in",
+    "loggingIn": "Signing in...",
+    "logout": "Sign out",
+    "loggingOut": "Signing out...",
+    "account": "Account",
+    "settings": "Settings",
+    "email": "Email",
+    "password": "Password",
+    "forgotPassword": "Forgot password?",
+    "loginTitle": "Sign in",
+    "loginFailed": "Sign in failed",
+    "errorOccurred": "Something went wrong",
+    "placeholderEmail": "you@email.com",
+    "placeholderPassword": "••••••••",
+    "unknownUser": "Account"
+  },
   "TopBar": {
     "email": "info@daylaixesongtien.vn",
     "hotline": "Hotline: 0919 555 678"
   },
   "Header": {
+    "brand": {
+      "line1": "Driving Training &",
+      "line2": "Testing Center",
+      "line3": "SONG TIEN"
+    },
+    "Search": {
+    "placeholder": "Search..."
+  },
+    "floating": {
+      "help": "Support",
+      "close": "Close",
+      "open_help": "Open support menu",
+      "live_chat": "Live chat",
+      "online": "Online",
+      "close_chat": "Close chat",
+      "zalo": "Zalo",
+      "facebook": "Facebook",
+      "hotline": "Hotline",
+      "placeholder": "Type a message...",
+      "send": "Send",
+      "chat_welcome": "Hi! How can we help you?",
+      "chat_auto_reply": "Got it — please wait a moment!",
+      "register_now": "Register now"
+    },
     "menu": {
       "gioi-thieu": "Introduction",
       "khoa-hoc": "Courses",
       "dang-ky-hoc": "Register",
       "tin-tuc": "News",
       "hoc-vien": "Students",
-      "lien-he": "Contact",
-      "dang-nhap": "Login"
+      "lien-he": "Contact"
+      
     },
     "dropdown": {
       "khoa-hoc": {
@@ -116,15 +161,41 @@
     "email": "Email",
     "phone": "Phone Number",
     "course": "Course",
-    "submit": "Submit"
+    "submit": "REGISTER NOW"
   },
   "LargeFieldInfo": {
     "title": "Largest car driving test field in Tien Giang province",
-    "distance": "Only 12km from Trung Luong"
+    "distance": "Only 12km from Trung Luong",
+    "studyCorner": "STUDY CORNER",
+    "car": "CAR B, C1",
+    "motorbike": "MOTORBIKE A1, A",
+    "videoTitle": "Song Tien Driving Training & Testing Center Introduction Video",
+    "imageAlt": "Song Tien Theory Classroom"
   },
-  "Footer": {
-    "main-office": "MAIN OFFICE & SONG TIEN DRIVING TEST FIELD",
-    "my-tho-office": "REGISTRATION OFFICE IN MY THO CITY",
-    "copyright": "Song Tien Driving School"
+  "footer": {
+    "main_office": {
+      "title": "MAIN OFFICE & DRIVING TEST CENTER (SONG TIEN)",
+      "address": "Lo Day Thep, Long Hoa B, Long Dinh, Dong Thap (former Tien Giang)",
+      "office_hours_label": "Enrollment office",
+      "office_hours": "07:30 - 17:00",
+      "practice_hours_label": "Practice yard",
+      "practice_hours": "07:30 - 18:00",
+      "phone": "0273.386.8888 - 0919.555.678",
+      "email": "info@daylaixesongtien.vn",
+      "map_title": "Main office map"
+    },
+    "my_tho_office": {
+      "title": "ENROLLMENT OFFICE IN MY THO CITY",
+      "address": "PG 02-10, Vincom area, 1A Hung Vuong, My Tho, Dong Thap (former Tien Giang)",
+      "hours": "07:30 - 17:00",
+      "phone": "0273.383.9999 - 0919.555.678",
+      "email": "info@daylaixesongtien.vn",
+      "map_title": "My Tho office map"
+    },
+    "social": {
+      "facebook_link": "#",
+      "youtube_link": "#"
+    },
+    "copyright": "Song Tien Driving Training & Testing Center"
   }
 }
