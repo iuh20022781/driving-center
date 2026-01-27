@@ -59,7 +59,7 @@ export default function UserMenu({ user, onLoggedOut }: Props) {
         <button
           onClick={onLogout}
           disabled={isPending}
-          className="flex w-full items-center gap-2 rounded-lg px-3 py-2 text-left text-sm hover:bg-gray-100 disabled:opacity-60 text-gray-800"
+          className="flex w-full items-center justify-center gap-2 rounded-lg px-3 py-2 text-left text-sm hover:bg-gray-100 disabled:opacity-60 text-gray-800"
         >
           <LogOut className="h-4 w-4" />
           {isPending ? t("loggingOut") : t("logout")}

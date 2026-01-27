@@ -20,55 +20,67 @@ export default function MainHeader() {
 
   return (
     <>
-      <div className="flex items-center justify-between py-3 gap-4">
-        {/* ===== Brand (FIXED WIDTH – không đẩy menu) ===== */}
-        <Link
-          href={`/${locale}`}
-          className="flex items-center gap-3 shrink-0 w-[260px] min-w-[260px]"
-        >
-          {/* Logo */}
-          <Image
-            src="/image/logotron.png"
-            alt="Song Tien Driving School"
-            width={52}
-            height={52}
-            priority
-            className="h-12 w-12 object-contain"
-          />
+      <div className="w-full overflow-x-clip">
+        <div className="mx-auto max-w-7xl px-3 sm:px-6">
+          {/* ✅ Brand nhỏ lại, Search rộng ra */}
+          <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 py-2
+                          lg:grid-cols-[280px_minmax(0,1fr)_auto]">
+            {/* Brand */}
+            <Link href={`/${locale}`} className="flex min-w-0 items-center gap-2">
+              <Image
+                src="/image/logotron.png"
+                alt="Song Tien Driving School"
+                width={40}
+                height={40}
+                priority
+                className="h-9 w-9 shrink-0 object-contain sm:h-10 sm:w-10"
+              />
 
-          {/* ===== Brand text (LỚN HƠN) ===== */}
-          <div className="leading-tight overflow-hidden">
-            <div className="text-[15px] md:text-[16px] font-bold text-blue-700 uppercase">
-              {t("brand.line1")}
+              <div className="min-w-0 leading-[1.05]">
+                <div className="truncate text-[11px] font-bold text-blue-700 sm:text-[12px] uppercase">
+                  {t("brand.line1")}
+                </div>
+                <div className="truncate text-[11px] font-bold text-blue-700 sm:text-[12px] uppercase">
+                  {t("brand.line2")}
+                </div>
+                <div className="truncate text-[15px] font-extrabold text-orange-500 sm:text-[16px] uppercase">
+                  {t("brand.line3")}
+                </div>
+              </div>
+            </Link>
+
+            {/* Desktop area */}
+            <div className="hidden min-w-0 items-center gap-4 lg:flex">
+              {/* ✅ Search rộng hơn */}
+              <div className="min-w-0 flex-1">
+                <div className="w-full max-w-[520px] xl:max-w-[620px]">
+                  <SearchBox />
+                </div>
+              </div>
+
+              {/* Nav */}
+              <div className="min-w-0">
+                <NavBar />
+              </div>
             </div>
 
-            <div className="text-[15px] md:text-[16px] font-bold text-blue-700 uppercase">
-              {t("brand.line2")}
-            </div>
-
-            <div className="text-[22px] md:text-[24px] font-extrabold text-orange-500 uppercase">
-              {t("brand.line3")}
+            {/* Mobile */}
+            <div className="flex items-center justify-end gap-2 lg:hidden">
+              <button
+                type="button"
+                onClick={() => setOpenMobile(true)}
+                className="inline-flex h-10 w-10 items-center justify-center rounded-lg border bg-white hover:bg-gray-50"
+                aria-label="Open menu"
+              >
+                <Menu className="h-6 w-6 text-blue-800" />
+              </button>
             </div>
           </div>
 
-        </Link>
-
-        {/* ===== Desktop: Menu + Search + Auth ===== */}
-        <div className="hidden lg:flex items-center justify-end flex-1 gap-4 min-w-0">
-          <NavBar />
-        </div>
-
-        {/* ===== Mobile ===== */}
-        <div className="lg:hidden flex items-center gap-3 shrink-0">
-          <SearchBox />
-          <button
-            type="button"
-            onClick={() => setOpenMobile(true)}
-            className="p-2 rounded-md hover:bg-gray-100 transition"
-            aria-label="Open menu"
-          >
-            <Menu className="w-7 h-7 text-blue-800" />
-          </button>
+          {/* ✅ Mobile search xuống dòng (đẹp + không tràn) */}
+          <div className="pb-2 lg:hidden">
+            <SearchBox />
+          </div>
         </div>
       </div>
 

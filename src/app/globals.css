@@ -1,26 +1,115 @@
-/* Tailwind v4 - BẮT BUỘC */
+/* =========================
+   Tailwind v4 - BẮT BUỘC
+========================= */
 @import "tailwindcss";
 
 /* =========================
    Base
 ========================= */
-html {
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
   scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
 }
 
 body {
   background-color: rgb(249 250 251); /* gray-50 */
   color: rgb(31 41 55); /* gray-800 */
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  min-height: 100vh;
 }
 
 /* =========================
-   Common utilities (KHÔNG dùng @apply utilities)
+   Layout container
 ========================= */
 .container {
-  max-width: 80rem;
+  max-width: 80rem; /* 1280px */
   margin-left: auto;
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+/* =========================
+   Scrollbar (optional - đẹp hơn)
+========================= */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5f5;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* =========================
+   Text & media defaults
+========================= */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* =========================
+   🚦 Traffic Light Animation
+   (Đỏ → Vàng → Xanh)
+========================= */
+@keyframes trafficLight {
+  0% {
+    background-color: #dc2626; /* đỏ */
+    box-shadow: 0 0 25px rgba(220, 38, 38, 0.8);
+  }
+  33% {
+    background-color: #facc15; /* vàng */
+    box-shadow: 0 0 25px rgba(250, 204, 21, 0.9);
+  }
+  66% {
+    background-color: #16a34a; /* xanh */
+    box-shadow: 0 0 25px rgba(22, 163, 74, 0.9);
+  }
+  100% {
+    background-color: #dc2626;
+    box-shadow: 0 0 25px rgba(220, 38, 38, 0.8);
+  }
+}
+
+/* =========================
+   Floating Register Button
+========================= */
+.traffic-button {
+  animation: trafficLight 6s infinite;
+}
+
+.traffic-glow {
+  animation: trafficLight 6s infinite;
+  filter: blur(24px);
+  opacity: 0.8;
+}
+
+/* =========================
+   Reduce motion (accessibility)
+========================= */
+@media (prefers-reduced-motion: reduce) {
+  .traffic-button,
+  .traffic-glow {
+    animation: none;
+  }
 }

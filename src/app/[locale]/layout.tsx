@@ -20,7 +20,7 @@ export default async function LocaleLayout({
 }) {
   const { locale } = await params;
 
-  let messages;
+  let messages: any;
   try {
     messages = (await import(`../../messages/${locale}.json`)).default;
   } catch {
@@ -28,35 +28,32 @@ export default async function LocaleLayout({
   }
 
   return (
-    <html lang={locale}>
-      <body className="bg-gray-50 text-gray-800">
+    <html lang={locale} className="overflow-x-hidden">
+      <body className="bg-gray-50 text-gray-800 overflow-x-hidden">
         <NextIntlClientProvider locale={locale} messages={messages}>
-          {/* Sticky TopBar + Header */}
-          <div className="sticky top-0 z-50">
+          {/* ✅ FIXED header (không viền đen) */}
+          <header className="fixed inset-x-0 top-0 z-[1000] bg-white shadow-sm">
             <TopBar />
-            <div className="bg-white shadow-md">
-              <PageContainer>
-                <Header />
-              </PageContainer>
-            </div>
+            <PageContainer>
+              <Header />
+            </PageContainer>
+          </header>
+
+          {/* ✅ Chừa chỗ cho header */}
+          <div className="pt-[132px] lg:pt-[92px]">
+            <main className="min-h-screen py-6">
+              <PageContainer>{children}</PageContainer>
+            </main>
+            <Footer />
           </div>
 
-          {/* Content */}
-          <main className="min-h-screen py-6">
-            <PageContainer>{children}</PageContainer>
-          </main>
-
-          <Footer />
-
-          {/* Floating Help */}
+          {/* ✅ Floating luôn nổi */}
           <FloatingHelp
             hotline="19001234"
             zaloLink="https://zalo.me/0909123456"
             facebookLink="https://m.me/yourpage"
           />
-
-          {/* Floating Register (scroll tới RegisterForm) */}
-          <FloatingRegisterNow targetId="register-form" label="Đăng ký ngay" />
+          <FloatingRegisterNow targetId="register-form" />
         </NextIntlClientProvider>
       </body>
     </html>

@@ -1,7 +1,186 @@
 {
+  "Profile": {
+    "studentInfoTitle": "Thông tin sinh viên",
+    "personalProfileLink": "Hồ sơ cá nhân",
+    "fields": {
+      "fullName": "Họ và tên:",
+      "phone": "Số điện thoại:",
+      "identityCard": "CCCD:",
+      "gender": "Giới tính:",
+      "birthday": "Ngày sinh:",
+      "address": "Địa chỉ:",
+      "email": "Gmail:",
+      "course": "Khóa học:"
+    }
+  },
+  "StudentQuickActions": {
+    "cta": "Xem chi tiết",
+    "registerSchedule": {
+      "title": "Đăng ký lịch học",
+      "desc": "Chọn lịch học phù hợp"
+    },
+    "viewSchedule": {
+      "title": "Xem lịch học",
+      "desc": "Theo dõi lịch học trong tuần"
+    },
+    "notifications": {
+      "title": "Xem thông báo",
+      "desc": "Nhắc nhở và thông báo mới",
+      "mockAlert": "Bạn có thể gắn trang thông báo sau nhé 😄"
+    }
+  },
+  "Schedule": {
+    "monthTitle": "Tháng {month} / {year}",
+    "viewTitle": "Xem lịch học",
+    "registerTitle": "Đăng ký lịch học",
+    "viewSubtitle": "Ngày có lịch sẽ tô xanh. Bấm vào ngày để xem chi tiết.",
+    "registerSubtitle": "Ngày trống sẽ tô xanh để đăng ký. Ngày full sẽ tô đỏ.",
+    "legend": {
+      "hasClass": "Có lịch",
+      "noClass": "Không có lịch",
+      "available": "Còn slot",
+      "full": "Full/Đã có người đăng ký",
+      "closed": "Không mở"
+    },
+    "weekdays": {
+      "mon": "Thứ hai",
+      "tue": "Thứ ba",
+      "wed": "Thứ tư",
+      "thu": "Thứ năm",
+      "fri": "Thứ sáu",
+      "sat": "Thứ bảy",
+      "sun": "Chủ nhật"
+    },
+    "hints": {
+      "sessions": "{count} buổi",
+      "slots": "{count} slot",
+      "full": "Full"
+    }
+  },
+  "SchedulePanel": {
+    "viewTitle": "Chi tiết lịch học",
+    "registerTitle": "Đăng ký lịch học",
+    "dateLabel": "Ngày:",
+    "empty": "Không có dữ liệu cho ngày này.",
+    "registerBtn": "Đăng ký",
+    "closeBtn": "Đóng"
+  },
+  "ScheduleDayDetail": {
+    "title": "Chi tiết ngày {date}",
+    "viewSubtitle": "Danh sách buổi học trong ngày.",
+    "registerSubtitle": "Chọn slot và đăng ký lịch học.",
+    "empty": "Không có dữ liệu cho ngày này.",
+    "registerBtn": "Đăng ký"
+  },
+  "WeeklySchedule": {
+    "headers": {
+      "date": "Ngày",
+      "time": "Giờ",
+      "content": "Nội dung",
+      "roomPlatform": "Phòng/Nền tảng",
+      "mode": "Hình thức",
+      "instructor": "Giảng viên",
+      "status": "Trạng thái"
+    },
+    "empty": "Chưa có lịch trong tuần.",
+    "status": {
+      "upcoming": "Sắp diễn ra",
+      "done": "Đã xong",
+      "cancel": "Hủy"
+    }
+  },
+  "RegistrationNopHoSo": {
+    "upload": {
+      "uploadAction": {
+        "highlight": "Bấm để tải ảnh",
+        "rest": "hoặc kéo thả vào đây"
+      },
+      "changeImage": "Bấm để đổi ảnh",
+      "remove": "Xóa"
+    }
+  },
+  "RegistrationNopHoSo": {
+    "title": "Nộp hồ sơ đăng ký học",
+    "subtitle": "Vui lòng điền đầy đủ thông tin và tải ảnh theo yêu cầu để gửi hồ sơ.",
+    "required_note": "là bắt buộc",
+    "gender": {
+      "male": "Nam",
+      "female": "Nữ",
+      "other": "Khác"
+    },
+    "personal": {
+      "title": "Thông tin cá nhân học viên",
+      "fullName": "Họ và tên",
+      "fullName_ph": "Nhập họ và tên",
+      "gender": "Giới tính",
+      "birthday": "Ngày sinh",
+      "phone": "Số điện thoại",
+      "email": "Email",
+      "address": "Địa chỉ",
+      "address_ph": "Nhập địa chỉ",
+      "identityCard": "CCCD/CMND",
+      "issuedDate": "Ngày cấp",
+      "issuedPlace": "Nơi cấp",
+      "issuedPlace_ph": "Ví dụ: Công an tỉnh..."
+    },
+    "course": {
+      "title": "Thông tin khóa học muốn đăng ký",
+      "type": "Hạng đăng ký",
+      "expectedStart": "Ngày dự kiến bắt đầu",
+      "note": "Ghi chú",
+      "note_ph": "Ví dụ: muốn học cuối tuần..."
+    },
+    "upload": {
+      "title": "Ảnh hồ sơ",
+      "cccdFront": "CCCD mặt trước",
+      "cccdBack": "CCCD mặt sau",
+      "portrait": "Ảnh chân dung 3x4 / 4x6",
+      "cccdHint": "Ảnh rõ nét, đủ 4 góc, không lóa.",
+      "portraitHint": "Nền sáng, mặt rõ, không đội mũ/kính râm.",
+      "uploadAction": {
+        "highlight": "Bấm để tải ảnh",
+        "rest": "hoặc kéo thả vào đây"
+      },
+      "changeImage": "Bấm để đổi ảnh",
+      "remove": "Xóa"
+    },
+    "submit": {
+      "label": "Gửi hồ sơ",
+      "loading": "Đang gửi..."
+    },
+    "success": "Gửi hồ sơ thành công! Trung tâm sẽ liên hệ sớm.",
+    "errors": {
+      "required": "Không được để trống.",
+      "invalid_email": "Email không hợp lệ.",
+      "required_image": "Vui lòng tải ảnh bắt buộc.",
+      "submit_failed": "Gửi hồ sơ thất bại. Vui lòng thử lại."
+    }
+  },
+  "About": {
+    "title": "GIỚI THIỆU",
+    "p1_bold": "Trung tâm Đào tạo và Sát hạch Lái xe Sông Tiền",
+    "p1_rest": "có diện tích hơn 22.000 m2. Sân tập lái và sát hạch có diện tích hơn 11.000 m2, lớn nhất tỉnh Tiền Giang, đạt chuẩn sân sát hạch loại II Quốc gia, được cấp phép để thi sát hạch giấy phép lái xe ô tô hạng B, C1, C và xe mô tô hạng A1, A. Lợi thế gần trung tâm thành phố Mỹ Tho là điều kiện lý tưởng để phục vụ việc học tập, thi giấy phép lái xe của các học viên ở tỉnh Tiền Giang và các tỉnh thành lân cận.",
+    "p2": "Trung tâm cam kết học phí niêm yết là trọn gói, không phí phát sinh. Đến với Trung tâm, quý học viên được nhận tài liệu học miễn phí, được đào tạo đầy đủ, đúng quy định về đào tạo lái xe ô tô: Lý thuyết, Mô phỏng, Cabin mô phỏng, Thực hành trong sân, Thực hành đường trường, v.v. Ngoài ra, quý học viên còn có lợi thế được tập lái với xe sát hạch, ngay trên sân sát hạch, và được giáo viên ôn tập trước khi thi.",
+    "p3": "Trung tâm được đầu tư bài bản để việc thi giấy phép lái xe của mọi thí sinh dễ dàng, thuận lợi nhất: màn hình máy tính thi lý thuyết, mô phỏng lớn nhất khu vực; xe sát hạch luôn được thay mới; sân thi đạt chuẩn, không đánh đố thí sinh.",
+    "mission": "Chúng tôi hoạt động với sứ mệnh: Mang đến dịch vụ tiện ích, thân thiện; Lấy học viên làm trung tâm; Sân tập và phương tiện sử dụng công nghệ cao, cơ sở vật chất hiện đại; Luôn thỏa mãn nhu cầu người học."
+  },
   "FloatingRegister": {
     "label": "Đăng ký ngay",
     "aria": "Cuộn đến form đăng ký"
+  },
+  "Account": {
+    "profileTitle": "Hồ sơ cá nhân",
+    "email": "Email",
+    "phone": "Số điện thoại",
+    "active": "Đang hoạt động",
+    "inactive": "Chưa kích hoạt",
+    "goSettings": "Cài đặt",
+    "reload": "Tải lại",
+    "logout": "Đăng xuất",
+    "loggingOut": "Đang đăng xuất...",
+    "notLoggedIn": "Bạn chưa đăng nhập. Vui lòng đăng nhập để xem hồ sơ.",
+    "loadFailed": "Không tải được thông tin hồ sơ.",
+    "backHome": "Về trang chủ"
   },
   "Auth": {
     "login": "Đăng nhập",

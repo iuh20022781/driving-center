@@ -1,7 +1,186 @@
 {
+  "Profile": {
+    "studentInfoTitle": "Student Information",
+    "personalProfileLink": "Personal Profile",
+    "fields": {
+      "fullName": "Full name:",
+      "phone": "Phone:",
+      "identityCard": "Citizen ID:",
+      "gender": "Gender:",
+      "birthday": "Date of birth:",
+      "address": "Address:",
+      "email": "Email:",
+      "course": "Course:"
+    }
+  },
+  "StudentQuickActions": {
+    "cta": "View details",
+    "registerSchedule": {
+      "title": "Register Schedule",
+      "desc": "Choose a suitable schedule"
+    },
+    "viewSchedule": {
+      "title": "View Schedule",
+      "desc": "Track your weekly schedule"
+    },
+    "notifications": {
+      "title": "Notifications",
+      "desc": "Reminders and latest updates",
+      "mockAlert": "You can link a notifications page later 😄"
+    }
+  },
+  "Schedule": {
+    "monthTitle": "Month {month} / {year}",
+    "viewTitle": "View Schedule",
+    "registerTitle": "Register Schedule",
+    "viewSubtitle": "Days with classes are highlighted. Click a day to view details.",
+    "registerSubtitle": "Available days are highlighted. Full days are marked in red.",
+    "legend": {
+      "hasClass": "Has class",
+      "noClass": "No class",
+      "available": "Available",
+      "full": "Full/Already booked",
+      "closed": "Closed"
+    },
+    "weekdays": {
+      "mon": "Monday",
+      "tue": "Tuesday",
+      "wed": "Wednesday",
+      "thu": "Thursday",
+      "fri": "Friday",
+      "sat": "Saturday",
+      "sun": "Sunday"
+    },
+    "hints": {
+      "sessions": "{count} session(s)",
+      "slots": "{count} slot(s)",
+      "full": "Full"
+    }
+  },
+  "SchedulePanel": {
+    "viewTitle": "Schedule Details",
+    "registerTitle": "Register Schedule",
+    "dateLabel": "Date:",
+    "empty": "No data for this day.",
+    "registerBtn": "Register",
+    "closeBtn": "Close"
+  },
+  "ScheduleDayDetail": {
+    "title": "Details for {date}",
+    "viewSubtitle": "List of sessions for this day.",
+    "registerSubtitle": "Choose a slot and register.",
+    "empty": "No data for this day.",
+    "registerBtn": "Register"
+  },
+  "WeeklySchedule": {
+    "headers": {
+      "date": "Date",
+      "time": "Time",
+      "content": "Content",
+      "roomPlatform": "Room/Platform",
+      "mode": "Mode",
+      "instructor": "Instructor",
+      "status": "Status"
+    },
+    "empty": "No schedule for this week.",
+    "status": {
+      "upcoming": "Upcoming",
+      "done": "Completed",
+      "cancel": "Canceled"
+    }
+  },
+  "RegistrationNopHoSo": {
+    "upload": {
+      "uploadAction": {
+        "highlight": "Click to upload",
+        "rest": "or drag and drop here"
+      },
+      "changeImage": "Click to change image",
+      "remove": "Remove"
+    }
+  },
+  "RegistrationNopHoSo": {
+    "title": "Submit Registration Application",
+    "subtitle": "Please fill in all required information and upload the requested images to submit your application.",
+    "required_note": "indicates required fields",
+    "gender": {
+      "male": "Male",
+      "female": "Female",
+      "other": "Other"
+    },
+    "personal": {
+      "title": "Student Personal Information",
+      "fullName": "Full name",
+      "fullName_ph": "Enter full name",
+      "gender": "Gender",
+      "birthday": "Date of birth",
+      "phone": "Phone number",
+      "email": "Email",
+      "address": "Address",
+      "address_ph": "Enter address",
+      "identityCard": "ID Card Number",
+      "issuedDate": "Date of issue",
+      "issuedPlace": "Place of issue",
+      "issuedPlace_ph": "Example: Provincial Police Department"
+    },
+    "course": {
+      "title": "Course Registration Information",
+      "type": "License category",
+      "expectedStart": "Expected start date",
+      "note": "Note",
+      "note_ph": "Example: prefer weekend classes..."
+    },
+    "upload": {
+      "title": "Required Documents",
+      "cccdFront": "ID card (front side)",
+      "cccdBack": "ID card (back side)",
+      "portrait": "Portrait photo (3x4 or 4x6)",
+      "cccdHint": "Clear image, all corners visible, no glare.",
+      "portraitHint": "Bright background, clear face, no hat or sunglasses.",
+      "uploadAction": {
+      "highlight": "Click to upload",
+      "rest": "or drag and drop here"
+    },
+    "changeImage": "Click to change",
+    "remove": "Remove"
+    },
+    "submit": {
+      "label": "Submit application",
+      "loading": "Submitting..."
+    },
+    "success": "Application submitted successfully! Our staff will contact you shortly.",
+    "errors": {
+      "required": "This field is required.",
+      "invalid_email": "Invalid email address.",
+      "required_image": "Please upload the required image.",
+      "submit_failed": "Submission failed. Please try again."
+    }
+  },
+  "About": {
+    "title": "ABOUT",
+    "p1_bold": "Song Tien Driving Training & Testing Center",
+    "p1_rest": "covers over 22,000 m². The practice and testing area spans more than 11,000 m²—the largest in Tien Giang—meeting Vietnam’s National Level II testing standards. It is licensed to conduct driving tests for car licenses (B, C1, C) and motorbike licenses (A1, A). Located near My Tho city center, it is an ideal place for students from Tien Giang and neighboring provinces to study and take license exams.",
+    "p2": "We commit to a transparent, all-inclusive tuition fee—no hidden charges. Students receive free learning materials and a complete training program in accordance with regulations: Theory, Simulation, Cabin Simulation, On-yard practice, On-road practice, etc. In addition, students can practice with real test vehicles right on the official test yard and receive pre-exam coaching from instructors.",
+    "p3": "The center is professionally invested to make every exam smooth and convenient: the largest theory/simulation computer screens in the region; test vehicles are regularly renewed; the testing yard meets standards and is designed without tricky elements.",
+    "mission": "Our mission: Provide friendly and convenient services; Put students at the center; Use modern, high-tech facilities and vehicles; Always meet learners’ needs."
+  },
   "FloatingRegister": {
     "label": "Register now",
     "aria": "Scroll to registration form"
+  },
+  "Account": {
+    "profileTitle": "Profile",
+    "email": "Email",
+    "phone": "Phone number",
+    "active": "Active",
+    "inactive": "Inactive",
+    "goSettings": "Settings",
+    "reload": "Reload",
+    "logout": "Log out",
+    "loggingOut": "Logging out...",
+    "notLoggedIn": "You are not logged in. Please sign in to view your profile.",
+    "loadFailed": "Failed to load profile information.",
+    "backHome": "Back to home"
   },
   "Auth": {
     "login": "Sign in",
