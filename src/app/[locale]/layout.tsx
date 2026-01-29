@@ -28,8 +28,11 @@ export default async function LocaleLayout({
   }
 
   return (
-    <html lang={locale} className="overflow-x-hidden">
-      <body className="bg-gray-50 text-gray-800 overflow-x-hidden">
+    <html lang={locale} className="overflow-x-hidden" suppressHydrationWarning>
+      <body
+        className="bg-gray-50 text-gray-800 overflow-x-hidden"
+        suppressHydrationWarning
+      >
         <NextIntlClientProvider locale={locale} messages={messages}>
           {/* ✅ FIXED header (không viền đen) */}
           <header className="fixed inset-x-0 top-0 z-[1000] bg-white shadow-sm">

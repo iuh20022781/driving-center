@@ -10,6 +10,10 @@ import AuthEntry from "@/components/auth/AuthEntry";
 
 type DropdownBlock = { title?: string; [key: string]: any };
 
+function clsx(...s: Array<string | false | null | undefined>) {
+  return s.filter(Boolean).join(" ");
+}
+
 function MobileSection({
   title,
   open,
@@ -26,22 +30,60 @@ function MobileSection({
       <button
         type="button"
         onClick={onToggle}
-        className="flex w-full items-center justify-between py-3 text-left font-medium"
+        className={clsx(
+          "flex w-full items-center justify-between py-3 text-left font-semibold",
+          "rounded-xl px-2 transition",
+          "hover:bg-gray-50"
+        )}
       >
         <span className="min-w-0 truncate">{title}</span>
-        <ChevronDown className={`h-5 w-5 transition ${open ? "rotate-180" : ""}`} />
+        <ChevronDown className={clsx("h-5 w-5 transition", open && "rotate-180")} />
       </button>
-      {open && <div className="pb-3 pl-3 text-gray-700">{children}</div>}
+
+      {open ? <div className="pb-3 pl-2 pr-2">{children}</div> : null}
     </div>
+  );
+}
+
+function MobileItem({
+  href,
+  locale,
+  onClose,
+  children,
+}: {
+  href: string;
+  locale: string;
+  onClose: () => void;
+  children: React.ReactNode;
+}) {
+  const pathname = usePathname();
+  const to = `/${locale}${href.startsWith("/") ? href : `/${href}`}`;
+  const isActive = pathname === to || pathname?.startsWith(`${to}/`);
+
+  return (
+    <Link
+      onClick={onClose}
+      href={to}
+      className={clsx(
+        "block rounded-xl px-3 py-2 text-sm transition",
+        "border border-transparent",
+        "hover:bg-blue-50 hover:text-blue-700 hover:border-blue-100",
+        isActive && "bg-blue-100 text-blue-800 border-blue-200 font-semibold"
+      )}
+    >
+      {children}
+    </Link>
   );
 }
 
 export default function MobileMenu({
   open,
   onClose,
+  isLoggedIn,
 }: {
   open: boolean;
   onClose: () => void;
+  isLoggedIn?: boolean;
 }) {
   const t = useTranslations("Header");
   const tTop = useTranslations("TopBar");
@@ -74,7 +116,6 @@ export default function MobileMenu({
 
   return (
     <div className="fixed inset-0 z-[60] lg:hidden">
-      {/* overlay */}
       <button
         aria-label="Close menu overlay"
         className="absolute inset-0 bg-black/40"
@@ -82,9 +123,7 @@ export default function MobileMenu({
         type="button"
       />
 
-      {/* panel */}
       <div className="absolute right-0 top-0 h-[100dvh] w-[85%] max-w-sm bg-white shadow-xl overflow-y-auto overscroll-contain">
-        {/* Header */}
         <div className="flex items-center justify-between px-4 py-3 border-b">
           <div className="font-semibold text-lg">Menu</div>
           <button
@@ -97,128 +136,139 @@ export default function MobileMenu({
           </button>
         </div>
 
-        {/* ✅ TopBar content on mobile */}
-        
-
-        {/* Menu items */}
         <div className="px-4 py-2">
-          <Link
-            href={`/${locale}`}
-            onClick={onClose}
-            className="block py-3 font-medium border-b border-gray-200"
-          >
+          <MobileItem href="/about" locale={locale} onClose={onClose}>
             {t("menu.gioi-thieu")}
-          </Link>
+          </MobileItem>
 
+          {/* ✅ CHỈ THÊM ITEM NÀY */}
+          {isLoggedIn ? (
+            <MobileItem href="/account/profile" locale={locale} onClose={onClose}>
+              {t("menu.trang-cua-toi") ?? "Trang của tôi"}
+            </MobileItem>
+          ) : null}
+
+          {/* ... phần còn lại giữ nguyên y như bạn */}
+          {/* Courses */}
           <MobileSection
             title={t("menu.khoa-hoc")}
             open={openKey === "courses"}
             onToggle={() => setOpenKey(openKey === "courses" ? null : "courses")}
           >
-            <ul className="space-y-2">
-              <li><Link onClick={onClose} href={`/${locale}/khoa-hoc/a1`} className="block py-1">{courses.a1}</Link></li>
-              <li><Link onClick={onClose} href={`/${locale}/khoa-hoc/a`} className="block py-1">{courses.a}</Link></li>
-              <li><Link onClick={onClose} href={`/${locale}/khoa-hoc/b1`} className="block py-1">{courses.b1}</Link></li>
-              <li><Link onClick={onClose} href={`/${locale}/khoa-hoc/b`} className="block py-1">{courses.b}</Link></li>
-              <li><Link onClick={onClose} href={`/${locale}/khoa-hoc/c1`} className="block py-1">{courses.c1}</Link></li>
-              <li><Link onClick={onClose} href={`/${locale}/khoa-hoc/c`} className="block py-1">{courses.c}</Link></li>
-            </ul>
+            <div className="grid gap-2">
+              <MobileItem href="/courses/a1" locale={locale} onClose={onClose}>{courses.a1}</MobileItem>
+              <MobileItem href="/courses/a" locale={locale} onClose={onClose}>{courses.a}</MobileItem>
+              <MobileItem href="/courses/b1" locale={locale} onClose={onClose}>{courses.b1}</MobileItem>
+              <MobileItem href="/courses/b" locale={locale} onClose={onClose}>{courses.b}</MobileItem>
+              <MobileItem href="/courses/c1" locale={locale} onClose={onClose}>{courses.c1}</MobileItem>
+              <MobileItem href="/courses/c" locale={locale} onClose={onClose}>{courses.c}</MobileItem>
+            </div>
           </MobileSection>
 
+          {/* Register */}
           <MobileSection
             title={t("menu.dang-ky-hoc")}
             open={openKey === "register"}
             onToggle={() => setOpenKey(openKey === "register" ? null : "register")}
           >
-            <ul className="space-y-2">
-              <li><Link onClick={onClose} href={`/${locale}/dang-ky/nop-ho-so`} className="block py-1">{register["nop-ho-so-truc-tuyen"]}</Link></li>
-              <li><Link onClick={onClose} href={`/${locale}/dang-ky/hoi-dap`} className="block py-1">{register["hoi-dap"]}</Link></li>
-              <li><Link onClick={onClose} href={`/${locale}/dang-ky/tra-cuu`} className="block py-1">{register["tra-cuu-thong-tin-hoc-vien"]}</Link></li>
-            </ul>
+            <div className="grid gap-2">
+              <MobileItem href="/registration/nop-ho-so" locale={locale} onClose={onClose}>
+                {register["nop-ho-so-truc-tuyen"]}
+              </MobileItem>
+              <MobileItem href="/registration/hoi-dap" locale={locale} onClose={onClose}>
+                {register["hoi-dap"]}
+              </MobileItem>
+              <MobileItem href="/registration/tra-cuu" locale={locale} onClose={onClose}>
+                {register["tra-cuu-thong-tin-hoc-vien"]}
+              </MobileItem>
+            </div>
           </MobileSection>
 
+          {/* News */}
           <MobileSection
             title={t("menu.tin-tuc")}
             open={openKey === "news"}
             onToggle={() => setOpenKey(openKey === "news" ? null : "news")}
           >
-            <ul className="space-y-2">
-              <li><Link onClick={onClose} href={`/${locale}/tin-tuc/thong-bao`} className="block py-1">{news["thong-bao"]}</Link></li>
-              <li><Link onClick={onClose} href={`/${locale}/tin-tuc/lich-thi`} className="block py-1">{news["lich-thi"]}</Link></li>
-              <li><Link onClick={onClose} href={`/${locale}/tin-tuc/so-bao-danh`} className="block py-1">{news["so-bao-danh"]}</Link></li>
-            </ul>
+            <div className="grid gap-2">
+              <MobileItem href="/news/thong-bao" locale={locale} onClose={onClose}>{news["thong-bao"]}</MobileItem>
+              <MobileItem href="/news/lich-thi" locale={locale} onClose={onClose}>{news["lich-thi"]}</MobileItem>
+              <MobileItem href="/news/so-bao-danh" locale={locale} onClose={onClose}>{news["so-bao-danh"]}</MobileItem>
+            </div>
           </MobileSection>
 
+          {/* Students */}
           <MobileSection
             title={t("menu.hoc-vien")}
             open={openKey === "students"}
             onToggle={() => setOpenKey(openKey === "students" ? null : "students")}
           >
-            <ul className="space-y-2">
-              <li><Link onClick={onClose} href={`/${locale}/hoc-vien/on-tap-o-to`} className="block py-1">{students["on-tap-o-to"]}</Link></li>
-              <li><Link onClick={onClose} href={`/${locale}/hoc-vien/on-tap-mo-to`} className="block py-1">{students["on-tap-mo-to"]}</Link></li>
-              <li><Link onClick={onClose} href={`/${locale}/hoc-vien/tai-lieu`} className="block py-1">{students["tai-lieu-phan-mem"]}</Link></li>
-              <li><Link onClick={onClose} href={`/${locale}/hoc-vien/dang-ky-cabin`} className="block py-1">{students["dang-ky-cabin"]}</Link></li>
-              <li><Link onClick={onClose} href={`/${locale}/hoc-vien/dang-ky-xe-cam-bien`} className="block py-1">{students["dang-ky-xe-cam-bien"]}</Link></li>
-            </ul>
+            <div className="grid gap-2">
+              <MobileItem href="/account/on-tap-o-to" locale={locale} onClose={onClose}>{students["on-tap-o-to"]}</MobileItem>
+              <MobileItem href="/account/on-tap-mo-to" locale={locale} onClose={onClose}>{students["on-tap-mo-to"]}</MobileItem>
+              <MobileItem href="/account/tai-lieu" locale={locale} onClose={onClose}>{students["tai-lieu-phan-mem"]}</MobileItem>
+              <MobileItem href="/account/dang-ky-cabin" locale={locale} onClose={onClose}>{students["dang-ky-cabin"]}</MobileItem>
+              <MobileItem href="/account/dang-ky-xe-cam-bien" locale={locale} onClose={onClose}>{students["dang-ky-xe-cam-bien"]}</MobileItem>
+            </div>
           </MobileSection>
 
+          {/* Contact */}
           <MobileSection
             title={t("menu.lien-he")}
             open={openKey === "contact"}
             onToggle={() => setOpenKey(openKey === "contact" ? null : "contact")}
           >
-            <ul className="space-y-2">
-              <li><Link onClick={onClose} href={`/${locale}/lien-he`} className="block py-1">{contact["lien-he"]}</Link></li>
-              <li><Link onClick={onClose} href={`/${locale}/tuyen-dung`} className="block py-1">{contact["tuyen-dung"]}</Link></li>
-            </ul>
+            <div className="grid gap-2">
+              <MobileItem href="/contact" locale={locale} onClose={onClose}>{contact["lien-he"]}</MobileItem>
+              <MobileItem href="/tuyen-dung" locale={locale} onClose={onClose}>{contact["tuyen-dung"]}</MobileItem>
+            </div>
           </MobileSection>
-          <div className="px-4 py-4 border-b bg-blue-800 text-white">
-          <div className="space-y-2 text-sm">
-            <div className="flex items-center gap-2">
-              <Mail className="h-4 w-4 shrink-0" />
-              <span className="break-words">{tTop("email")}</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Phone className="h-4 w-4 shrink-0" />
-              <span>{tTop("hotline")}</span>
-            </div>
-          </div>
 
-          <div className="mt-3 flex items-center justify-between gap-2">
-            <div className="flex items-center gap-3">
-              <Link href="#" className="inline-flex items-center gap-1 hover:text-yellow-300">
-                <Facebook className="h-5 w-5" />
-              </Link>
-              <Link href="#" className="inline-flex items-center gap-1 hover:text-yellow-300">
-                <Youtube className="h-5 w-5" />
-              </Link>
+          {/* Footer card giữ nguyên */}
+          <div className="mt-4 rounded-2xl border bg-blue-800 text-white p-4">
+            <div className="space-y-2 text-sm">
+              <div className="flex items-center gap-2">
+                <Mail className="h-4 w-4 shrink-0" />
+                <span className="break-words">{tTop("email")}</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Phone className="h-4 w-4 shrink-0" />
+                <span>{tTop("hotline")}</span>
+              </div>
             </div>
 
-            <div className="flex items-center gap-1 bg-white/20 px-3 py-1 rounded-full">
-              <Globe className="h-4 w-4" />
-              <button
-                onClick={() => changeLanguage("vi")}
-                className={`font-medium ${locale === "vi" ? "text-yellow-300" : "hover:text-yellow-300"}`}
-              >
-                VI
-              </button>
-              <span className="text-white/60">|</span>
-              <button
-                onClick={() => changeLanguage("en")}
-                className={`font-medium ${locale === "en" ? "text-yellow-300" : "hover:text-yellow-300"}`}
-              >
-                EN
-              </button>
-            </div>
-          </div>
+            <div className="mt-3 flex items-center justify-between gap-2">
+              <div className="flex items-center gap-3">
+                <Link href="#" className="inline-flex items-center gap-1 hover:text-yellow-300">
+                  <Facebook className="h-5 w-5" />
+                </Link>
+                <Link href="#" className="inline-flex items-center gap-1 hover:text-yellow-300">
+                  <Youtube className="h-5 w-5" />
+                </Link>
+              </div>
 
-          <div className="mt-2 ">
-            <div className="w-full justify-center">
+              <div className="flex items-center gap-1 bg-white/20 px-3 py-1 rounded-full">
+                <Globe className="h-4 w-4" />
+                <button
+                  onClick={() => changeLanguage("vi")}
+                  className={clsx("font-medium", locale === "vi" ? "text-yellow-300" : "hover:text-yellow-300")}
+                >
+                  VI
+                </button>
+                <span className="text-white/60">|</span>
+                <button
+                  onClick={() => changeLanguage("en")}
+                  className={clsx("font-medium", locale === "en" ? "text-yellow-300" : "hover:text-yellow-300")}
+                >
+                  EN
+                </button>
+              </div>
+            </div>
+
+            <div className="mt-3 flex justify-center">
               <AuthEntry />
             </div>
           </div>
-        </div>
         </div>
       </div>
     </div>

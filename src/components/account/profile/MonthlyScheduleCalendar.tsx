@@ -53,15 +53,22 @@ function buildMonthGrid(year: number, month: number) {
   return cells;
 }
 
+/**
+ * ✅ Important:
+ * - Luôn dùng border-2 cho tất cả ô để KHÔNG bị "phình" khi chọn
+ * - Default border-transparent, khi hover/selected mới đổi màu
+ * - Không dùng ring để tránh viền xanh bị "lỗi" như ảnh
+ */
 function clsByStatus(status: DayStatus, mode: ScheduleMode) {
+  // NOTE: Border màu theo status chỉ là "gợi ý" (hover), còn selected sẽ override bằng border-blue-500
   if (mode === "VIEW") {
-    if (status === "HAS_CLASS") return "bg-emerald-50 border-emerald-200 hover:bg-emerald-100";
-    return "bg-white border-gray-200 hover:bg-gray-50";
+    if (status === "HAS_CLASS") return "bg-emerald-50 hover:bg-emerald-100 hover:border-emerald-200";
+    return "bg-white hover:bg-gray-50 hover:border-gray-200";
   }
 
-  if (status === "AVAILABLE") return "bg-emerald-50 border-emerald-200 hover:bg-emerald-100";
-  if (status === "FULL") return "bg-red-50 border-red-200 opacity-80 cursor-not-allowed";
-  return "bg-white border-gray-200 hover:bg-gray-50";
+  if (status === "AVAILABLE") return "bg-emerald-50 hover:bg-emerald-100 hover:border-emerald-200";
+  if (status === "FULL") return "bg-red-50 opacity-80 cursor-not-allowed";
+  return "bg-white hover:bg-gray-50 hover:border-gray-200";
 }
 
 export default function MonthlyScheduleCalendar({
@@ -164,9 +171,16 @@ export default function MonthlyScheduleCalendar({
                   disabled={!clickable}
                   onClick={() => onOpenPanel(d)}
                   className={[
-                    "h-[92px] rounded-xl border p-3 text-left transition",
+                    // ✅ base: luôn border-2 + border-transparent để không bị lệch
+                    "h-[92px] rounded-xl border-2 border-transparent p-3 text-left transition box-border",
+                    // ✅ tắt focus/outline/ring của trình duyệt
+                    "outline-none focus:outline-none focus-visible:outline-none ring-0 focus:ring-0 focus-visible:ring-0",
+                    // màu nền + hover theo status/mode
                     clsByStatus(status, mode),
-                    isSelected ? "ring-2 ring-blue-400" : "",
+                    // ✅ selected chỉ đổi màu border (không ring)
+                    isSelected ? "border-blue-500" : "",
+                    // nếu không clickable thì vẫn giữ border-transparent để không bị “đổi size”
+                    !clickable ? "opacity-80" : "",
                   ].join(" ")}
                   title={`${vnDayLabel(new Date(d).getDay())} - ${d}`}
                 >

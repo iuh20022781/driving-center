@@ -1,4 +1,391 @@
 {
+  "CourseC": {
+    "breadcrumb": {
+      "home": "Trang chủ",
+      "courses": "Khóa học",
+      "c": "Hạng C"
+    },
+    "imageAlt": "Khóa học lái xe hạng C",
+    "title": "Khóa học lái xe hạng C",
+    "intro": {
+      "p1": "Giấy phép lái xe hạng C cấp cho người điều khiển các loại xe:",
+      "li1": "Ô tô tải và ô tô chuyên dùng có khối lượng toàn bộ theo thiết kế trên 7.500 kg;",
+      "li2": "Các loại xe ô tô quy định cho giấy phép lái xe hạng B và C1 có kéo rơ moóc có khối lượng toàn bộ theo thiết kế ≤ 750 kg;",
+      "li3": "Chương trình học rõ ràng, hỗ trợ ôn tập trước khi thi.",
+      "note": "Khóa học lái xe ô tô hạng C được khai giảng hàng tháng."
+    },
+    "meta": {
+      "updated": "Cập nhật theo thông báo mới",
+      "share": "Chia sẻ"
+    },
+    "category": {
+      "label": "Category",
+      "value": "Khóa học lái xe ô tô"
+    },
+    "cta": "Đăng ký ngay",
+    "descLabel": "Description",
+    "quick": {
+      "title": "Tóm tắt khóa học",
+      "item1Label": "Thời gian:",
+      "item1Value": "Khai giảng hàng tháng",
+      "item2Label": "Hình thức:",
+      "item2Value": "Học + ôn tập trước khi thi",
+      "item3Label": "Thi sát hạch:",
+      "item3Value": "Tại sân đạt chuẩn"
+    },
+    "section": {
+      "title": "KHÓA HỌC LÁI XE Ô TÔ HẠNG C",
+      "subtitle1": "I. Thời gian:",
+      "subtitle2": "II. Hồ sơ",
+      "subtitle3": "III. Cam kết của Trung tâm:"
+    },
+    "time": {
+      "li1": "Thời gian mở lớp: Các khóa học được tổ chức liên tục, khai giảng hàng tháng",
+      "li2": "Thời gian học: 3 tháng",
+      "li3": "Thời gian thi cuối khóa: sau khi bế giảng khoảng 03 ngày",
+      "li4": "Thời gian thi sát hạch bằng lái: sau khi thi cuối khóa tốt nghiệp từ 10–15 ngày"
+    },
+    "table": {
+      "col1": "THÀNH PHẦN HỒ SƠ",
+      "col2": "GHI CHÚ",
+      "r1": { "c1": "01 bản sao CCCD công dân", "c2": "Photo 2 mặt không cần công chứng" },
+      "r2": { "c1": "Giấy khám sức khỏe", "c2": "Tại Bệnh viện/Phòng khám đủ điều kiện" },
+      "r3": { "c1": "Đơn đề nghị học, sát hạch", "c2": "Tải Đơn đề nghị học, sát hạch" },
+      "r4": { "c1": "Đơn đề nghị sát hạch", "c2": "Tải Đơn đề nghị sát hạch" },
+      "r5": { "c1": "Ảnh chụp kỹ thuật số", "c2": "03 ảnh chụp tại Trung tâm" },
+      "r6": { "c1": "Giấy chứng nhận sơ cấp", "c2": "Có thể bổ sung theo yêu cầu của khóa" }
+    },
+    "commit": {
+      "c1": "Cam kết học phí trọn gói, không phát sinh",
+      "c2": "Miễn phí tài liệu học",
+      "c3": "Thời gian đào tạo nhanh",
+      "c4": "Hỗ trợ đăng ký online qua Zalo"
+    },
+    "location": {
+      "title": "IV. Địa điểm thi bằng lái ô tô:",
+      "name": "TRUNG TÂM ĐÀO TẠO & SÁT HẠCH LÁI XE SÔNG TIỀN",
+      "addr": "Địa chỉ: (cập nhật địa chỉ thật của bạn tại đây)",
+      "phone": "Hotline/Zalo: 0919.555.678",
+      "email": "Email: info@daylaixesongtien.vn",
+      "mapSrc": "https://www.google.com/maps?q=My%20Tho%20Tien%20Giang&output=embed"
+    }
+  },
+  "CourseC1": {
+    "breadcrumb": {
+      "home": "Trang chủ",
+      "courses": "Khóa học",
+      "c1": "Hạng C1"
+    },
+    "imageAlt": "Khóa học lái xe hạng C1",
+    "title": "Khóa học lái xe hạng C1",
+    "intro": {
+      "p1": "Giấy phép lái xe hạng C1 cấp cho người điều khiển các loại xe:",
+      "li1": "Ô tô tải và ô tô chuyên dùng có khối lượng toàn bộ theo thiết kế trên 3.500 kg đến 7.500 kg;",
+      "li2": "Các loại xe ô tô quy định cho giấy phép lái xe hạng C1 có kéo rơ moóc có khối lượng toàn bộ theo thiết kế ≤ 750 kg;",
+      "li3": "Các loại xe quy định cho giấy phép lái xe hạng B (ô tô chở người đến 08 chỗ không kể chỗ của người lái xe);",
+      "li4": "Ô tô tải và ô tô chuyên dùng có khối lượng toàn bộ theo thiết kế ≤ 3.500 kg; xe kéo rơ moóc ≤ 750 kg;",
+      "note": "Khóa học lái xe ô tô hạng C1 được khai giảng hàng tháng."
+    },
+    "meta": {
+      "updated": "Cập nhật theo thông báo mới",
+      "share": "Chia sẻ"
+    },
+    "category": {
+      "label": "Chuyên mục",
+      "value": "Khóa học lái xe tải"
+    },
+    "cta": "Đăng ký ngay",
+    "descLabel": "Mô tả",
+    "quick": {
+      "title": "Thông tin nhanh",
+      "item1Label": "Thời gian:",
+      "item1Value": "Khai giảng hàng tháng",
+      "item2Label": "Hình thức:",
+      "item2Value": "Học + ôn tập trước khi thi",
+      "item3Label": "Thi sát hạch:",
+      "item3Value": "Tại sân đạt chuẩn"
+    },
+    "section": {
+      "title": "KHÓA HỌC LÁI XE Ô TÔ HẠNG C1",
+      "subtitle1": "I. Thời gian:",
+      "subtitle2": "II. Hồ sơ",
+      "subtitle3": "III. Cam kết của Trung tâm:"
+    },
+    "time": {
+      "li1": "Thời gian mở lớp: Các khóa học được tổ chức liên tục, khai giảng hàng tháng",
+      "li2": "Thời gian học: 3 tháng",
+      "li3": "Thời gian thi cuối khóa: sau khi bế giảng khoảng 03 ngày",
+      "li4": "Thời gian thi sát hạch bằng lái: sau khi thi cuối khóa tốt nghiệp từ 10–15 ngày"
+    },
+    "table": {
+      "col1": "THÀNH PHẦN HỒ SƠ",
+      "col2": "GHI CHÚ",
+      "r1": { "c1": "01 bản sao CCCD công dân", "c2": "Photo 2 mặt không cần công chứng" },
+      "r2": { "c1": "Giấy khám sức khỏe", "c2": "Tại Bệnh viện/Phòng khám đủ điều kiện" },
+      "r3": { "c1": "Đơn đề nghị học, sát hạch", "c2": "Tải Đơn đề nghị học, sát hạch" },
+      "r4": { "c1": "Đơn đề nghị sát hạch", "c2": "Tải Đơn đề nghị sát hạch" },
+      "r5": { "c1": "Ảnh chụp kỹ thuật số", "c2": "03 ảnh chụp tại Trung tâm" }
+    },
+    "commit": {
+      "c1": "Cam kết học phí trọn gói, không phát sinh",
+      "c2": "Miễn phí tài liệu học",
+      "c3": "Thời gian đào tạo nhanh",
+      "c4": "Hỗ trợ đăng ký online qua Zalo"
+    },
+    "location": {
+      "title": "IV. Địa điểm thi bằng lái ô tô:",
+      "name": "TRUNG TÂM ĐÀO TẠO & SÁT HẠCH LÁI XE SÔNG TIỀN",
+      "addr": "Địa chỉ: (cập nhật địa chỉ thật của bạn tại đây)",
+      "phone": "Hotline/Zalo: 0919.555.678",
+      "email": "Email: info@daylaixesongtien.vn",
+      "mapSrc": "https://www.google.com/maps?q=My%20Tho%20Tien%20Giang&output=embed"
+    }
+  },
+  "CourseB1": {
+    "breadcrumb": {
+      "home": "Home",
+      "courses": "Khóa học",
+      "b1": "Hạng B (Số sàn)"
+    },
+    "imageAlt": "Khóa học lái xe hạng B số sàn",
+    "title": "Khóa học lái xe hạng B số sàn",
+    "intro": {
+      "p1": "Giấy phép lái xe hạng B số sàn cấp cho người điều khiển các loại xe:",
+      "li1": "Ô tô chở người đến 08 chỗ (không kể chỗ của người lái xe);",
+      "li2": "Ô tô tải và ô tô chuyên dùng có khối lượng toàn bộ theo thiết kế ≤ 3.500 kg;",
+      "li3": "Các loại xe ô tô quy định cho giấy phép lái xe hạng B có kéo rơ moóc có khối lượng toàn bộ theo thiết kế ≤ 750 kg.",
+      "note": "Khóa học lái xe ô tô hạng B số sàn được khai giảng hàng tháng."
+    },
+    "meta": {
+      "updated": "Cập nhật theo thông báo mới",
+      "share": "Chia sẻ"
+    },
+    "category": {
+      "label": "Category",
+      "value": "Khóa học lái xe ô tô"
+    },
+    "cta": "Đăng ký ngay",
+    "descLabel": "Description",
+    "section": {
+      "title": "KHÓA HỌC LÁI XE Ô TÔ HẠNG B SỐ SÀN",
+      "subtitle1": "I. Thời gian:",
+      "subtitle2": "II. Hồ sơ",
+      "subtitle3": "III. Cam kết của Trung tâm:"
+    },
+    "time": {
+      "li1": "Thời gian mở lớp: Các khóa học được tổ chức liên tục, khai giảng hàng tháng",
+      "li2": "Thời gian học: 3 tháng",
+      "li3": "Thời gian thi cuối khóa: sau khi bế giảng khoảng 03 ngày",
+      "li4": "Thời gian thi sát hạch bằng lái: sau khi thi cuối khóa tốt nghiệp từ 10–15 ngày"
+    },
+    "table": {
+      "col1": "THÀNH PHẦN HỒ SƠ",
+      "col2": "GHI CHÚ",
+      "r1": { "c1": "01 bản sao CCCD công dân", "c2": "Photo 2 mặt không cần công chứng" },
+      "r2": { "c1": "Giấy khám sức khỏe", "c2": "Tại Bệnh viện/Phòng khám đủ điều kiện" },
+      "r3": { "c1": "Đơn đề nghị học, sát hạch", "c2": "Tải Đơn đề nghị học, sát hạch" },
+      "r4": { "c1": "Đơn đề nghị sát hạch", "c2": "Tải Đơn đề nghị sát hạch" },
+      "r5": { "c1": "Ảnh chụp kỹ thuật số", "c2": "03 ảnh chụp tại Trung tâm" }
+    },
+    "commit": {
+      "c1": "Cam kết học phí trọn gói, không phát sinh",
+      "c2": "Miễn phí tài liệu học",
+      "c3": "Thời gian đào tạo nhanh",
+      "c4": "Hỗ trợ đăng ký online qua Zalo"
+    },
+    "location": {
+      "title": "IV. Địa điểm thi bằng lái ô tô:",
+      "name": "TRUNG TÂM ĐÀO TẠO & SÁT HẠCH LÁI XE SÔNG TIỀN",
+      "addr": "Địa chỉ: (cập nhật địa chỉ thật của bạn tại đây)",
+      "phone": "Hotline/Zalo: 0919.555.678",
+      "email": "Email: info@daylaixesongtien.vn",
+      "mapSrc": "https://www.google.com/maps?q=My%20Tho%20Tien%20Giang&output=embed"
+    },
+    "quick": {
+      "title": "Thông tin nhanh",
+      "item1Label": "Thời gian:",
+      "item1Value": "Khai giảng hàng tháng",
+      "item2Label": "Hình thức:",
+      "item2Value": "Học + ôn tập trước khi thi",
+      "item3Label": "Thi sát hạch:",
+      "item3Value": "Tại sân đạt chuẩn"
+    }
+  },
+  "CourseB": {
+    "breadcrumb": {
+      "home": "Home",
+      "courses": "Khóa học",
+      "b": "Hạng B (Số tự động)"
+    },
+    "imageAlt": "Khóa học lái xe hạng B số tự động",
+    "title": "Khóa học lái xe hạng B số tự động",
+    "intro": {
+      "p1": "Giấy phép lái xe hạng B số tự động cấp cho người điều khiển các loại xe:",
+      "li1": "Ô tô chuyển số tự động (bao gồm cả ô tô điện);",
+      "li2": "Ô tô chở người đến 08 chỗ (không kể chỗ của người lái xe);",
+      "li3": "Ô tô tải và ô tô chuyên dùng có khối lượng toàn bộ theo thiết kế đến 3.500 kg.",
+      "note": "Khóa học lái xe ô tô B số tự động được khai giảng hàng tháng."
+    },
+    "meta": {
+      "updated": "Cập nhật theo thông báo mới",
+      "share": "Chia sẻ"
+    },
+    "category": {
+      "label": "Category:",
+      "value": "Khóa học lái xe Ô tô"
+    },
+    "cta": "Đăng ký ngay",
+    "quick": {
+      "title": "Thông tin nhanh",
+      "item1Label": "Hình thức:",
+      "item1Value": "Học lý thuyết + thực hành",
+      "item2Label": "Thời gian:",
+      "item2Value": "Khai giảng hàng tháng",
+      "item3Label": "Thi sát hạch:",
+      "item3Value": "Tại sân sát hạch đạt chuẩn"
+    },
+    "descriptionTag": "Description",
+    "section": {
+      "title": "KHÓA HỌC LÁI XE Ô TÔ HẠNG B SỐ TỰ ĐỘNG"
+    },
+    "time": {
+      "title": "I. Thời gian:",
+      "li1": "Thời gian mở lớp: Các khóa học được tổ chức liên tục, khai giảng hàng tháng",
+      "li2": "Thời gian học: 3 tháng",
+      "li3": "Thời gian thi cuối khóa: sau khi bế giảng khoảng 03 ngày",
+      "li4": "Thời gian thi sát hạch bằng lái: sau khi thi cuối khóa từ 10-15 ngày"
+    },
+    "docs": {
+      "title": "II. Hồ sơ:"
+    },
+    "table": {
+      "col1": "THÀNH PHẦN HỒ SƠ",
+      "col2": "GHI CHÚ",
+      "r1": { "c1": "01 bản căn cước công dân", "c2": "Photo 2 mặt/ không cần công chứng" },
+      "r2": { "c1": "Giấy khám sức khỏe", "c2": "Tại Bệnh viện/ phòng khám" },
+      "r3": { "c1": "Đơn đề nghị học, sát hạch", "c2": "Tại Trung tâm (có sẵn)" },
+      "r4": { "c1": "Ảnh thẻ 3x4 (nền xanh dương)", "c2": "Chụp tại Trung tâm" },
+      "r5": { "c1": "Ảnh chụp khuôn mặt", "c2": "Có thể chụp tại Trung tâm" }
+    },
+    "commit": {
+      "title": "III. Cam kết của Trung tâm:",
+      "c1": "Cam kết học phí trọn gói, không phát sinh",
+      "c2": "Miễn phí tài liệu học",
+      "c3": "Thời gian đào tạo nhanh",
+      "c4": "Hỗ trợ đăng ký online qua Zalo"
+    },
+    "location": {
+      "title": "IV. Địa điểm thi bằng lái ô tô:",
+      "name": "TRUNG TÂM ĐÀO TẠO & SÁT HẠCH LÁI XE SÔNG TIỀN",
+      "addr": "TP. Mỹ Tho, Tiền Giang",
+      "time": "07:30 - 18:00",
+      "phone": "Hotline/Zalo: 0919.555.678",
+      "email": "info@daylaixesongtien.vn"
+    }
+  },
+  "CourseA": {
+    "breadcrumb": {
+      "home": "Home",
+      "courses": "Khóa học",
+      "a": "Hạng A"
+    },
+    "title": "Khóa học lái xe hạng A",
+    "introBullet1": "Giấy phép lái xe hạng A1 cấp cho người lái xe mô tô hai bánh có dung tích xi lanh đến dưới 125cc hoặc có công suất động cơ điện đến 11 kW.",
+    "introBullet2": "Giấy phép lái xe hạng A cấp cho người lái xe mô tô hai bánh có dung tích xi lanh từ 125cc hoặc có công suất động cơ điện trên 11 kW và các loại xe quy định cho giấy phép lái xe hạng A1.",
+    "meta": {
+      "updated": "Cập nhật theo thông báo mới",
+      "share": "Chia sẻ"
+    },
+    "category": {
+      "label": "Category",
+      "value": "Khóa học lái xe mô tô"
+    },
+    "cta": "Đăng ký ngay",
+    "body": {
+      "descLabel": "Description",
+      "title": "KHÓA HỌC LÁI XE MÔ TÔ HẠNG A",
+      "s1": {
+        "title": "I. Thời gian:",
+        "li1": "Thời gian mở lớp: Các khóa học được tổ chức liên tục, khai giảng hằng tháng"
+      },
+      "s2": { "title": "II. Hồ sơ" },
+      "table": {
+        "col1": "THÀNH PHẦN HỒ SƠ",
+        "col2": "GHI CHÚ",
+        "r1": { "c1": "01 bản photo CCCD gắn chip", "c2": "Photo 2 mặt không cắt góc, công chứng" },
+        "r2": { "c1": "Đơn đăng ký học, sát hạch", "c2": "Tải Đơn đăng ký học, sát hạch" },
+        "r3": { "c1": "Đơn đề nghị sát hạch", "c2": "Tải Đơn đề nghị sát hạch" },
+        "r4": { "c1": "02 ảnh thẻ 3x4 nền xanh dương", "c2": "có thể chụp tại Trung tâm" },
+        "r5": { "c1": "Ảnh chụp ký thi sát hạch", "c2": "có thể chụp tại Trung tâm vào ngày ôn thi (nếu đủ số lượng đăng ký)" }
+      },
+      "s3": {
+        "title": "III. Cam kết của Trung tâm:",
+        "li1": "Cam kết học phí trọn gói, không phát sinh",
+        "li2": "Miễn phí tài liệu",
+        "li3": "Thời gian đào tạo nhanh",
+        "li4": "Hỗ trợ đăng ký online qua Zalo"
+      },
+      "s4": { "title": "IV. Địa điểm thi:" },
+      "location": {
+        "name": "TRUNG TÂM ĐÀO TẠO & SÁT HẠCH LÁI XE SÔNG TIỀN",
+        "addr": "Mỹ Tho, Tiền Giang",
+        "phone": "Hotline/Zalo: 0919.555.678",
+        "email": "info@daylaixesongtien.vn"
+      }
+    }
+  },
+  "CourseA1": {
+    "breadcrumb": {
+      "home": "Trang chủ",
+      "courses": "Khóa học",
+      "a1": "A1"
+    },
+    "title": "Khóa học lái xe hạng A1",
+    "intro": "Giấy phép lái xe hạng A1 áp dụng cho xe mô tô hai bánh có dung tích xi lanh từ 50cc đến dưới 125cc (số/ tay ga). Học và thi tại Trung tâm Sông Tiền nhanh chóng, rõ ràng, minh bạch.",
+    "meta": {
+      "updated": "Cập nhật theo thông báo mới",
+      "share": "Chia sẻ"
+    },
+    "cta": "Đăng ký ngay",
+    "quick": {
+      "title": "Học viên được chọn xe số hoặc xe tay ga",
+      "item1Label": "Thời gian:",
+      "item1Value": "Linh hoạt theo lịch Trung tâm",
+      "item2Label": "Hình thức:",
+      "item2Value": "Học + ôn tập trước khi thi",
+      "item3Label": "Thi sát hạch:",
+      "item3Value": "Tại sân đạt chuẩn"
+    },
+    "section": {
+      "title": "KHÓA HỌC LÁI XE MÔ TÔ HẠNG A1",
+      "p1": "Trung tâm Đào tạo và Sát hạch Lái xe Sông Tiền tổ chức đào tạo bài bản, bám sát quy định. Học viên được hướng dẫn rõ ràng từng phần, đảm bảo tự tin trước khi thi.",
+      "subtitle1": "I. Thời gian",
+      "li1": "Thời gian mở lớp: theo lịch của Trung tâm (sắp xếp theo nhu cầu học viên).",
+      "li2": "Thời lượng học và ôn: đủ nội dung theo quy định, có giáo viên kèm.",
+      "subtitle2": "II. Hồ sơ",
+      "subtitle3": "III. Cam kết của Trung tâm",
+      "c1": "Học phí niêm yết trọn gói, không phí phát sinh.",
+      "c2": "Hỗ trợ học viên học và ôn tập bài bản.",
+      "c3": "Thi sát hạch minh bạch, đúng quy trình.",
+      "c4": "Hỗ trợ thủ tục nhanh, rõ ràng."
+    },
+    "table": {
+      "col1": "Thành phần hồ sơ",
+      "col2": "Ghi chú",
+      "r1": { "c1": "Đơn đăng ký học", "c2": "Theo mẫu của Trung tâm" },
+      "r2": { "c1": "CCCD (bản photo)", "c2": "Còn hiệu lực" },
+      "r3": { "c1": "Ảnh thẻ 3x4 hoặc 4x6", "c2": "Nền sáng, rõ mặt" },
+      "r4": { "c1": "Giấy khám sức khỏe", "c2": "Theo quy định" },
+      "r5": { "c1": "Thông tin liên hệ", "c2": "SĐT, địa chỉ, email (nếu có)" }
+    },
+    "location": {
+      "title": "IV. Địa điểm thi",
+      "name": "TRUNG TÂM ĐÀO TẠO & SÁT HẠCH LÁI XE SÔNG TIỀN",
+      "addr": "Địa chỉ: (bạn thay địa chỉ thật tại đây)",
+      "phone": "Hotline: 09xx.xxx.xxx",
+      "email": "Email: info@daylaixesongtien.vn"
+    }
+  },
   "Profile": {
     "studentInfoTitle": "Thông tin sinh viên",
     "personalProfileLink": "Hồ sơ cá nhân",
@@ -234,7 +621,8 @@
       "dang-ky-hoc": "Đăng ký học",
       "tin-tuc": "Tin tức",
       "hoc-vien": "Học viên",
-      "lien-he": "Liên hệ"
+      "lien-he": "Liên hệ",
+      "trang-cua-toi": "Trang của tôi"
     },
     "dropdown": {
       "khoa-hoc": {

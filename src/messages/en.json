@@ -1,4 +1,391 @@
 {
+  "CourseC": {
+    "breadcrumb": {
+      "home": "Home",
+      "courses": "Courses",
+      "c": "Class C"
+    },
+    "imageAlt": "Class C driving course",
+    "title": "Class C Driving Course",
+    "intro": {
+      "p1": "A Class C driving license is issued for drivers of:",
+      "li1": "Trucks and specialized vehicles with a permitted gross weight over 7,500 kg;",
+      "li2": "Vehicles permitted under Class B and C1 that tow a trailer with permitted gross weight ≤ 750 kg;",
+      "li3": "Clear training program with pre-exam review support.",
+      "note": "Class C courses open every month."
+    },
+    "meta": {
+      "updated": "Updated with latest announcements",
+      "share": "Share"
+    },
+    "category": {
+      "label": "Category",
+      "value": "Car Driving Courses"
+    },
+    "cta": "Register now",
+    "descLabel": "Description",
+    "quick": {
+      "title": "Course summary",
+      "item1Label": "Schedule:",
+      "item1Value": "Monthly intake",
+      "item2Label": "Format:",
+      "item2Value": "Training + pre-exam review",
+      "item3Label": "Test:",
+      "item3Value": "At a standard testing ground"
+    },
+    "section": {
+      "title": "CLASS C DRIVING COURSE",
+      "subtitle1": "I. Duration:",
+      "subtitle2": "II. Documents",
+      "subtitle3": "III. Our commitments:"
+    },
+    "time": {
+      "li1": "Opening schedule: Courses run continuously with monthly intake",
+      "li2": "Training duration: 3 months",
+      "li3": "Final course test: about 3 days after graduation",
+      "li4": "Official license test: 10–15 days after the final course test"
+    },
+    "table": {
+      "col1": "REQUIRED DOCUMENTS",
+      "col2": "NOTES",
+      "r1": { "c1": "01 copy of Citizen ID", "c2": "Two-sided photocopy, no notarization required" },
+      "r2": { "c1": "Health certificate", "c2": "From eligible hospital/clinic" },
+      "r3": { "c1": "Training & testing application form", "c2": "Download the application form" },
+      "r4": { "c1": "Testing application form", "c2": "Download the testing form" },
+      "r5": { "c1": "Digital photo", "c2": "03 photos taken at the center" },
+      "r6": { "c1": "Preliminary certificate", "c2": "May be required depending on the course" }
+    },
+    "commit": {
+      "c1": "All-inclusive tuition, no hidden fees",
+      "c2": "Free learning materials",
+      "c3": "Fast training process",
+      "c4": "Online registration support via Zalo"
+    },
+    "location": {
+      "title": "IV. Test location:",
+      "name": "SONG TIEN DRIVING TRAINING & TESTING CENTER",
+      "addr": "Address: (update your real address here)",
+      "phone": "Hotline/Zalo: 0919.555.678",
+      "email": "Email: info@daylaixesongtien.vn",
+      "mapSrc": "https://www.google.com/maps?q=My%20Tho%20Tien%20Giang&output=embed"
+    }
+  },
+  "CourseC1": {
+    "breadcrumb": {
+      "home": "Home",
+      "courses": "Courses",
+      "c1": "Class C1"
+    },
+    "imageAlt": "C1 driving course",
+    "title": "C1 driving course",
+    "intro": {
+      "p1": "Class C1 license is issued for drivers of:",
+      "li1": "Trucks and specialized vehicles with gross design weight from 3,500 kg to 7,500 kg;",
+      "li2": "C1 vehicles towing a trailer with gross design weight ≤ 750 kg;",
+      "li3": "Vehicles under class B rules (passenger cars up to 8 seats excluding the driver);",
+      "li4": "Trucks/special vehicles with gross design weight ≤ 3,500 kg; trailers ≤ 750 kg;",
+      "note": "C1 course opens monthly."
+    },
+    "meta": {
+      "updated": "Updated with the latest notice",
+      "share": "Share"
+    },
+    "category": {
+      "label": "Category",
+      "value": "Truck driving courses"
+    },
+    "cta": "Register now",
+    "descLabel": "Description",
+    "quick": {
+      "title": "Quick info",
+      "item1Label": "Schedule:",
+      "item1Value": "Monthly opening",
+      "item2Label": "Format:",
+      "item2Value": "Learning + review before the test",
+      "item3Label": "Test:",
+      "item3Value": "At a certified test ground"
+    },
+    "section": {
+      "title": "CLASS C1 DRIVING COURSE",
+      "subtitle1": "I. Schedule:",
+      "subtitle2": "II. Documents",
+      "subtitle3": "III. Our commitment:"
+    },
+    "time": {
+      "li1": "Opening schedule: Classes are organized continuously and open monthly",
+      "li2": "Training duration: 3 months",
+      "li3": "Final test: About 3 days after the closing session",
+      "li4": "License test: 10–15 days after graduation test"
+    },
+    "table": {
+      "col1": "REQUIRED DOCUMENTS",
+      "col2": "NOTES",
+      "r1": { "c1": "01 copy of national ID", "c2": "Photocopy both sides, no notarization needed" },
+      "r2": { "c1": "Health certificate", "c2": "At eligible hospitals/clinics" },
+      "r3": { "c1": "Training & test application form", "c2": "Download training & test form" },
+      "r4": { "c1": "Test application form", "c2": "Download test form" },
+      "r5": { "c1": "Digital photo", "c2": "03 photos taken at the center" }
+    },
+    "commit": {
+      "c1": "All-inclusive tuition, no hidden fees",
+      "c2": "Free learning materials",
+      "c3": "Fast training timeline",
+      "c4": "Online registration support via Zalo"
+    },
+    "location": {
+      "title": "IV. Car license test location:",
+      "name": "SONG TIEN DRIVING TRAINING & TEST CENTER",
+      "addr": "Address: (replace with your real address here)",
+      "phone": "Hotline/Zalo: 0919.555.678",
+      "email": "Email: info@daylaixesongtien.vn",
+      "mapSrc": "https://www.google.com/maps?q=My%20Tho%20Tien%20Giang&output=embed"
+    }
+  },
+  "CourseB1": {
+    "breadcrumb": {
+      "home": "Home",
+      "courses": "Courses",
+      "b1": "Class B (Manual)"
+    },
+    "imageAlt": "B (Manual) driving course",
+    "title": "B (Manual) driving course",
+    "intro": {
+      "p1": "The B (manual) driving license allows you to drive:",
+      "li1": "Passenger cars up to 8 seats (excluding the driver’s seat);",
+      "li2": "Trucks and specialized vehicles with gross vehicle weight ≤ 3,500 kg;",
+      "li3": "Vehicles in the B class towing a trailer with design GVW ≤ 750 kg.",
+      "note": "This course opens monthly."
+    },
+    "meta": {
+      "updated": "Updated via latest notice",
+      "share": "Share"
+    },
+    "category": {
+      "label": "Category",
+      "value": "Car driving course"
+    },
+    "cta": "Register now",
+    "descLabel": "Description",
+    "section": {
+      "title": "B (MANUAL) DRIVING COURSE",
+      "subtitle1": "I. Schedule:",
+      "subtitle2": "II. Documents",
+      "subtitle3": "III. Our commitments:"
+    },
+    "time": {
+      "li1": "Class opening: continuous enrollment, monthly openings",
+      "li2": "Training duration: 3 months",
+      "li3": "Final exam: about 3 days after course completion",
+      "li4": "Official license test: 10–15 days after graduation test"
+    },
+    "table": {
+      "col1": "DOCUMENTS",
+      "col2": "NOTES",
+      "r1": { "c1": "Copy of ID card", "c2": "Both sides, no notarization required" },
+      "r2": { "c1": "Health certificate", "c2": "From an eligible hospital/clinic" },
+      "r3": { "c1": "Training & testing application", "c2": "Download the form" },
+      "r4": { "c1": "Testing application", "c2": "Download the form" },
+      "r5": { "c1": "Digital photos", "c2": "3 photos taken at the center" }
+    },
+    "commit": {
+      "c1": "All-inclusive tuition, no hidden fees",
+      "c2": "Free learning materials",
+      "c3": "Fast training timeline",
+      "c4": "Online registration support via Zalo"
+    },
+    "location": {
+      "title": "IV. Test location:",
+      "name": "SONG TIEN DRIVING TRAINING & TESTING CENTER",
+      "addr": "Address: (replace with your real address)",
+      "phone": "Hotline/Zalo: 0919.555.678",
+      "email": "Email: info@daylaixesongtien.vn",
+      "mapSrc": "https://www.google.com/maps?q=My%20Tho%20Tien%20Giang&output=embed"
+    },
+    "quick": {
+      "title": "Quick info",
+      "item1Label": "Schedule:",
+      "item1Value": "Monthly opening",
+      "item2Label": "Format:",
+      "item2Value": "Learning + review before the test",
+      "item3Label": "Test:",
+      "item3Value": "At a certified test ground"
+    }
+  },
+  "CourseB": {
+    "breadcrumb": {
+      "home": "Home",
+      "courses": "Courses",
+      "b": "Class B (Automatic)"
+    },
+    "imageAlt": "Class B automatic driving course",
+    "title": "Class B automatic driving course",
+    "intro": {
+      "p1": "Class B automatic driving license is issued for operating:",
+      "li1": "Automatic transmission cars (including electric cars);",
+      "li2": "Passenger cars up to 8 seats (excluding the driver’s seat);",
+      "li3": "Trucks and specialized vehicles with a design gross weight up to 3,500 kg.",
+      "note": "This course opens every month."
+    },
+    "meta": {
+      "updated": "Updated by latest notice",
+      "share": "Share"
+    },
+    "category": {
+      "label": "Category:",
+      "value": "Car Driving Course"
+    },
+    "cta": "Register now",
+    "quick": {
+      "title": "Quick info",
+      "item1Label": "Format:",
+      "item1Value": "Theory + Practice",
+      "item2Label": "Schedule:",
+      "item2Value": "Monthly intake",
+      "item3Label": "Test:",
+      "item3Value": "At a certified test yard"
+    },
+    "descriptionTag": "Description",
+    "section": {
+      "title": "CLASS B AUTOMATIC DRIVING COURSE"
+    },
+    "time": {
+      "title": "I. Duration:",
+      "li1": "Classes open continuously with monthly intake",
+      "li2": "Training duration: 3 months",
+      "li3": "Final course test: about 3 days after graduation",
+      "li4": "License exam: 10–15 days after the final test"
+    },
+    "docs": {
+      "title": "II. Required documents:"
+    },
+    "table": {
+      "col1": "DOCUMENT",
+      "col2": "NOTES",
+      "r1": { "c1": "Citizen ID copy", "c2": "Copy both sides / no notarization" },
+      "r2": { "c1": "Health certificate", "c2": "From hospital/clinic" },
+      "r3": { "c1": "Training & exam application form", "c2": "Provided at the center" },
+      "r4": { "c1": "3x4 photo (blue background)", "c2": "Can be taken at the center" },
+      "r5": { "c1": "Portrait photo", "c2": "Can be taken at the center" }
+    },
+    "commit": {
+      "title": "III. Our commitment:",
+      "c1": "All-inclusive tuition, no hidden fees",
+      "c2": "Free learning materials",
+      "c3": "Fast training schedule",
+      "c4": "Online support via Zalo"
+    },
+    "location": {
+      "title": "IV. Test location:",
+      "name": "SONG TIEN DRIVING TRAINING & TEST CENTER",
+      "addr": "My Tho City, Tien Giang",
+      "time": "07:30 - 18:00",
+      "phone": "Hotline/Zalo: 0919.555.678",
+      "email": "info@daylaixesongtien.vn"
+    }
+  },
+  "CourseA": {
+    "breadcrumb": {
+      "home": "Home",
+      "courses": "Courses",
+      "a": "Class A"
+    },
+    "title": "Class A Motorbike Driving Course",
+    "introBullet1": "Class A1 license applies to two-wheeled motorbikes up to under 125cc or electric motor power up to 11 kW.",
+    "introBullet2": "Class A license applies to two-wheeled motorbikes from 125cc or electric motor power over 11 kW, and vehicles allowed under the A1 category.",
+    "meta": {
+      "updated": "Updated with latest notice",
+      "share": "Share"
+    },
+    "category": {
+      "label": "Category",
+      "value": "Motorbike driving course"
+    },
+    "cta": "Register now",
+    "body": {
+      "descLabel": "Description",
+      "title": "CLASS A MOTORBIKE DRIVING COURSE",
+      "s1": {
+        "title": "I. Schedule:",
+        "li1": "Enrollment: Courses open continuously, with monthly intakes"
+      },
+      "s2": { "title": "II. Documents" },
+      "table": {
+        "col1": "REQUIRED DOCUMENTS",
+        "col2": "NOTES",
+        "r1": { "c1": "01 copy of chip-based ID card", "c2": "Copy both sides, no corner cutting, notarized" },
+        "r2": { "c1": "Training & exam registration form", "c2": "Download the registration form" },
+        "r3": { "c1": "Exam request form", "c2": "Download the exam request form" },
+        "r4": { "c1": "02 photos 3x4 (blue background)", "c2": "Can be taken at the center" },
+        "r5": { "c1": "Exam photo capture", "c2": "Can be done at the center on the practice day (if enough registrations)" }
+      },
+      "s3": {
+        "title": "III. Our commitment:",
+        "li1": "All-inclusive tuition, no hidden fees",
+        "li2": "Free learning materials",
+        "li3": "Fast training timeline",
+        "li4": "Online support via Zalo"
+      },
+      "s4": { "title": "IV. Test location:" },
+      "location": {
+        "name": "SONG TIEN DRIVING TRAINING & TESTING CENTER",
+        "addr": "My Tho, Tien Giang",
+        "phone": "Hotline/Zalo: 0919.555.678",
+        "email": "info@daylaixesongtien.vn"
+      }
+    }
+  },
+  "CourseA1": {
+    "breadcrumb": {
+      "home": "Home",
+      "courses": "Courses",
+      "a1": "Class A1"
+    },
+    "title": "A1 Motorcycle Driving Course",
+    "intro": "The A1 driving license is for two-wheeled motorcycles with engine displacement from 50cc to under 125cc (manual/automatic). Study and take the test at Song Tien Center with a clear and transparent process.",
+    "meta": {
+      "updated": "Updated with latest notice",
+      "share": "Share"
+    },
+    "cta": "Register now",
+    "quick": {
+      "title": "Students can choose manual or automatic scooters",
+      "item1Label": "Schedule:",
+      "item1Value": "Flexible based on the Center’s timetable",
+      "item2Label": "Training:",
+      "item2Value": "Learning + pre-exam practice",
+      "item3Label": "Test:",
+      "item3Value": "At a standardized test yard"
+    },
+    "section": {
+      "title": "A1 MOTORCYCLE DRIVING COURSE",
+      "p1": "Song Tien Driving Training & Testing Center provides structured training aligned with regulations. Students are guided step by step to build confidence before the exam.",
+      "subtitle1": "I. Schedule",
+      "li1": "Class opening schedule: based on the Center’s timetable (arranged by students’ needs).",
+      "li2": "Training & practice time: covers all required content with instructor support.",
+      "subtitle2": "II. Required documents",
+      "subtitle3": "III. Our commitments",
+      "c1": "All-inclusive listed tuition, no hidden fees.",
+      "c2": "Well-structured training and practice support.",
+      "c3": "Transparent, standard exam procedures.",
+      "c4": "Fast and clear administrative support."
+    },
+    "table": {
+      "col1": "Documents",
+      "col2": "Notes",
+      "r1": { "c1": "Registration form", "c2": "Provided by the Center" },
+      "r2": { "c1": "National ID copy", "c2": "Valid ID" },
+      "r3": { "c1": "Portrait photo (3x4 or 4x6)", "c2": "Bright background, clear face" },
+      "r4": { "c1": "Health certificate", "c2": "As required" },
+      "r5": { "c1": "Contact information", "c2": "Phone, address, email (if any)" }
+    },
+    "location": {
+      "title": "IV. Test location",
+      "name": "SONG TIEN DRIVING TRAINING & TESTING CENTER",
+      "addr": "Address: (replace with your real address)",
+      "phone": "Hotline: 09xx.xxx.xxx",
+      "email": "Email: info@daylaixesongtien.vn"
+    }
+  },
   "Profile": {
     "studentInfoTitle": "Student Information",
     "personalProfileLink": "Personal Profile",
@@ -234,7 +621,9 @@
       "dang-ky-hoc": "Register",
       "tin-tuc": "News",
       "hoc-vien": "Students",
-      "lien-he": "Contact"
+      "lien-he": "Contact",
+      "trang-cua-toi": "My page"
+    }
       
     },
     "dropdown": {
@@ -268,7 +657,6 @@
         "lien-he": "Contact Us",
         "tuyen-dung": "Recruitment"
       }
-    }
   },
   "HeroBanner": {
     "san-thi-title": "Largest car driving test field in former Tien Giang province",
