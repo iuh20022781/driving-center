@@ -1,16 +1,18 @@
 /* =========================
-   Tailwind v4 - BẮT BUỘC
+   Tailwind v4 (BẮT BUỘC)
 ========================= */
 @import "tailwindcss";
 
 /* =========================
-   Base
+   Base reset & layout
 ========================= */
-html, body {
+html,
+body {
   max-width: 100%;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+
 * {
   box-sizing: border-box;
 }
@@ -21,6 +23,20 @@ body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   min-height: 100vh;
+}
+
+/* =========================
+   Media defaults
+========================= */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 /* =========================
@@ -35,7 +51,7 @@ body {
 }
 
 /* =========================
-   Scrollbar (optional - đẹp hơn)
+   Scrollbar (optional)
 ========================= */
 ::-webkit-scrollbar {
   width: 10px;
@@ -55,34 +71,85 @@ body {
 }
 
 /* =========================
-   Text & media defaults
+   Custom Components
 ========================= */
-img,
-video {
-  max-width: 100%;
-  height: auto;
-}
+@layer components {
+  .app-bg {
+    background-color: #0b0d10;
+    color: rgba(255, 255, 255, 0.92);
+  }
 
-a {
-  color: inherit;
-  text-decoration: none;
+  .panel {
+    @apply rounded-2xl border;
+    background-color: rgb(15, 19, 26);
+    border-color: rgba(255, 255, 255, 0.10);
+  }
+
+  .panel-header {
+    @apply border-b;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-color: rgba(255, 255, 255, 0.10);
+  }
+
+  .btn-pink {
+    @apply rounded-xl px-4 py-2 text-sm font-semibold text-white transition;
+    background-color: #ff4da6;
+  }
+  .btn-pink:hover {
+    background-color: #ff2f98;
+  }
+
+  .btn-ghost {
+    @apply rounded-xl bg-transparent px-3 py-2 text-sm text-white/90 transition;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+  }
+  .btn-ghost:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+
+  .input-dark {
+    @apply w-full rounded-xl px-3 py-2 text-sm text-white/90 outline-none;
+    background-color: rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+  }
+  .input-dark::placeholder {
+    color: rgba(255, 255, 255, 0.40);
+  }
+
+  .locale-pill {
+    @apply inline-flex rounded-xl p-1;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background-color: rgba(0, 0, 0, 0.20);
+  }
+
+  .locale-btn {
+    @apply px-3 py-1.5 text-xs rounded-lg transition;
+    color: rgba(255, 255, 255, 0.85);
+  }
+  .locale-btn:hover {
+    background-color: rgba(255, 255, 255, 0.06);
+  }
+
+  .locale-btn-active {
+    background-color: #ff4da6;
+    color: white;
+  }
 }
 
 /* =========================
    🚦 Traffic Light Animation
-   (Đỏ → Vàng → Xanh)
 ========================= */
 @keyframes trafficLight {
   0% {
-    background-color: #dc2626; /* đỏ */
+    background-color: #dc2626;
     box-shadow: 0 0 25px rgba(220, 38, 38, 0.8);
   }
   33% {
-    background-color: #facc15; /* vàng */
+    background-color: #facc15;
     box-shadow: 0 0 25px rgba(250, 204, 21, 0.9);
   }
   66% {
-    background-color: #16a34a; /* xanh */
+    background-color: #16a34a;
     box-shadow: 0 0 25px rgba(22, 163, 74, 0.9);
   }
   100% {
@@ -91,9 +158,6 @@ a {
   }
 }
 
-/* =========================
-   Floating Register Button
-========================= */
 .traffic-button {
   animation: trafficLight 6s infinite;
 }
@@ -105,7 +169,7 @@ a {
 }
 
 /* =========================
-   Reduce motion (accessibility)
+   Accessibility
 ========================= */
 @media (prefers-reduced-motion: reduce) {
   .traffic-button,

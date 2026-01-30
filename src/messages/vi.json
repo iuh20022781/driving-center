@@ -1,10 +1,264 @@
 {
-  "CourseC": {
-    "breadcrumb": {
-      "home": "Trang chủ",
-      "courses": "Khóa học",
-      "c": "Hạng C"
+  "Notifications": {
+    "title": "Thông báo",
+    "breadcrumb": "Admin / Thông báo",
+    "filters": "Bộ lọc",
+    "unread": "Chưa đọc",
+    "markAllRead": "Đánh dấu đã đọc",
+    "empty": "Chưa có thông báo",
+    "student": "Học viên",
+    "course": "Khóa",
+    "phone": "SĐT",
+    "review": "Kết quả duyệt",
+    "type": {
+      "all": "Tất cả",
+      "course": "Đăng ký khóa học",
+      "profile": "Duyệt hồ sơ"
     },
+    "status": {
+      "all": "Tất cả",
+      "unread": "Chưa đọc",
+      "read": "Đã đọc"
+    },
+    "reviewResult": {
+      "approved": "Đã duyệt",
+      "need_more": "Cần bổ sung",
+      "rejected": "Từ chối"
+    }
+  },
+  "PostsAdmin": {
+    "title": "Bài viết",
+    "breadcrumb": "Quản lý • Bài viết",
+    "listTitle": "Danh sách bài viết",
+    "new": "Thêm",
+    "search": "Tìm kiếm bài viết...",
+    "date": "Ngày",
+    "empty": "Chưa có bài viết",
+    "confirmDelete": "Xóa bài viết này?",
+    "newDefaultTitle": "Bài viết mới",
+    "newDefaultContent": "Nhập nội dung bài viết...",
+    "status": {
+      "draft": "Nháp",
+      "published": "Đã đăng"
+    }
+  },
+  "PostsEditor": {
+    "pickLeft": "Chọn bài viết ở danh sách bên trái hoặc tạo bài viết mới.",
+    "editor": "Soạn bài",
+    "title": "Tiêu đề",
+    "date": "Ngày đăng",
+    "slug": "Đường dẫn (slug)",
+    "cover": "Ảnh minh họa chính (cover)",
+    "pickCover": "Chọn ảnh cover",
+    "coverHint": "Ảnh cover hiển thị trên đầu bài viết.",
+    "content": "Nội dung",
+    "insertImage": "Chèn ảnh vào nội dung",
+    "insertHint": "Ảnh sẽ được thêm vào cuối nội dung.",
+    "contentHint": "Bạn có thể nhập văn bản hoặc dán HTML (p, img...) để hiển thị giống bài báo.",
+    "publish": "Đăng bài",
+    "saveDraft": "Lưu nháp",
+    "preview": "Xem trước",
+    "ph": {
+      "title": "Nhập tiêu đề...",
+      "slug": "cong-an-tinh-tien-giang...",
+      "content": "<p>Nội dung...</p>"
+    }
+  },
+  "PostsClient": {
+    "title": "Tin tức",
+    "empty": "Chưa có bài viết nào.",
+    "notFound": "Không tìm thấy bài viết."
+  },
+  "ChangePassword": {
+    "title": "Đổi mật khẩu",
+    "breadcrumb": "Tài khoản • Đổi mật khẩu",
+    "subtitle": "Cập nhật mật khẩu",
+    "hint": "Mật khẩu mới tối thiểu 8 ký tự. Tránh dùng mật khẩu cũ.",
+    "current": "Mật khẩu hiện tại",
+    "new": "Mật khẩu mới",
+    "confirm": "Xác nhận mật khẩu mới",
+    "save": "Lưu mật khẩu",
+    "saving": "Đang lưu...",
+    "reset": "Nhập lại",
+    "success": "Đổi mật khẩu thành công!",
+    "placeholder": {
+      "current": "Nhập mật khẩu hiện tại",
+      "new": "Nhập mật khẩu mới",
+      "confirm": "Nhập lại mật khẩu mới"
+    },
+    "error": {
+      "required": "Trường này bắt buộc",
+      "min8": "Mật khẩu mới tối thiểu 8 ký tự",
+      "notMatch": "Mật khẩu xác nhận không khớp",
+      "invalid": "Dữ liệu không hợp lệ"
+    }
+  },
+  "PersonalInformation": {
+    "title": "Thông tin cá nhân",
+    "breadcrumb": "Tài khoản • Thông tin cá nhân",
+    "edit": "Sửa",
+    "save": "Lưu",
+    "cancel": "Hủy",
+    "avatar": "Ảnh đại diện",
+    "avatarHint": "Chỉ PNG/JPG. Khuyến nghị 400x400.",
+    "changeAvatar": "Đổi ảnh",
+    "info": "Thông tin",
+    "roleLabel": "Chức vụ",
+    "fullName": "Họ và tên",
+    "gender": "Giới tính",
+    "genderMale": "Nam",
+    "genderFemale": "Nữ",
+    "genderOther": "Khác",
+    "dob": "Ngày sinh",
+    "phone": "Số điện thoại",
+    "email": "Gmail",
+    "address": "Địa chỉ",
+    "readOnlyHint": "Nhấn “Sửa” để cập nhật thông tin.",
+    "role": {
+      "admin": "Quản trị viên"
+    }
+  },
+  "Chat": {
+    "title": "Tin nhắn",
+    "breadcrumb": "Quản lý • Tin nhắn",
+    "inbox": "Hộp thư",
+    "search": "Tìm theo tên/sđt/nội dung...",
+    "empty": "Không có hội thoại",
+    "pickLeft": "Chọn một hội thoại bên trái để bắt đầu.",
+    "placeholder": "Nhập tin nhắn... (Enter để gửi, Shift+Enter xuống dòng)",
+    "hintEnter": "Enter: gửi • Shift+Enter: xuống dòng",
+    "onlineMock": "Đang hoạt động",
+    "channel": {
+      "facebook": "Facebook",
+      "zalo": "Zalo",
+      "phone": "Điện thoại"
+    }
+  },
+  "UserMenu": {
+    "name": "Nguyễn Tấn Phát",
+    "role": "Admin",
+    "profile": "Thông tin cá nhân",
+    "changePassword": "Đổi mật khẩu",
+    "logout": "Đăng xuất"
+  },
+  "Common": {
+    "appName": "Driving Center Admin",
+    "loading": "Đang tải...",
+    "search": "Tìm kiếm...",
+    "save": "Lưu",
+    "cancel": "Hủy",
+    "close": "Đóng"
+  },
+  "Nav": {
+    "menu": "MENU",
+    "subtitle": "Bảng điều khiển quản trị",
+    "dashboard": "Tổng quan",
+    "analytics": "Thống kê",
+    "chat": "Tin nhắn",
+    "notifications": "Thông báo",
+    "students": "Học viên",
+    "instructors": "Giảng viên",
+    "courses": "Khóa học",
+    "account": "Tài khoản",
+    "language": "Ngôn ngữ",
+    "posts": "Bài viết"
+  },
+  "Analytics": {
+    "title": "Thống kê",
+    "breadcrumb": "Quản lý • Thống kê",
+    "desc": "Trang thống kê tổng hợp (bạn có thể thêm biểu đồ, báo cáo theo ngày/tháng)."
+  },
+  "Topbar": {
+    "title": "Admin",
+    "center": "Trung tâm dạy lái xe",
+    "action": "Thêm mới"
+  },
+  "Dashboard": {
+    "title": "Tổng quan",
+    "breadcrumb": "Quản lý • Tổng quan",
+    "card": {
+      "students": "Tổng học viên",
+      "instructors": "Tổng giáo viên",
+      "courses": "Tổng khóa học",
+      "revenue": "Doanh thu tháng"
+    },
+    "stats": {
+      "title": "Thống kê hoạt động",
+      "visits": "Lượt truy cập",
+      "courseViews": "Lượt xem khóa học",
+      "registrations": "Đăng ký khóa học",
+      "filterCourse": "Xem theo hạng",
+      "hint": "Số liệu đang hiển thị theo hạng đã chọn.",
+      "selected": "Đang chọn"
+    }
+  },
+  "Students": {
+    "title": "Danh sách học viên",
+    "breadcrumb": "Quản lý • Học viên",
+    "add": "+ Thêm học viên",
+    "edit": "Sửa",
+    "delete": "Xóa",
+    "cols": {
+      "code": "Mã học viên",
+      "name": "Tên học viên",
+      "phone": "Số điện thoại",
+      "course": "Khóa học",
+      "status": "Trạng thái"
+    },
+    "status": {
+      "ACTIVE": "Đang học",
+      "PAUSED": "Tạm dừng",
+      "DONE": "Hoàn thành"
+    }
+  },
+  "Instructors": {
+    "title": "Danh sách giáo viên",
+    "breadcrumb": "Quản lý • Giáo viên",
+    "add": "+ Thêm giáo viên",
+    "edit": "Sửa",
+    "delete": "Xóa",
+    "cols": {
+      "code": "Mã giáo viên",
+      "name": "Tên giáo viên",
+      "phone": "Số điện thoại",
+      "specialty": "Hạng dạy",
+      "status": "Trạng thái"
+    },
+    "status": {
+      "ACTIVE": "Đang dạy",
+      "OFF": "Tạm nghỉ"
+    }
+  },
+  "Courses": {
+    "title": "Danh sách khóa học",
+    "breadcrumb": "Quản lý • Khóa học",
+    "add": "+ Thêm khóa học",
+    "edit": "Sửa",
+    "delete": "Xóa",
+    "cols": {
+      "code": "Mã",
+      "name": "Tên khóa học",
+      "duration": "Thời lượng",
+      "fee": "Học phí",
+      "status": "Trạng thái"
+    },
+    "status": {
+      "OPEN": "Mở",
+      "LOCKED": "Tạm khóa"
+    }
+  },
+  "Table": {
+    "search": "Tìm kiếm...",
+    "filter": "Bộ lọc",
+    "reset": "Reset",
+    "empty": "Không có dữ liệu",
+    "actions": "Thao tác",
+    "perPage": "Số dòng",
+    "of": "của"
+  },
+
+  "CourseC": {
+    "breadcrumb": { "home": "Trang chủ", "courses": "Khóa học", "c": "Hạng C" },
     "imageAlt": "Khóa học lái xe hạng C",
     "title": "Khóa học lái xe hạng C",
     "intro": {
@@ -14,14 +268,8 @@
       "li3": "Chương trình học rõ ràng, hỗ trợ ôn tập trước khi thi.",
       "note": "Khóa học lái xe ô tô hạng C được khai giảng hàng tháng."
     },
-    "meta": {
-      "updated": "Cập nhật theo thông báo mới",
-      "share": "Chia sẻ"
-    },
-    "category": {
-      "label": "Category",
-      "value": "Khóa học lái xe ô tô"
-    },
+    "meta": { "updated": "Cập nhật theo thông báo mới", "share": "Chia sẻ" },
+    "category": { "label": "Category", "value": "Khóa học lái xe ô tô" },
     "cta": "Đăng ký ngay",
     "descLabel": "Description",
     "quick": {
@@ -70,12 +318,9 @@
       "mapSrc": "https://www.google.com/maps?q=My%20Tho%20Tien%20Giang&output=embed"
     }
   },
+
   "CourseC1": {
-    "breadcrumb": {
-      "home": "Trang chủ",
-      "courses": "Khóa học",
-      "c1": "Hạng C1"
-    },
+    "breadcrumb": { "home": "Trang chủ", "courses": "Khóa học", "c1": "Hạng C1" },
     "imageAlt": "Khóa học lái xe hạng C1",
     "title": "Khóa học lái xe hạng C1",
     "intro": {
@@ -86,14 +331,8 @@
       "li4": "Ô tô tải và ô tô chuyên dùng có khối lượng toàn bộ theo thiết kế ≤ 3.500 kg; xe kéo rơ moóc ≤ 750 kg;",
       "note": "Khóa học lái xe ô tô hạng C1 được khai giảng hàng tháng."
     },
-    "meta": {
-      "updated": "Cập nhật theo thông báo mới",
-      "share": "Chia sẻ"
-    },
-    "category": {
-      "label": "Chuyên mục",
-      "value": "Khóa học lái xe tải"
-    },
+    "meta": { "updated": "Cập nhật theo thông báo mới", "share": "Chia sẻ" },
+    "category": { "label": "Chuyên mục", "value": "Khóa học lái xe tải" },
     "cta": "Đăng ký ngay",
     "descLabel": "Mô tả",
     "quick": {
@@ -141,12 +380,9 @@
       "mapSrc": "https://www.google.com/maps?q=My%20Tho%20Tien%20Giang&output=embed"
     }
   },
+
   "CourseB1": {
-    "breadcrumb": {
-      "home": "Home",
-      "courses": "Khóa học",
-      "b1": "Hạng B (Số sàn)"
-    },
+    "breadcrumb": { "home": "Home", "courses": "Khóa học", "b1": "Hạng B (Số sàn)" },
     "imageAlt": "Khóa học lái xe hạng B số sàn",
     "title": "Khóa học lái xe hạng B số sàn",
     "intro": {
@@ -156,14 +392,8 @@
       "li3": "Các loại xe ô tô quy định cho giấy phép lái xe hạng B có kéo rơ moóc có khối lượng toàn bộ theo thiết kế ≤ 750 kg.",
       "note": "Khóa học lái xe ô tô hạng B số sàn được khai giảng hàng tháng."
     },
-    "meta": {
-      "updated": "Cập nhật theo thông báo mới",
-      "share": "Chia sẻ"
-    },
-    "category": {
-      "label": "Category",
-      "value": "Khóa học lái xe ô tô"
-    },
+    "meta": { "updated": "Cập nhật theo thông báo mới", "share": "Chia sẻ" },
+    "category": { "label": "Category", "value": "Khóa học lái xe ô tô" },
     "cta": "Đăng ký ngay",
     "descLabel": "Description",
     "section": {
@@ -211,12 +441,9 @@
       "item3Value": "Tại sân đạt chuẩn"
     }
   },
+
   "CourseB": {
-    "breadcrumb": {
-      "home": "Home",
-      "courses": "Khóa học",
-      "b": "Hạng B (Số tự động)"
-    },
+    "breadcrumb": { "home": "Home", "courses": "Khóa học", "b": "Hạng B (Số tự động)" },
     "imageAlt": "Khóa học lái xe hạng B số tự động",
     "title": "Khóa học lái xe hạng B số tự động",
     "intro": {
@@ -226,14 +453,8 @@
       "li3": "Ô tô tải và ô tô chuyên dùng có khối lượng toàn bộ theo thiết kế đến 3.500 kg.",
       "note": "Khóa học lái xe ô tô B số tự động được khai giảng hàng tháng."
     },
-    "meta": {
-      "updated": "Cập nhật theo thông báo mới",
-      "share": "Chia sẻ"
-    },
-    "category": {
-      "label": "Category:",
-      "value": "Khóa học lái xe Ô tô"
-    },
+    "meta": { "updated": "Cập nhật theo thông báo mới", "share": "Chia sẻ" },
+    "category": { "label": "Category:", "value": "Khóa học lái xe Ô tô" },
     "cta": "Đăng ký ngay",
     "quick": {
       "title": "Thông tin nhanh",
@@ -245,9 +466,7 @@
       "item3Value": "Tại sân sát hạch đạt chuẩn"
     },
     "descriptionTag": "Description",
-    "section": {
-      "title": "KHÓA HỌC LÁI XE Ô TÔ HẠNG B SỐ TỰ ĐỘNG"
-    },
+    "section": { "title": "KHÓA HỌC LÁI XE Ô TÔ HẠNG B SỐ TỰ ĐỘNG" },
     "time": {
       "title": "I. Thời gian:",
       "li1": "Thời gian mở lớp: Các khóa học được tổ chức liên tục, khai giảng hàng tháng",
@@ -255,9 +474,7 @@
       "li3": "Thời gian thi cuối khóa: sau khi bế giảng khoảng 03 ngày",
       "li4": "Thời gian thi sát hạch bằng lái: sau khi thi cuối khóa từ 10-15 ngày"
     },
-    "docs": {
-      "title": "II. Hồ sơ:"
-    },
+    "docs": { "title": "II. Hồ sơ:" },
     "table": {
       "col1": "THÀNH PHẦN HỒ SƠ",
       "col2": "GHI CHÚ",
@@ -283,31 +500,19 @@
       "email": "info@daylaixesongtien.vn"
     }
   },
+
   "CourseA": {
-    "breadcrumb": {
-      "home": "Home",
-      "courses": "Khóa học",
-      "a": "Hạng A"
-    },
+    "breadcrumb": { "home": "Home", "courses": "Khóa học", "a": "Hạng A" },
     "title": "Khóa học lái xe hạng A",
     "introBullet1": "Giấy phép lái xe hạng A1 cấp cho người lái xe mô tô hai bánh có dung tích xi lanh đến dưới 125cc hoặc có công suất động cơ điện đến 11 kW.",
     "introBullet2": "Giấy phép lái xe hạng A cấp cho người lái xe mô tô hai bánh có dung tích xi lanh từ 125cc hoặc có công suất động cơ điện trên 11 kW và các loại xe quy định cho giấy phép lái xe hạng A1.",
-    "meta": {
-      "updated": "Cập nhật theo thông báo mới",
-      "share": "Chia sẻ"
-    },
-    "category": {
-      "label": "Category",
-      "value": "Khóa học lái xe mô tô"
-    },
+    "meta": { "updated": "Cập nhật theo thông báo mới", "share": "Chia sẻ" },
+    "category": { "label": "Category", "value": "Khóa học lái xe mô tô" },
     "cta": "Đăng ký ngay",
     "body": {
       "descLabel": "Description",
       "title": "KHÓA HỌC LÁI XE MÔ TÔ HẠNG A",
-      "s1": {
-        "title": "I. Thời gian:",
-        "li1": "Thời gian mở lớp: Các khóa học được tổ chức liên tục, khai giảng hằng tháng"
-      },
+      "s1": { "title": "I. Thời gian:", "li1": "Thời gian mở lớp: Các khóa học được tổ chức liên tục, khai giảng hằng tháng" },
       "s2": { "title": "II. Hồ sơ" },
       "table": {
         "col1": "THÀNH PHẦN HỒ SƠ",
@@ -334,18 +539,12 @@
       }
     }
   },
+
   "CourseA1": {
-    "breadcrumb": {
-      "home": "Trang chủ",
-      "courses": "Khóa học",
-      "a1": "A1"
-    },
+    "breadcrumb": { "home": "Trang chủ", "courses": "Khóa học", "a1": "A1" },
     "title": "Khóa học lái xe hạng A1",
     "intro": "Giấy phép lái xe hạng A1 áp dụng cho xe mô tô hai bánh có dung tích xi lanh từ 50cc đến dưới 125cc (số/ tay ga). Học và thi tại Trung tâm Sông Tiền nhanh chóng, rõ ràng, minh bạch.",
-    "meta": {
-      "updated": "Cập nhật theo thông báo mới",
-      "share": "Chia sẻ"
-    },
+    "meta": { "updated": "Cập nhật theo thông báo mới", "share": "Chia sẻ" },
     "cta": "Đăng ký ngay",
     "quick": {
       "title": "Học viên được chọn xe số hoặc xe tay ga",
@@ -386,6 +585,7 @@
       "email": "Email: info@daylaixesongtien.vn"
     }
   },
+
   "Profile": {
     "studentInfoTitle": "Thông tin sinh viên",
     "personalProfileLink": "Hồ sơ cá nhân",
@@ -400,22 +600,14 @@
       "course": "Khóa học:"
     }
   },
+
   "StudentQuickActions": {
     "cta": "Xem chi tiết",
-    "registerSchedule": {
-      "title": "Đăng ký lịch học",
-      "desc": "Chọn lịch học phù hợp"
-    },
-    "viewSchedule": {
-      "title": "Xem lịch học",
-      "desc": "Theo dõi lịch học trong tuần"
-    },
-    "notifications": {
-      "title": "Xem thông báo",
-      "desc": "Nhắc nhở và thông báo mới",
-      "mockAlert": "Bạn có thể gắn trang thông báo sau nhé 😄"
-    }
+    "registerSchedule": { "title": "Đăng ký lịch học", "desc": "Chọn lịch học phù hợp" },
+    "viewSchedule": { "title": "Xem lịch học", "desc": "Theo dõi lịch học trong tuần" },
+    "notifications": { "title": "Xem thông báo", "desc": "Nhắc nhở và thông báo mới", "mockAlert": "Bạn có thể gắn trang thông báo sau nhé 😄" }
   },
+
   "Schedule": {
     "monthTitle": "Tháng {month} / {year}",
     "viewTitle": "Xem lịch học",
@@ -438,12 +630,9 @@
       "sat": "Thứ bảy",
       "sun": "Chủ nhật"
     },
-    "hints": {
-      "sessions": "{count} buổi",
-      "slots": "{count} slot",
-      "full": "Full"
-    }
+    "hints": { "sessions": "{count} buổi", "slots": "{count} slot", "full": "Full" }
   },
+
   "SchedulePanel": {
     "viewTitle": "Chi tiết lịch học",
     "registerTitle": "Đăng ký lịch học",
@@ -452,6 +641,7 @@
     "registerBtn": "Đăng ký",
     "closeBtn": "Đóng"
   },
+
   "ScheduleDayDetail": {
     "title": "Chi tiết ngày {date}",
     "viewSubtitle": "Danh sách buổi học trong ngày.",
@@ -459,6 +649,7 @@
     "empty": "Không có dữ liệu cho ngày này.",
     "registerBtn": "Đăng ký"
   },
+
   "WeeklySchedule": {
     "headers": {
       "date": "Ngày",
@@ -470,31 +661,14 @@
       "status": "Trạng thái"
     },
     "empty": "Chưa có lịch trong tuần.",
-    "status": {
-      "upcoming": "Sắp diễn ra",
-      "done": "Đã xong",
-      "cancel": "Hủy"
-    }
+    "status": { "upcoming": "Sắp diễn ra", "done": "Đã xong", "cancel": "Hủy" }
   },
-  "RegistrationNopHoSo": {
-    "upload": {
-      "uploadAction": {
-        "highlight": "Bấm để tải ảnh",
-        "rest": "hoặc kéo thả vào đây"
-      },
-      "changeImage": "Bấm để đổi ảnh",
-      "remove": "Xóa"
-    }
-  },
+
   "RegistrationNopHoSo": {
     "title": "Nộp hồ sơ đăng ký học",
     "subtitle": "Vui lòng điền đầy đủ thông tin và tải ảnh theo yêu cầu để gửi hồ sơ.",
     "required_note": "là bắt buộc",
-    "gender": {
-      "male": "Nam",
-      "female": "Nữ",
-      "other": "Khác"
-    },
+    "gender": { "male": "Nam", "female": "Nữ", "other": "Khác" },
     "personal": {
       "title": "Thông tin cá nhân học viên",
       "fullName": "Họ và tên",
@@ -524,17 +698,11 @@
       "portrait": "Ảnh chân dung 3x4 / 4x6",
       "cccdHint": "Ảnh rõ nét, đủ 4 góc, không lóa.",
       "portraitHint": "Nền sáng, mặt rõ, không đội mũ/kính râm.",
-      "uploadAction": {
-        "highlight": "Bấm để tải ảnh",
-        "rest": "hoặc kéo thả vào đây"
-      },
+      "uploadAction": { "highlight": "Bấm để tải ảnh", "rest": "hoặc kéo thả vào đây" },
       "changeImage": "Bấm để đổi ảnh",
       "remove": "Xóa"
     },
-    "submit": {
-      "label": "Gửi hồ sơ",
-      "loading": "Đang gửi..."
-    },
+    "submit": { "label": "Gửi hồ sơ", "loading": "Đang gửi..." },
     "success": "Gửi hồ sơ thành công! Trung tâm sẽ liên hệ sớm.",
     "errors": {
       "required": "Không được để trống.",
@@ -543,6 +711,7 @@
       "submit_failed": "Gửi hồ sơ thất bại. Vui lòng thử lại."
     }
   },
+
   "About": {
     "title": "GIỚI THIỆU",
     "p1_bold": "Trung tâm Đào tạo và Sát hạch Lái xe Sông Tiền",
@@ -551,10 +720,9 @@
     "p3": "Trung tâm được đầu tư bài bản để việc thi giấy phép lái xe của mọi thí sinh dễ dàng, thuận lợi nhất: màn hình máy tính thi lý thuyết, mô phỏng lớn nhất khu vực; xe sát hạch luôn được thay mới; sân thi đạt chuẩn, không đánh đố thí sinh.",
     "mission": "Chúng tôi hoạt động với sứ mệnh: Mang đến dịch vụ tiện ích, thân thiện; Lấy học viên làm trung tâm; Sân tập và phương tiện sử dụng công nghệ cao, cơ sở vật chất hiện đại; Luôn thỏa mãn nhu cầu người học."
   },
-  "FloatingRegister": {
-    "label": "Đăng ký ngay",
-    "aria": "Cuộn đến form đăng ký"
-  },
+
+  "FloatingRegister": { "label": "Đăng ký ngay", "aria": "Cuộn đến form đăng ký" },
+
   "Account": {
     "profileTitle": "Hồ sơ cá nhân",
     "email": "Email",
@@ -569,6 +737,7 @@
     "loadFailed": "Không tải được thông tin hồ sơ.",
     "backHome": "Về trang chủ"
   },
+
   "Auth": {
     "login": "Đăng nhập",
     "loggingIn": "Đang đăng nhập...",
@@ -586,19 +755,12 @@
     "placeholderPassword": "••••••••",
     "unknownUser": "Tài khoản"
   },
-  "TopBar": {
-    "email": "info@daylaixesongtien.vn",
-    "hotline": "Số liên hệ: 0919.555.678"
-  },
+
+  "TopBar": { "email": "info@daylaixesongtien.vn", "hotline": "Số liên hệ: 0919.555.678" },
+
   "Header": {
-    "brand": {
-      "line1": "Trung tâm đào tạo &",
-      "line2": "sát hạch lái xe",
-      "line3": "Sông Tiền"
-    },
-    "Search": {
-    "placeholder": "Nhập tìm kiếm..."
-  },
+    "brand": { "line1": "Trung tâm đào tạo &", "line2": "sát hạch lái xe", "line3": "Sông Tiền" },
+    "Search": { "placeholder": "Nhập tìm kiếm..." },
     "floating": {
       "help": "Hỗ trợ",
       "close": "Đóng",
@@ -651,16 +813,12 @@
         "dang-ky-cabin": "Đăng ký cabin",
         "dang-ky-xe-cam-bien": "Đăng ký xe cảm biến"
       },
-      "lien-he": {
-        "lien-he": "Liên hệ",
-        "tuyen-dung": "Tuyển dụng"
-      }
+      "lien-he": { "lien-he": "Liên hệ", "tuyen-dung": "Tuyển dụng" }
     }
   },
-  "HeroBanner": {
-    "san-thi-title": "Sân thi bằng lái ô tô lớn nhất tỉnh Tiền Giang cũ",
-    "san-thi-desc": "Chỉ cách Trung Lương 12 km"
-  },
+
+  "HeroBanner": { "san-thi-title": "Sân thi bằng lái ô tô lớn nhất tỉnh Tiền Giang cũ", "san-thi-desc": "Chỉ cách Trung Lương 12 km" },
+
   "FeaturesGrid": {
     "title1": "CHỦ ĐỘNG LỊCH HỌC",
     "desc1": "Học, thi bằng lái ngay tại Tiền Giang",
@@ -671,55 +829,53 @@
     "title4": "TẬN TÂM, NHIỆT TÌNH",
     "desc4": "Giáo viên kinh nghiệm giúp bạn nhanh tiếp thu"
   },
+
   "EnrollmentTable": {
-  "title": "Thông báo tuyển sinh",
-  "motorcycle-title": "HẠNG XE MÔ TÔ",
-  "tuition": "Học phí",
-  "exam-fee": "Lệ phí thi",
-  "license-fee": "Lệ phí cấp bằng",
-  "csgt": "thu hộ CSGT",
-  "total": "TỔNG CỘNG",
-  "a1-title": "A1 (dưới 125 cc)",
-  "a1-desc": "Số / tay ga",
-  "a-title": "A (trên 125 cc)",
-  "a-desc": "Côn / tay ga",
-  "car-title": "HẠNG XE Ô TÔ",
-  "practice-in-office-hours": "Thực hành trong giờ hành chính",
-  "mon-fri": "Thứ 2 đến thứ 6",
-  "practice-outside-office-hours": "Thực hành ngoài giờ hành chính",
-  "sat-sun": "Thứ 7 & chủ nhật",
-  "vip-package": "Gói VIP",
-  "vip-desc": "Thực hành theo thời gian yêu cầu & xe đưa đón",
-  "b-auto": "B (số tự động)",
-  "b-manual": "B (số sàn)",
-  "c1": "C1 (ô tô tải)",
-  "upgrade-title": "NÂNG HẠNG XE Ô TÔ",
-  "requirement": "Yêu cầu thâm niên lái xe",
-  "b-to-c": "B lên C",
-  "req-b-2years": "Bằng lái các hạng B từ 2 năm trở lên",
-  "c1-to-c": "C1 lên C",
-  "req-c1-2years": "Bằng lái hạng C1 từ 2 năm trở lên",
-  "note": "*Học phí các khóa học lái xe ô tô chưa bao gồm: Phí khám sức khỏe, Phí kiểm tra cuối khóa, Lệ phí thi & cấp bằng lái xe"
+    "title": "Thông báo tuyển sinh",
+    "motorcycle-title": "HẠNG XE MÔ TÔ",
+    "tuition": "Học phí",
+    "exam-fee": "Lệ phí thi",
+    "license-fee": "Lệ phí cấp bằng",
+    "csgt": "thu hộ CSGT",
+    "total": "TỔNG CỘNG",
+    "a1-title": "A1 (dưới 125 cc)",
+    "a1-desc": "Số / tay ga",
+    "a-title": "A (trên 125 cc)",
+    "a-desc": "Côn / tay ga",
+    "car-title": "HẠNG XE Ô TÔ",
+    "practice-in-office-hours": "Thực hành trong giờ hành chính",
+    "mon-fri": "Thứ 2 đến thứ 6",
+    "practice-outside-office-hours": "Thực hành ngoài giờ hành chính",
+    "sat-sun": "Thứ 7 & chủ nhật",
+    "vip-package": "Gói VIP",
+    "vip-desc": "Thực hành theo thời gian yêu cầu & xe đưa đón",
+    "b-auto": "B (số tự động)",
+    "b-manual": "B (số sàn)",
+    "c1": "C1 (ô tô tải)",
+    "upgrade-title": "NÂNG HẠNG XE Ô TÔ",
+    "requirement": "Yêu cầu thâm niên lái xe",
+    "b-to-c": "B lên C",
+    "req-b-2years": "Bằng lái các hạng B từ 2 năm trở lên",
+    "c1-to-c": "C1 lên C",
+    "req-c1-2years": "Bằng lái hạng C1 từ 2 năm trở lên",
+    "note": "*Học phí các khóa học lái xe ô tô chưa bao gồm: Phí khám sức khỏe, Phí kiểm tra cuối khóa, Lệ phí thi & cấp bằng lái xe"
   },
+
   "CarCourses": {
-  "title": "Các khóa học lái xe ô tô",
-  "view-detail": "Xem chi tiết",
-
-  "b-auto-title": "Hạng B số tự động",
-  "b-auto-price": "19.000.000 VNĐ",
-
-  "b-manual-title": "Hạng B số sàn",
-  "b-manual-price": "19.000.000 VNĐ",
-
-  "c1-title": "Hạng C1 – Ô tô tải dưới 7.5 tấn",
-  "c1-price": "21.000.000 VNĐ",
-
-  "c-upgrade-title": "Nâng hạng C – Ô tô tải trên 7.5 tấn",
-  "c-upgrade-price": "8.500.000 – 10.500.000 VNĐ"
+    "title": "Các khóa học lái xe ô tô",
+    "view-detail": "Xem chi tiết",
+    "b-auto-title": "Hạng B số tự động",
+    "b-auto-price": "19.000.000 VNĐ",
+    "b-manual-title": "Hạng B số sàn",
+    "b-manual-price": "19.000.000 VNĐ",
+    "c1-title": "Hạng C1 – Ô tô tải dưới 7.5 tấn",
+    "c1-price": "21.000.000 VNĐ",
+    "c-upgrade-title": "Nâng hạng C – Ô tô tải trên 7.5 tấn",
+    "c-upgrade-price": "8.500.000 – 10.500.000 VNĐ"
   },
-  "LatestPosts": {
-    "title": "Bài đăng mới nhất"
-  },
+
+  "LatestPosts": { "title": "Bài đăng mới nhất" },
+
   "RegisterForm": {
     "title": "ĐĂNG KÝ NHẬN TƯ VẤN",
     "subtitle": "Cập nhật thông tin khuyến mãi",
@@ -729,6 +885,7 @@
     "course": "Khóa Học",
     "submit": "ĐĂNG KÝ NGAY"
   },
+
   "LargeFieldInfo": {
     "title": "Sân thi bằng lái ô tô lớn nhất tỉnh Tiền Giang",
     "distance": "Chỉ cách Trung Lương 12 km",
@@ -738,6 +895,7 @@
     "videoTitle": "Video giới thiệu trung tâm đào tạo & sát hạch lái xe Sông Tiền",
     "imageAlt": "Hội trường học lý thuyết Sông Tiền"
   },
+
   "footer": {
     "main_office": {
       "title": "TRỤ SỞ CHÍNH & SÂN THI SÁT HẠCH SÔNG TIỀN",
@@ -758,10 +916,7 @@
       "email": "info@daylaixesongtien.vn",
       "map_title": "Bản đồ Văn phòng Mỹ Tho"
     },
-    "social": {
-      "facebook_link": "#",
-      "youtube_link": "#"
-    },
+    "social": { "facebook_link": "#", "youtube_link": "#" },
     "copyright": "Trung tâm Đào tạo & Sát hạch Lái xe Sông Tiền"
   }
 }
