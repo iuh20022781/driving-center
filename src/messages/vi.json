@@ -1,4 +1,376 @@
 {
+  "HR": {
+    "filter": {
+      "title": "Bộ lọc",
+      "hint": "Chọn cột để áp dụng tìm kiếm:",
+      "selectAll": "Chọn tất cả",
+      "clear": "Bỏ chọn",
+      "apply": "Áp dụng"
+    },
+    "permissions": {
+    "groups": {
+      "main": "Trang chính",
+      "ai": "AI",
+      "admissions_group": "Tuyển sinh",
+      "people": "Nhân sự",
+      "training": "Đào tạo",
+      "practice": "Thực hành",
+      "fleet": "Đội xe",
+      "finance_reports": "Tài chính & Báo cáo",
+      "system": "Hệ thống",
+      "content": "Nội dung",
+      "other": "Khác"
+    },
+    "pages": {
+      "dashboard": "Trang chính",
+      "analytics": "Thống kê",
+      "chat": "Chat",
+      "notifications": "Thông báo",
+      "admissions": "Hồ sơ đăng ký",
+      "students": "Học viên",
+      "instructors": "Giáo viên",
+      "hr": "Nhân sự",
+      "courses": "Khóa học",
+      "enrollments": "Ghi danh",
+      "theory_sessions": "Lịch lý thuyết",
+      "teaching_assignments": "Phân công giảng dạy",
+      "attendance": "Điểm danh",
+      "practice_schedules": "Lịch thực hành",
+      "rentals": "Thuê xe",
+      "rental_packages": "Gói thuê xe",
+      "vehicles": "Đội xe",
+      "maintenance": "Bảo trì",
+      "payments": "Thanh toán",
+      "reports": "Báo cáo",
+      "rbac": "Phân quyền",
+      "system_settings": "Cài đặt hệ thống",
+      "audit_logs": "Nhật ký",
+      "posts": "Bài viết"
+    }
+  },
+    "title": "Danh sách nhân sự",
+    "breadcrumb": "Quản lý · Nhân sự",
+    "add": "Thêm nhân sự",
+
+    "createTitle": "Thêm nhân sự",
+    "editTitle": "Sửa nhân sự",
+    "deleteTitle": "Xóa nhân sự",
+    "deleteDesc": "Bạn có chắc muốn xóa {code} – {name} không?",
+    "delete": "Xóa",
+    "cancel": "Hủy",
+
+    "filterTitle": "Bộ lọc",
+
+    "cols": {
+      "code": "Mã nhân sự",
+      "role": "Chức vụ",
+      "fullName": "Họ và tên",
+      "dob": "Ngày sinh",
+      "gender": "Giới tính",
+      "phone": "Số điện thoại",
+      "cccd": "CCCD",
+      "email": "Gmail",
+      "address": "Địa chỉ",
+      "username": "Tài khoản",
+      "status": "Trạng thái"
+    },
+
+    "status": {
+      "ACTIVE": "Đang hoạt động",
+      "PAUSED": "Tạm dừng",
+      "DONE": "Ngừng"
+    },
+
+    "roles": {
+      "STUDENT": "Student",
+      "INSTRUCTOR": "Instructor",
+      "ADMISSIONS": "Admissions / Sales",
+      "DISPATCH": "Practice Scheduler / Dispatch",
+      "VEHICLE_MANAGER": "Vehicle Manager",
+      "ACCOUNTANT": "Accountant",
+      "ADMIN": "Admin",
+      "OWNER": "Super Admin / Owner"
+    },
+
+    "form": {
+      "close": "Đóng",
+      "cancel": "Hủy",
+      "save": "Lưu",
+
+      "basicInfo": "Thông tin cơ bản",
+      "accountInfo": "Tài khoản",
+      "permissions": "Phân quyền trang",
+      "selectAll": "Chọn tất cả",
+      "clear": "Bỏ chọn",
+      "singlePages": "Trang chính",
+      "permHint": "Gợi ý: Bạn có thể chọn 1 hoặc nhiều trang mà tài khoản được phép truy cập.",
+
+      "role": "Chức vụ (Role)",
+      "fullName": "Họ và tên",
+      "dob": "Ngày sinh",
+      "gender": "Giới tính",
+      "genderMale": "Nam",
+      "genderFemale": "Nữ",
+      "genderOther": "Khác",
+
+      "phone": "Số điện thoại",
+      "cccd": "CCCD",
+      "email": "Gmail",
+      "address": "Địa chỉ",
+      "account": "Tài khoản",
+      "username": "Tài khoản",
+      "password": "Mật khẩu",
+      "status": "Trạng thái",
+
+      "errors": {
+        "fullName": "Vui lòng nhập họ và tên.",
+        "dob": "Vui lòng chọn ngày sinh.",
+        "phone": "Vui lòng nhập số điện thoại.",
+        "cccd": "Vui lòng nhập CCCD.",
+        "email": "Vui lòng nhập Gmail.",
+        "address": "Vui lòng nhập địa chỉ.",
+        "username": "Vui lòng nhập tài khoản.",
+        "password": "Vui lòng nhập mật khẩu.",
+        "allowedPages": "Vui lòng chọn ít nhất 1 trang."
+      }
+    }
+  },
+  "Instructors": {
+    "filter": {
+      "title": "Bộ lọc",
+      "hint": "Chọn cột để áp dụng tìm kiếm:",
+      "selectAll": "Chọn tất cả",
+      "clear": "Bỏ chọn",
+      "apply": "Áp dụng"
+    },
+    "title": "Danh sách giáo viên",
+    "breadcrumb": "Quản lý · Giáo viên",
+    "add": "Thêm giáo viên",
+
+    "createTitle": "Thêm giáo viên",
+    "editTitle": "Sửa giáo viên",
+    "deleteTitle": "Xóa giáo viên",
+    "deleteDesc": "Bạn có chắc muốn xóa {code} – {name} không?",
+    "delete": "Xóa",
+    "cancel": "Hủy",
+
+    "filterTitle": "Bộ lọc",
+
+    "cols": {
+      "code": "Mã giáo viên",
+      "name": "Tên giáo viên",
+      "phone": "Số điện thoại",
+      "cccd": "CCCD",
+      "address": "Địa chỉ",
+      "email": "Gmail",
+      "rank": "Hạng dạy",
+      "status": "Trạng thái",
+      "actions": "Thao tác"
+    },
+
+    "status": {
+      "ACTIVE": "Đang dạy",
+      "PAUSED": "Tạm dừng",
+      "DONE": "Ngừng dạy"
+    },
+
+    "form": {
+      "close": "Đóng",
+      "cancel": "Hủy",
+      "save": "Lưu",
+
+      "name": "Tên giáo viên",
+      "namePh": "Nguyễn Văn A",
+      "phone": "Số điện thoại",
+      "phonePh": "0912345678",
+      "cccd": "CCCD",
+      "cccdPh": "079123456789",
+      "email": "Gmail",
+      "emailPh": "abc@gmail.com",
+      "address": "Địa chỉ",
+      "addressPh": "TP. Hồ Chí Minh",
+
+      "rank": "Hạng dạy",
+      "rankPh": "Chọn hạng dạy",
+
+      "status": "Trạng thái",
+      "statusActive": "Đang dạy",
+      "statusPaused": "Tạm dừng",
+      "statusDone": "Ngừng dạy",
+
+      "errors": {
+        "name": "Vui lòng nhập tên giáo viên.",
+        "phone": "Vui lòng nhập số điện thoại.",
+        "cccd": "Vui lòng nhập CCCD.",
+        "address": "Vui lòng nhập địa chỉ.",
+        "email": "Vui lòng nhập Gmail.",
+        "rank": "Vui lòng chọn hạng dạy."
+      }
+    }
+  },
+  "Students": {
+    "filter": {
+      "title": "Bộ lọc",
+      "hint": "Chọn cột để áp dụng tìm kiếm:",
+      "selectAll": "Chọn tất cả",
+      "clear": "Bỏ chọn",
+      "apply": "Áp dụng"
+    },
+    "title": "Danh sách học viên",
+    "breadcrumb": "Quản lý · Học viên",
+    "add": "Thêm học viên",
+
+    "createTitle": "Thêm học viên",
+    "editTitle": "Sửa học viên",
+
+    "deleteTitle": "Xóa học viên",
+    "deleteDesc": "Bạn có chắc muốn xóa học viên {code} – {name} không?",
+    "delete": "Xóa",
+    "cancel": "Hủy",
+
+    "cols": {
+      "code": "Mã học viên",
+      "name": "Tên học viên",
+      "phone": "Số điện thoại",
+      "cccd": "CCCD",
+      "address": "Địa chỉ",
+      "email": "Gmail",
+      "course": "Khóa học",
+      "status": "Trạng thái"
+    },
+
+    "status": {
+      "ACTIVE": "Đang học",
+      "PAUSED": "Tạm dừng",
+      "DONE": "Hoàn thành"
+    },
+
+    "form": {
+      "close": "Đóng",
+      "cancel": "Hủy",
+      "save": "Lưu",
+
+      "name": "Tên học viên",
+      "namePh": "Nguyễn Văn A",
+
+      "phone": "Số điện thoại",
+      "phonePh": "0912345678",
+
+      "cccd": "CCCD",
+      "cccdPh": "079123456789",
+
+      "email": "Gmail",
+      "emailPh": "abc@gmail.com",
+
+      "address": "Địa chỉ",
+      "addressPh": "TP. Hồ Chí Minh",
+
+      "course": "Khóa học",
+      "coursePh": "B2 - 3 tháng",
+
+      "status": "Trạng thái",
+      "statusActive": "Đang học",
+      "statusPaused": "Tạm dừng",
+      "statusDone": "Hoàn thành",
+
+      "errors": {
+        "name": "Vui lòng nhập tên học viên.",
+        "phone": "Vui lòng nhập số điện thoại.",
+        "cccd": "Vui lòng nhập CCCD.",
+        "email": "Vui lòng nhập Gmail.",
+        "address": "Vui lòng nhập địa chỉ.",
+        "course": "Vui lòng nhập khóa học."
+      }
+    }
+  },
+  "CreateUser": {
+    "title": "Tạo tài khoản",
+    "breadcrumb": "Quản lý · Tài khoản · Tạo mới",
+    "back": "Quay lại",
+    "reset": "Reset",
+    "create": "Tạo tài khoản",
+    "creating": "Đang tạo...",
+    "success": "Tạo tài khoản thành công.",
+    "errors": {
+      "fullName": "Vui lòng nhập họ và tên.",
+      "email": "Gmail không hợp lệ.",
+      "phone": "Vui lòng nhập số điện thoại.",
+      "dob": "Vui lòng chọn ngày sinh.",
+      "address": "Vui lòng nhập địa chỉ.",
+      "roles": "Vui lòng chọn ít nhất 1 role phân quyền.",
+      "unknown": "Có lỗi xảy ra khi tạo tài khoản."
+    },
+    "form": {
+      "sectionTitle": "Thông tin",
+      "roleTitle": "Chức vụ",
+      "roleTitleHint": "Chức vụ hiển thị có thể chọn theo role chính.",
+      "status": "Trạng thái",
+      "statusActive": "Hoạt động",
+      "statusDisabled": "Khóa",
+      "fullName": "Họ và tên",
+      "fullNamePh": "Nguyễn Tấn Phát",
+      "gender": "Giới tính",
+      "genderMale": "Nam",
+      "genderFemale": "Nữ",
+      "genderOther": "Khác",
+      "dob": "Ngày sinh",
+      "phone": "Số điện thoại",
+      "phonePh": "0369809077",
+      "email": "Gmail",
+      "emailPh": "nguyentanphat100102it@gmail.com",
+      "address": "Địa chỉ",
+      "addressPh": "TP. Hồ Chí Minh"
+    },
+    "roles": {
+      "title": "Phân quyền (Role)",
+      "subtitle": "Có thể chọn nhiều role. Quyền sẽ hợp nhất theo RBAC.",
+      "previewTitle": "Preview nhóm quyền (gợi ý)",
+      "emptyPreview": "Chưa có.",
+      "previewNote": "* Preview chỉ tham khảo. Quyền thực tế lấy theo role_permissions.",
+      "items": {
+        "student": {
+          "name": "Student (Học viên)",
+          "desc": "Xem lịch, tiến độ, thuê xe, thanh toán, chat AI (self)."
+        },
+        "instructor": {
+          "name": "Instructor (Giảng viên)",
+          "desc": "Xem lịch dạy, điểm danh buổi mình dạy, cập nhật trạng thái."
+        },
+        "admissions": {
+          "name": "Admissions / Sales (Tuyển sinh)",
+          "desc": "Duyệt hồ sơ tuyển sinh, tạo học viên, dùng AI nội bộ."
+        },
+        "training_officer": {
+          "name": "Training Officer (Phòng đào tạo)",
+          "desc": "Quản lý khóa học/ghi danh/lịch lý thuyết/phân công, báo cáo đào tạo."
+        },
+        "dispatch": {
+          "name": "Dispatch (Điều phối)",
+          "desc": "Lập lịch thực hành, duyệt thuê xe, xử lý trùng lịch, báo cáo điều phối."
+        },
+        "vehicle_manager": {
+          "name": "Vehicle Manager (Kỹ thuật xe)",
+          "desc": "Quản lý đội xe, bảo trì, khóa trạng thái xe, báo cáo xe."
+        },
+        "accountant": {
+          "name": "Accountant (Kế toán)",
+          "desc": "Quản lý thanh toán, hoàn tiền, báo cáo tài chính."
+        },
+        "hr_manager": {
+          "name": "HR Manager (Nhân sự)",
+          "desc": "Tạo tài khoản, kích hoạt/khóa user, gán role theo policy."
+        },
+        "admin": {
+          "name": "Quản trị viên",
+          "desc": "RBAC, cấu hình hệ thống, audit log, truy cập nghiệp vụ theo chính sách."
+        },
+        "super_admin": {
+          "name": "Super Admin / Owner",
+          "desc": "Toàn quyền hệ thống (*)."
+        }
+      }
+    }
+  },
   "Notifications": {
     "title": "Thông báo",
     "breadcrumb": "Admin / Thông báo",
@@ -150,19 +522,57 @@
     "close": "Đóng"
   },
   "Nav": {
+    "ai": "AI",
+  "admissions_group": "Tuyển sinh",
+  "people": "Nhân sự & Học viên",
+  "training": "Đào tạo",
+  "practice": "Thực hành & Thuê xe",
+  "fleet": "Đội xe & Bảo trì",
+  "finance_reports": "Tài chính & Báo cáo",
+  "system": "Hệ thống",
+  "content": "Nội dung",
+    "subtitle": "Hệ thống quản lý trung tâm",
     "menu": "MENU",
-    "subtitle": "Bảng điều khiển quản trị",
-    "dashboard": "Tổng quan",
-    "analytics": "Thống kê",
-    "chat": "Tin nhắn",
-    "notifications": "Thông báo",
-    "students": "Học viên",
-    "instructors": "Giảng viên",
-    "courses": "Khóa học",
     "account": "Tài khoản",
     "language": "Ngôn ngữ",
+
+    "dashboard": "Dashboard",
+    "analytics": "Thống kê",
+    "chat": "Chat AI",
+    "notifications": "Thông báo",
+
+    "admissions": "Tuyển sinh (Hồ sơ đăng ký)",
+
+    "users": "Tài khoản",
+    "users_create": "Tạo tài khoản",
+    "students": "Học viên",
+    "instructors": "Giảng viên",
+    "hr": "Nhân sự",
+
+    "courses": "Khóa học",
+    "enrollments": "Ghi danh",
+
+    "theory_sessions": "Lịch lý thuyết",
+    "teaching_assignments": "Phân công giảng dạy",
+    "attendance": "Điểm danh",
+
+    "practice_schedules": "Lịch thực hành",
+    "rentals": "Thuê xe tập riêng",
+    "rental_packages": "Gói thuê xe",
+
+    "vehicles": "Đội xe",
+    "maintenance": "Bảo trì",
+
+    "payments": "Thanh toán",
+    "reports": "Báo cáo",
+
+    "rbac": "Phân quyền (Role/Permission)",
+    "system_settings": "Cấu hình hệ thống",
+    "audit_logs": "Audit log",
+
     "posts": "Bài viết"
-  },
+  }
+,
   "Analytics": {
     "title": "Thống kê",
     "breadcrumb": "Quản lý • Thống kê",
@@ -190,43 +600,6 @@
       "filterCourse": "Xem theo hạng",
       "hint": "Số liệu đang hiển thị theo hạng đã chọn.",
       "selected": "Đang chọn"
-    }
-  },
-  "Students": {
-    "title": "Danh sách học viên",
-    "breadcrumb": "Quản lý • Học viên",
-    "add": "+ Thêm học viên",
-    "edit": "Sửa",
-    "delete": "Xóa",
-    "cols": {
-      "code": "Mã học viên",
-      "name": "Tên học viên",
-      "phone": "Số điện thoại",
-      "course": "Khóa học",
-      "status": "Trạng thái"
-    },
-    "status": {
-      "ACTIVE": "Đang học",
-      "PAUSED": "Tạm dừng",
-      "DONE": "Hoàn thành"
-    }
-  },
-  "Instructors": {
-    "title": "Danh sách giáo viên",
-    "breadcrumb": "Quản lý • Giáo viên",
-    "add": "+ Thêm giáo viên",
-    "edit": "Sửa",
-    "delete": "Xóa",
-    "cols": {
-      "code": "Mã giáo viên",
-      "name": "Tên giáo viên",
-      "phone": "Số điện thoại",
-      "specialty": "Hạng dạy",
-      "status": "Trạng thái"
-    },
-    "status": {
-      "ACTIVE": "Đang dạy",
-      "OFF": "Tạm nghỉ"
     }
   },
   "Courses": {

@@ -1,832 +1,1164 @@
-  {
-    "Notifications": {
-    "title": "Notifications",
-    "breadcrumb": "Admin / Notifications",
-    "filters": "Filters",
-    "unread": "Unread",
-    "markAllRead": "Mark all read",
-    "empty": "No notifications yet",
-    "student": "Student",
-    "course": "Course",
-    "phone": "Phone",
-    "review": "Review result",
-    "type": {
-      "all": "All",
-      "course": "Course registrations",
-      "profile": "Profile reviews"
+{
+  "HR": {
+    "filter": {
+      "title": "Filter",
+      "hint": "Select columns to apply search:",
+      "selectAll": "Select all",
+      "clear": "Clear",
+      "apply": "Apply"
     },
-    "status": {
-      "all": "All",
-      "unread": "Unread",
-      "read": "Read"
-    },
-    "reviewResult": {
-      "approved": "Approved",
-      "need_more": "Need more info",
-      "rejected": "Rejected"
-    }
-  },
-    "PostsAdmin": {
-      "title": "Posts",
-      "breadcrumb": "Management • Posts",
-      "listTitle": "Posts list",
-      "new": "New",
-      "search": "Search posts...",
-      "date": "Date",
-      "empty": "No posts yet",
-      "confirmDelete": "Delete this post?",
-      "newDefaultTitle": "New post",
-      "newDefaultContent": "Write your content...",
-      "status": {
-        "draft": "Draft",
-        "published": "Published"
-      }
-    },
-    "PostsEditor": {
-      "pickLeft": "Select a post on the left or create a new one.",
-      "editor": "Editor",
-      "title": "Title",
-      "date": "Publish date",
-      "slug": "Slug",
-      "cover": "Cover image",
-      "pickCover": "Pick cover",
-      "coverHint": "Cover shows at the top of the post.",
-      "content": "Content",
-      "insertImage": "Insert image",
-      "insertHint": "Image will be appended to the content.",
-      "contentHint": "You can type text or paste HTML (p, img...) to render like a news article.",
-      "publish": "Publish",
-      "saveDraft": "Save draft",
-      "preview": "Preview",
-      "ph": {
-        "title": "Enter title...",
-        "slug": "example-post",
-        "content": "<p>Content...</p>"
-      }
-    },
-    "PostsClient": {
-      "title": "News",
-      "empty": "No posts yet.",
-      "notFound": "Post not found."
-    },
-    "ChangePassword": {
-      "title": "Change password",
-      "breadcrumb": "Account • Change password",
-      "subtitle": "Update your password",
-      "hint": "New password must be at least 8 characters. Avoid reusing old passwords.",
-      "current": "Current password",
-      "new": "New password",
-      "confirm": "Confirm new password",
-      "save": "Save password",
-      "saving": "Saving...",
-      "reset": "Reset",
-      "success": "Password changed successfully!",
-      "placeholder": {
-        "current": "Enter current password",
-        "new": "Enter new password",
-        "confirm": "Re-enter new password"
-      },
-      "error": {
-        "required": "This field is required",
-        "min8": "New password must be at least 8 characters",
-        "notMatch": "Passwords do not match",
-        "invalid": "Invalid input"
-      }
-    },
-    "PersonalInformation": {
-      "title": "Personal information",
-      "breadcrumb": "Account • Personal information",
-      "edit": "Edit",
-      "save": "Save",
-      "cancel": "Cancel",
-      "avatar": "Avatar",
-      "avatarHint": "PNG/JPG only. Recommended 400x400.",
-      "changeAvatar": "Change avatar",
-      "info": "Information",
-      "roleLabel": "Role",
-      "fullName": "Full name",
-      "gender": "Gender",
-      "genderMale": "Male",
-      "genderFemale": "Female",
-      "genderOther": "Other",
-      "dob": "Date of birth",
-      "phone": "Phone",
-      "email": "Email",
-      "address": "Address",
-      "readOnlyHint": "Click “Edit” to update your info.",
-      "role": {
-        "admin": "Administrator"
-      }
-    },
-    "Chat": {
-    "title": "Messages",
-    "breadcrumb": "Manage • Messages",
-    "inbox": "Inbox",
-    "search": "Search name/phone/message...",
-    "empty": "No conversations",
-    "pickLeft": "Pick a conversation on the left.",
-    "placeholder": "Type a message... (Enter to send, Shift+Enter new line)",
-    "hintEnter": "Enter: send • Shift+Enter: new line",
-    "onlineMock": "Active",
-    "channel": {
-      "facebook": "Facebook",
-      "zalo": "Zalo",
-      "phone": "Phone"
-    }
-  },
-    "UserMenu": {
-      "name": "Nguyen Tan Phat",
-      "role": "Admin",
-      "profile": "Profile",
-      "changePassword": "Change password",
-      "logout": "Log out"
-    },
-    "Common": {
-      "appName": "Driving Center Admin",
-      "loading": "Loading...",
-      "search": "Search...",
-      "save": "Save",
-      "cancel": "Cancel",
-      "close": "Close"
-    },
-    "Nav": {
-      "menu": "MENU",
-      "subtitle": "Admin dashboard",
-      "dashboard": "Dashboard",
-      "analytics": "Analytics",
-      "chat": "Messages",
-      "notifications": "Notifications",
-      "students": "Students",
-      "instructors": "Instructors",
-      "courses": "Courses",
-      "account": "Account",
-      "language": "Language",
-      "posts": "Posts"
-    },
-    "Analytics": {
-      "title": "Analytics",
-      "breadcrumb": "Management • Analytics",
-      "desc": "Analytics page (you can add charts and daily/monthly reports here)."
-    },
-    "Topbar": {
-      "title": "Admin",
-      "center": "Driving Center",
-      "action": "Create"
-    },
-    "Dashboard": {
-      "title": "Dashboard",
-      "breadcrumb": "Management • Dashboard",
-      "card": {
-        "students": "Total students",
-        "instructors": "Total instructors",
-        "courses": "Total courses",
-        "revenue": "Monthly revenue"
-      },
-      "stats": {
-        "title": "Activity statistics",
-        "visits": "Visits",
-        "courseViews": "Course views",
-        "registrations": "Course registrations",
-        "filterCourse": "Filter by class",
-        "hint": "Data is shown for the selected class.",
-        "selected": "Selected"
-      }
-    },
-    "Students": {
-      "title": "Students",
-      "breadcrumb": "Management • Students",
-      "add": "+ Add student",
-      "edit": "Edit",
-      "delete": "Delete",
-      "cols": {
-        "code": "Student code",
-        "name": "Name",
-        "phone": "Phone",
-        "course": "Course",
-        "status": "Status"
-      },
-      "status": {
-        "ACTIVE": "Learning",
-        "PAUSED": "Paused",
-        "DONE": "Completed"
-      }
-    },
-    "Instructors": {
-      "title": "Instructors",
-      "breadcrumb": "Management • Instructors",
-      "add": "+ Add instructor",
-      "edit": "Edit",
-      "delete": "Delete",
-      "cols": {
-        "code": "Instructor code",
-        "name": "Name",
-        "phone": "Phone",
-        "specialty": "License",
-        "status": "Status"
-      },
-      "status": {
-        "ACTIVE": "Active",
-        "OFF": "Off"
-      }
-    },
-    "Courses": {
-      "title": "Courses",
-      "breadcrumb": "Management • Courses",
-      "add": "+ Add course",
-      "edit": "Edit",
-      "delete": "Delete",
-      "cols": {
-        "code": "Code",
-        "name": "Course name",
-        "duration": "Duration",
-        "fee": "Fee",
-        "status": "Status"
-      },
-      "status": {
-        "OPEN": "Open",
-        "LOCKED": "Locked"
-      }
-    },
-    "Table": {
-      "search": "Search...",
-      "filter": "Filter",
-      "reset": "Reset",
-      "empty": "No data",
-      "actions": "Actions",
-      "perPage": "Rows",
-      "of": "of"
-    },
+  "title": "HR Users",
+  "breadcrumb": "Management · HR",
+  "add": "Add user",
 
-    "CourseC": {
-      "breadcrumb": { "home": "Home", "courses": "Courses", "c": "Class C" },
-      "imageAlt": "Class C driving course",
-      "title": "Class C Driving Course",
-      "intro": {
-        "p1": "A Class C driving license is issued for drivers of:",
-        "li1": "Trucks and specialized vehicles with a permitted gross weight over 7,500 kg;",
-        "li2": "Vehicles permitted under Class B and C1 that tow a trailer with permitted gross weight ≤ 750 kg;",
-        "li3": "Clear training program with pre-exam review support.",
-        "note": "Class C courses open every month."
-      },
-      "meta": { "updated": "Updated with latest announcements", "share": "Share" },
-      "category": { "label": "Category", "value": "Car Driving Courses" },
-      "cta": "Register now",
-      "descLabel": "Description",
-      "quick": {
-        "title": "Course summary",
-        "item1Label": "Schedule:",
-        "item1Value": "Monthly intake",
-        "item2Label": "Format:",
-        "item2Value": "Training + pre-exam review",
-        "item3Label": "Test:",
-        "item3Value": "At a standard testing ground"
-      },
-      "section": { "title": "CLASS C DRIVING COURSE", "subtitle1": "I. Duration:", "subtitle2": "II. Documents", "subtitle3": "III. Our commitments:" },
-      "time": {
-        "li1": "Opening schedule: Courses run continuously with monthly intake",
-        "li2": "Training duration: 3 months",
-        "li3": "Final course test: about 3 days after graduation",
-        "li4": "Official license test: 10–15 days after the final course test"
-      },
-      "table": {
-        "col1": "REQUIRED DOCUMENTS",
-        "col2": "NOTES",
-        "r1": { "c1": "01 copy of Citizen ID", "c2": "Two-sided photocopy, no notarization required" },
-        "r2": { "c1": "Health certificate", "c2": "From eligible hospital/clinic" },
-        "r3": { "c1": "Training & testing application form", "c2": "Download the application form" },
-        "r4": { "c1": "Testing application form", "c2": "Download the testing form" },
-        "r5": { "c1": "Digital photo", "c2": "03 photos taken at the center" },
-        "r6": { "c1": "Preliminary certificate", "c2": "May be required depending on the course" }
-      },
-      "commit": { "c1": "All-inclusive tuition, no hidden fees", "c2": "Free learning materials", "c3": "Fast training process", "c4": "Online registration support via Zalo" },
-      "location": {
-        "title": "IV. Test location:",
-        "name": "SONG TIEN DRIVING TRAINING & TESTING CENTER",
-        "addr": "Address: (update your real address here)",
-        "phone": "Hotline/Zalo: 0919.555.678",
-        "email": "Email: info@daylaixesongtien.vn",
-        "mapSrc": "https://www.google.com/maps?q=My%20Tho%20Tien%20Giang&output=embed"
-      }
-    },
-    "CourseC1": {
-      "breadcrumb": { "home": "Home", "courses": "Courses", "c1": "Class C1" },
-      "imageAlt": "C1 driving course",
-      "title": "C1 driving course",
-      "intro": {
-        "p1": "Class C1 license is issued for drivers of:",
-        "li1": "Trucks and specialized vehicles with gross design weight from 3,500 kg to 7,500 kg;",
-        "li2": "C1 vehicles towing a trailer with gross design weight ≤ 750 kg;",
-        "li3": "Vehicles under class B rules (passenger cars up to 8 seats excluding the driver);",
-        "li4": "Trucks/special vehicles with gross design weight ≤ 3,500 kg; trailers ≤ 750 kg;",
-        "note": "C1 course opens monthly."
-      },
-      "meta": { "updated": "Updated with the latest notice", "share": "Share" },
-      "category": { "label": "Category", "value": "Truck driving courses" },
-      "cta": "Register now",
-      "descLabel": "Description",
-      "quick": {
-        "title": "Quick info",
-        "item1Label": "Schedule:",
-        "item1Value": "Monthly opening",
-        "item2Label": "Format:",
-        "item2Value": "Learning + review before the test",
-        "item3Label": "Test:",
-        "item3Value": "At a certified test ground"
-      },
-      "section": { "title": "CLASS C1 DRIVING COURSE", "subtitle1": "I. Schedule:", "subtitle2": "II. Documents", "subtitle3": "III. Our commitment:" },
-      "time": {
-        "li1": "Opening schedule: Classes are organized continuously and open monthly",
-        "li2": "Training duration: 3 months",
-        "li3": "Final test: About 3 days after the closing session",
-        "li4": "License test: 10–15 days after graduation test"
-      },
-      "table": {
-        "col1": "REQUIRED DOCUMENTS",
-        "col2": "NOTES",
-        "r1": { "c1": "01 copy of national ID", "c2": "Photocopy both sides, no notarization needed" },
-        "r2": { "c1": "Health certificate", "c2": "At eligible hospitals/clinics" },
-        "r3": { "c1": "Training & test application form", "c2": "Download training & test form" },
-        "r4": { "c1": "Test application form", "c2": "Download test form" },
-        "r5": { "c1": "Digital photo", "c2": "03 photos taken at the center" }
-      },
-      "commit": { "c1": "All-inclusive tuition, no hidden fees", "c2": "Free learning materials", "c3": "Fast training timeline", "c4": "Online registration support via Zalo" },
-      "location": {
-        "title": "IV. Car license test location:",
-        "name": "SONG TIEN DRIVING TRAINING & TEST CENTER",
-        "addr": "Address: (replace with your real address here)",
-        "phone": "Hotline/Zalo: 0919.555.678",
-        "email": "Email: info@daylaixesongtien.vn",
-        "mapSrc": "https://www.google.com/maps?q=My%20Tho%20Tien%20Giang&output=embed"
-      }
-    },
-    "CourseB1": {
-      "breadcrumb": { "home": "Home", "courses": "Courses", "b1": "Class B (Manual)" },
-      "imageAlt": "B (Manual) driving course",
-      "title": "B (Manual) driving course",
-      "intro": {
-        "p1": "The B (manual) driving license allows you to drive:",
-        "li1": "Passenger cars up to 8 seats (excluding the driver’s seat);",
-        "li2": "Trucks and specialized vehicles with gross vehicle weight ≤ 3,500 kg;",
-        "li3": "Vehicles in the B class towing a trailer with design GVW ≤ 750 kg.",
-        "note": "This course opens monthly."
-      },
-      "meta": { "updated": "Updated via latest notice", "share": "Share" },
-      "category": { "label": "Category", "value": "Car driving course" },
-      "cta": "Register now",
-      "descLabel": "Description",
-      "section": { "title": "B (MANUAL) DRIVING COURSE", "subtitle1": "I. Schedule:", "subtitle2": "II. Documents", "subtitle3": "III. Our commitments:" },
-      "time": {
-        "li1": "Class opening: continuous enrollment, monthly openings",
-        "li2": "Training duration: 3 months",
-        "li3": "Final exam: about 3 days after course completion",
-        "li4": "Official license test: 10–15 days after graduation test"
-      },
-      "table": {
-        "col1": "DOCUMENTS",
-        "col2": "NOTES",
-        "r1": { "c1": "Copy of ID card", "c2": "Both sides, no notarization required" },
-        "r2": { "c1": "Health certificate", "c2": "From an eligible hospital/clinic" },
-        "r3": { "c1": "Training & testing application", "c2": "Download the form" },
-        "r4": { "c1": "Testing application", "c2": "Download the form" },
-        "r5": { "c1": "Digital photos", "c2": "3 photos taken at the center" }
-      },
-      "commit": { "c1": "All-inclusive tuition, no hidden fees", "c2": "Free learning materials", "c3": "Fast training timeline", "c4": "Online registration support via Zalo" },
-      "location": {
-        "title": "IV. Test location:",
-        "name": "SONG TIEN DRIVING TRAINING & TESTING CENTER",
-        "addr": "Address: (replace with your real address)",
-        "phone": "Hotline/Zalo: 0919.555.678",
-        "email": "Email: info@daylaixesongtien.vn",
-        "mapSrc": "https://www.google.com/maps?q=My%20Tho%20Tien%20Giang&output=embed"
-      },
-      "quick": {
-        "title": "Quick info",
-        "item1Label": "Schedule:",
-        "item1Value": "Monthly opening",
-        "item2Label": "Format:",
-        "item2Value": "Learning + review before the test",
-        "item3Label": "Test:",
-        "item3Value": "At a certified test ground"
-      }
-    },
-    "CourseB": {
-      "breadcrumb": { "home": "Home", "courses": "Courses", "b": "Class B (Automatic)" },
-      "imageAlt": "Class B automatic driving course",
-      "title": "Class B automatic driving course",
-      "intro": {
-        "p1": "Class B automatic driving license is issued for operating:",
-        "li1": "Automatic transmission cars (including electric cars);",
-        "li2": "Passenger cars up to 8 seats (excluding the driver’s seat);",
-        "li3": "Trucks and specialized vehicles with a design gross weight up to 3,500 kg.",
-        "note": "This course opens every month."
-      },
-      "meta": { "updated": "Updated by latest notice", "share": "Share" },
-      "category": { "label": "Category:", "value": "Car Driving Course" },
-      "cta": "Register now",
-      "quick": {
-        "title": "Quick info",
-        "item1Label": "Format:",
-        "item1Value": "Theory + Practice",
-        "item2Label": "Schedule:",
-        "item2Value": "Monthly intake",
-        "item3Label": "Test:",
-        "item3Value": "At a certified test yard"
-      },
-      "descriptionTag": "Description",
-      "section": { "title": "CLASS B AUTOMATIC DRIVING COURSE" },
-      "time": {
-        "title": "I. Duration:",
-        "li1": "Classes open continuously with monthly intake",
-        "li2": "Training duration: 3 months",
-        "li3": "Final course test: about 3 days after graduation",
-        "li4": "License exam: 10–15 days after the final test"
-      },
-      "docs": { "title": "II. Required documents:" },
-      "table": {
-        "col1": "DOCUMENT",
-        "col2": "NOTES",
-        "r1": { "c1": "Citizen ID copy", "c2": "Copy both sides / no notarization" },
-        "r2": { "c1": "Health certificate", "c2": "From hospital/clinic" },
-        "r3": { "c1": "Training & exam application form", "c2": "Provided at the center" },
-        "r4": { "c1": "3x4 photo (blue background)", "c2": "Can be taken at the center" },
-        "r5": { "c1": "Portrait photo", "c2": "Can be taken at the center" }
-      },
-      "commit": {
-        "title": "III. Our commitment:",
-        "c1": "All-inclusive tuition, no hidden fees",
-        "c2": "Free learning materials",
-        "c3": "Fast training schedule",
-        "c4": "Online support via Zalo"
-      },
-      "location": {
-        "title": "IV. Test location:",
-        "name": "SONG TIEN DRIVING TRAINING & TEST CENTER",
-        "addr": "My Tho City, Tien Giang",
-        "time": "07:30 - 18:00",
-        "phone": "Hotline/Zalo: 0919.555.678",
-        "email": "info@daylaixesongtien.vn"
-      }
-    },
-    "CourseA": {
-      "breadcrumb": { "home": "Home", "courses": "Courses", "a": "Class A" },
-      "title": "Class A Motorbike Driving Course",
-      "introBullet1": "Class A1 license applies to two-wheeled motorbikes up to under 125cc or electric motor power up to 11 kW.",
-      "introBullet2": "Class A license applies to two-wheeled motorbikes from 125cc or electric motor power over 11 kW, and vehicles allowed under the A1 category.",
-      "meta": { "updated": "Updated with latest notice", "share": "Share" },
-      "category": { "label": "Category", "value": "Motorbike driving course" },
-      "cta": "Register now",
-      "body": {
-        "descLabel": "Description",
-        "title": "CLASS A MOTORBIKE DRIVING COURSE",
-        "s1": { "title": "I. Schedule:", "li1": "Enrollment: Courses open continuously, with monthly intakes" },
-        "s2": { "title": "II. Documents" },
-        "table": {
-          "col1": "REQUIRED DOCUMENTS",
-          "col2": "NOTES",
-          "r1": { "c1": "01 copy of chip-based ID card", "c2": "Copy both sides, no corner cutting, notarized" },
-          "r2": { "c1": "Training & exam registration form", "c2": "Download the registration form" },
-          "r3": { "c1": "Exam request form", "c2": "Download the exam request form" },
-          "r4": { "c1": "02 photos 3x4 (blue background)", "c2": "Can be taken at the center" },
-          "r5": { "c1": "Exam photo capture", "c2": "Can be done at the center on the practice day (if enough registrations)" }
-        },
-        "s3": {
-          "title": "III. Our commitment:",
-          "li1": "All-inclusive tuition, no hidden fees",
-          "li2": "Free learning materials",
-          "li3": "Fast training timeline",
-          "li4": "Online support via Zalo"
-        },
-        "s4": { "title": "IV. Test location:" },
-        "location": {
-          "name": "SONG TIEN DRIVING TRAINING & TESTING CENTER",
-          "addr": "My Tho, Tien Giang",
-          "phone": "Hotline/Zalo: 0919.555.678",
-          "email": "info@daylaixesongtien.vn"
-        }
-      }
-    },
-    "CourseA1": {
-      "breadcrumb": { "home": "Home", "courses": "Courses", "a1": "Class A1" },
-      "title": "A1 Motorcycle Driving Course",
-      "intro": "The A1 driving license is for two-wheeled motorcycles with engine displacement from 50cc to under 125cc (manual/automatic). Study and take the test at Song Tien Center with a clear and transparent process.",
-      "meta": { "updated": "Updated with latest notice", "share": "Share" },
-      "cta": "Register now",
-      "quick": {
-        "title": "Students can choose manual or automatic scooters",
-        "item1Label": "Schedule:",
-        "item1Value": "Flexible based on the Center’s timetable",
-        "item2Label": "Training:",
-        "item2Value": "Learning + pre-exam practice",
-        "item3Label": "Test:",
-        "item3Value": "At a standardized test yard"
-      },
-      "section": {
-        "title": "A1 MOTORCYCLE DRIVING COURSE",
-        "p1": "Song Tien Driving Training & Testing Center provides structured training aligned with regulations. Students are guided step by step to build confidence before the exam.",
-        "subtitle1": "I. Schedule",
-        "li1": "Class opening schedule: based on the Center’s timetable (arranged by students’ needs).",
-        "li2": "Training & practice time: covers all required content with instructor support.",
-        "subtitle2": "II. Required documents",
-        "subtitle3": "III. Our commitments",
-        "c1": "All-inclusive listed tuition, no hidden fees.",
-        "c2": "Well-structured training and practice support.",
-        "c3": "Transparent, standard exam procedures.",
-        "c4": "Fast and clear administrative support."
-      },
-      "table": {
-        "col1": "Documents",
-        "col2": "Notes",
-        "r1": { "c1": "Registration form", "c2": "Provided by the Center" },
-        "r2": { "c1": "National ID copy", "c2": "Valid ID" },
-        "r3": { "c1": "Portrait photo (3x4 or 4x6)", "c2": "Bright background, clear face" },
-        "r4": { "c1": "Health certificate", "c2": "As required" },
-        "r5": { "c1": "Contact information", "c2": "Phone, address, email (if any)" }
-      },
-      "location": {
-        "title": "IV. Test location",
-        "name": "SONG TIEN DRIVING TRAINING & TESTING CENTER",
-        "addr": "Address: (replace with your real address)",
-        "phone": "Hotline: 09xx.xxx.xxx",
-        "email": "Email: info@daylaixesongtien.vn"
-      }
-    },
-    "Profile": {
-      "studentInfoTitle": "Student Information",
-      "personalProfileLink": "Personal Profile",
-      "fields": {
-        "fullName": "Full name:",
-        "phone": "Phone:",
-        "identityCard": "Citizen ID:",
-        "gender": "Gender:",
-        "birthday": "Date of birth:",
-        "address": "Address:",
-        "email": "Email:",
-        "course": "Course:"
-      }
-    },
-    "StudentQuickActions": {
-      "cta": "View details",
-      "registerSchedule": { "title": "Register Schedule", "desc": "Choose a suitable schedule" },
-      "viewSchedule": { "title": "View Schedule", "desc": "Track your weekly schedule" },
-      "notifications": { "title": "Notifications", "desc": "Reminders and latest updates", "mockAlert": "You can link a notifications page later 😄" }
-    },
-    "Schedule": {
-      "monthTitle": "Month {month} / {year}",
-      "viewTitle": "View Schedule",
-      "registerTitle": "Register Schedule",
-      "viewSubtitle": "Days with classes are highlighted. Click a day to view details.",
-      "registerSubtitle": "Available days are highlighted. Full days are marked in red.",
-      "legend": {
-        "hasClass": "Has class",
-        "noClass": "No class",
-        "available": "Available",
-        "full": "Full/Already booked",
-        "closed": "Closed"
-      },
-      "weekdays": { "mon": "Monday", "tue": "Tuesday", "wed": "Wednesday", "thu": "Thursday", "fri": "Friday", "sat": "Saturday", "sun": "Sunday" },
-      "hints": { "sessions": "{count} session(s)", "slots": "{count} slot(s)", "full": "Full" }
-    },
-    "SchedulePanel": {
-      "viewTitle": "Schedule Details",
-      "registerTitle": "Register Schedule",
-      "dateLabel": "Date:",
-      "empty": "No data for this day.",
-      "registerBtn": "Register",
-      "closeBtn": "Close"
-    },
-    "ScheduleDayDetail": {
-      "title": "Details for {date}",
-      "viewSubtitle": "List of sessions for this day.",
-      "registerSubtitle": "Choose a slot and register.",
-      "empty": "No data for this day.",
-      "registerBtn": "Register"
-    },
-    "WeeklySchedule": {
-      "headers": { "date": "Date", "time": "Time", "content": "Content", "roomPlatform": "Room/Platform", "mode": "Mode", "instructor": "Instructor", "status": "Status" },
-      "empty": "No schedule for this week.",
-      "status": { "upcoming": "Upcoming", "done": "Completed", "cancel": "Canceled" }
-    },
-    "RegistrationNopHoSo": {
-      "title": "Submit Registration Application",
-      "subtitle": "Please fill in all required information and upload the requested images to submit your application.",
-      "required_note": "indicates required fields",
-      "gender": { "male": "Male", "female": "Female", "other": "Other" },
-      "personal": {
-        "title": "Student Personal Information",
-        "fullName": "Full name",
-        "fullName_ph": "Enter full name",
-        "gender": "Gender",
-        "birthday": "Date of birth",
-        "phone": "Phone number",
-        "email": "Email",
-        "address": "Address",
-        "address_ph": "Enter address",
-        "identityCard": "ID Card Number",
-        "issuedDate": "Date of issue",
-        "issuedPlace": "Place of issue",
-        "issuedPlace_ph": "Example: Provincial Police Department"
-      },
-      "course": { "title": "Course Registration Information", "type": "License category", "expectedStart": "Expected start date", "note": "Note", "note_ph": "Example: prefer weekend classes..." },
-      "upload": {
-        "title": "Required Documents",
-        "cccdFront": "ID card (front side)",
-        "cccdBack": "ID card (back side)",
-        "portrait": "Portrait photo (3x4 or 4x6)",
-        "cccdHint": "Clear image, all corners visible, no glare.",
-        "portraitHint": "Bright background, clear face, no hat or sunglasses.",
-        "uploadAction": { "highlight": "Click to upload", "rest": "or drag and drop here" },
-        "changeImage": "Click to change",
-        "remove": "Remove"
-      },
-      "submit": { "label": "Submit application", "loading": "Submitting..." },
-      "success": "Application submitted successfully! Our staff will contact you shortly.",
-      "errors": {
-        "required": "This field is required.",
-        "invalid_email": "Invalid email address.",
-        "required_image": "Please upload the required image.",
-        "submit_failed": "Submission failed. Please try again."
-      }
-    },
-    "About": {
-      "title": "ABOUT",
-      "p1_bold": "Song Tien Driving Training & Testing Center",
-      "p1_rest": "covers over 22,000 m². The practice and testing area spans more than 11,000 m²—the largest in Tien Giang—meeting Vietnam’s National Level II testing standards. It is licensed to conduct driving tests for car licenses (B, C1, C) and motorbike licenses (A1, A). Located near My Tho city center, it is an ideal place for students from Tien Giang and neighboring provinces to study and take license exams.",
-      "p2": "We commit to a transparent, all-inclusive tuition fee—no hidden charges. Students receive free learning materials and a complete training program in accordance with regulations: Theory, Simulation, Cabin Simulation, On-yard practice, On-road practice, etc. In addition, students can practice with real test vehicles right on the official test yard and receive pre-exam coaching from instructors.",
-      "p3": "The center is professionally invested to make every exam smooth and convenient: the largest theory/simulation computer screens in the region; test vehicles are regularly renewed; the testing yard meets standards and is designed without tricky elements.",
-      "mission": "Our mission: Provide friendly and convenient services; Put students at the center; Use modern, high-tech facilities and vehicles; Always meet learners’ needs."
-    },
-    "FloatingRegister": { "label": "Register now", "aria": "Scroll to registration form" },
-    "Account": {
-      "profileTitle": "Profile",
-      "email": "Email",
-      "phone": "Phone number",
-      "active": "Active",
-      "inactive": "Inactive",
-      "goSettings": "Settings",
-      "reload": "Reload",
-      "logout": "Log out",
-      "loggingOut": "Logging out...",
-      "notLoggedIn": "You are not logged in. Please sign in to view your profile.",
-      "loadFailed": "Failed to load profile information.",
-      "backHome": "Back to home"
-    },
-    "Auth": {
-      "login": "Sign in",
-      "loggingIn": "Signing in...",
-      "logout": "Sign out",
-      "loggingOut": "Signing out...",
-      "account": "Account",
-      "settings": "Settings",
-      "email": "Email",
-      "password": "Password",
-      "forgotPassword": "Forgot password?",
-      "loginTitle": "Sign in",
-      "loginFailed": "Sign in failed",
-      "errorOccurred": "Something went wrong",
-      "placeholderEmail": "you@email.com",
-      "placeholderPassword": "••••••••",
-      "unknownUser": "Account"
-    },
-    "TopBar": { "email": "info@daylaixesongtien.vn", "hotline": "Hotline: 0919 555 678" },
-    "Header": {
-      "brand": { "line1": "Driving Training &", "line2": "Testing Center", "line3": "SONG TIEN" },
-      "Search": { "placeholder": "Search..." },
-      "floating": {
-        "help": "Support",
-        "close": "Close",
-        "open_help": "Open support menu",
-        "live_chat": "Live chat",
-        "online": "Online",
-        "close_chat": "Close chat",
-        "zalo": "Zalo",
-        "facebook": "Facebook",
-        "hotline": "Hotline",
-        "placeholder": "Type a message...",
-        "send": "Send",
-        "chat_welcome": "Hi! How can we help you?",
-        "chat_auto_reply": "Got it — please wait a moment!",
-        "register_now": "Register now"
-      },
-      "menu": {
-        "gioi-thieu": "Introduction",
-        "khoa-hoc": "Courses",
-        "dang-ky-hoc": "Register",
-        "tin-tuc": "News",
-        "hoc-vien": "Students",
-        "lien-he": "Contact",
-        "trang-cua-toi": "My page"
-      },
-      "dropdown": {
-        "khoa-hoc": {
-          "title": "All Courses",
-          "a1": "A1 – Motorcycle under 125cc (Automatic / Semi-automatic)",
-          "a": "A – Motorcycle over 125cc (Manual / Automatic)",
-          "b1": "B1 – Car up to 9 seats (Automatic / Non-professional)",
-          "b": "B – Car up to 8 seats + truck under 3.5 tons (Professional)",
-          "c1": "C1 – Truck under 7.5 tons",
-          "c": "C – Truck over 7.5 tons + Tractor unit"
-        },
-        "dang-ky-hoc": {
-          "nop-ho-so-truc-tuyen": "Online Application",
-          "hoi-dap": "FAQ",
-          "tra-cuu-thong-tin-hoc-vien": "Student Information Lookup"
-        },
-        "tin-tuc": { "thong-bao": "News & Announcements", "lich-thi": "Exam Schedule", "so-bao-danh": "Exam Candidate List" },
-        "hoc-vien": {
-          "on-tap-o-to": "Car Theory Review",
-          "on-tap-mo-to": "Motorcycle Theory Review",
-          "tai-lieu-phan-mem": "Materials & Software",
-          "dang-ky-cabin": "Cabin Registration",
-          "dang-ky-xe-cam-bien": "Sensor Car Registration"
-        },
-        "lien-he": { "lien-he": "Contact Us", "tuyen-dung": "Recruitment" }
-      }
-    },
-    "HeroBanner": { "san-thi-title": "Largest car driving test field in former Tien Giang province", "san-thi-desc": "Only 12km from Trung Luong" },
-    "FeaturesGrid": {
-      "title1": "FLEXIBLE SCHEDULE",
-      "desc1": "Learn and test right in Tien Giang",
-      "title2": "START LEARNING IMMEDIATELY",
-      "desc2": "New courses open regularly",
-      "title3": "CLEAR & TRANSPARENT",
-      "desc3": "All fees listed, no hidden costs",
-      "title4": "DEDICATED & ENTHUSIASTIC",
-      "desc4": "Experienced instructors help you learn quickly"
-    },
-    "EnrollmentTable": {
-      "title": "Enrollment Notice",
-      "motorcycle-title": "MOTORCYCLE CATEGORIES",
-      "tuition": "Tuition",
-      "exam-fee": "Exam fee",
-      "license-fee": "License fee",
-      "csgt": "collected by CSGT",
-      "total": "TOTAL",
-      "a1-title": "A1 (Under 125 cc)",
-      "a1-desc": "Automatic / Semi-automatic",
-      "a-title": "A (Over 125 cc)",
-      "a-desc": "Manual / Automatic",
-      "car-title": "CAR CATEGORIES",
-      "practice-in-office-hours": "Practice during office hours",
-      "mon-fri": "Monday to Friday",
-      "practice-outside-office-hours": "Practice outside office hours",
-      "sat-sun": "Saturday & Sunday",
-      "vip-package": "VIP Package",
-      "vip-desc": "Practice on demand & with pick-up/drop-off",
-      "b-auto": "B (Automatic)",
-      "b-manual": "B (Manual)",
-      "c1": "C1 (Truck under 7.5 tons)",
-      "upgrade-title": "CAR LICENSE UPGRADE",
-      "requirement": "Driving experience requirement",
-      "b-to-c": "B to C",
-      "req-b-2years": "B license for at least 2 years",
-      "c1-to-c": "C1 to C",
-      "req-c1-2years": "C1 license for at least 2 years",
-      "note": "*Car driving course fees do not include: Health check, Final test fee, Exam & license issuance fees"
-    },
-    "CarCourses": {
-      "title": "Car Driving Courses",
-      "view-detail": "View Details",
-      "b-auto-title": "B Automatic Transmission",
-      "b-auto-price": "19,000,000 VND",
-      "b-manual-title": "B Manual Transmission",
-      "b-manual-price": "19,000,000 VND",
-      "c1-title": "C1 – Truck Under 7.5 Tons",
-      "c1-price": "21,000,000 VND",
-      "c-upgrade-title": "Upgrade to C – Truck Over 7.5 Tons",
-      "c-upgrade-price": "8,500,000 – 10,500,000 VND"
-    },
-    "LatestPosts": { "title": "Latest Posts" },
-    "RegisterForm": { "title": "REGISTER FOR CONSULTATION", "subtitle": "Update promotional information", "name": "Full Name", "email": "Email", "phone": "Phone Number", "course": "Course", "submit": "REGISTER NOW" },
-    "LargeFieldInfo": {
-      "title": "Largest car driving test field in Tien Giang province",
-      "distance": "Only 12km from Trung Luong",
-      "studyCorner": "STUDY CORNER",
-      "car": "CAR B, C1",
-      "motorbike": "MOTORBIKE A1, A",
-      "videoTitle": "Song Tien Driving Training & Testing Center Introduction Video",
-      "imageAlt": "Song Tien Theory Classroom"
-    },
-    "footer": {
-      "main_office": {
-        "title": "MAIN OFFICE & DRIVING TEST CENTER (SONG TIEN)",
-        "address": "Lo Day Thep, Long Hoa B, Long Dinh, Dong Thap (former Tien Giang)",
-        "office_hours_label": "Enrollment office",
-        "office_hours": "07:30 - 17:00",
-        "practice_hours_label": "Practice yard",
-        "practice_hours": "07:30 - 18:00",
-        "phone": "0273.386.8888 - 0919.555.678",
-        "email": "info@daylaixesongtien.vn",
-        "map_title": "Main office map"
-      },
-      "my_tho_office": {
-        "title": "ENROLLMENT OFFICE IN MY THO CITY",
-        "address": "PG 02-10, Vincom area, 1A Hung Vuong, My Tho, Dong Thap (former Tien Giang)",
-        "hours": "07:30 - 17:00",
-        "phone": "0273.383.9999 - 0919.555.678",
-        "email": "info@daylaixesongtien.vn",
-        "map_title": "My Tho office map"
-      },
-      "social": { "facebook_link": "#", "youtube_link": "#" },
-      "copyright": "Song Tien Driving Training & Testing Center"
+  "createTitle": "Create user",
+  "editTitle": "Edit user",
+  "deleteTitle": "Delete user",
+  "deleteDesc": "Are you sure you want to delete {code} – {name}?",
+  "delete": "Delete",
+  "cancel": "Cancel",
+
+  "filterTitle": "Filter",
+
+  "cols": {
+    "code": "Staff code",
+    "role": "Role",
+    "fullName": "Full name",
+    "dob": "Date of birth",
+    "gender": "Gender",
+    "phone": "Phone",
+    "cccd": "ID number",
+    "email": "Gmail",
+    "address": "Address",
+    
+    "username": "Username",
+    "status": "Status"
+  },
+
+  "status": {
+    "ACTIVE": "Active",
+    "PAUSED": "Paused",
+    "DONE": "Stopped"
+  },
+
+  "roles": {
+    "STUDENT": "Student",
+    "INSTRUCTOR": "Instructor",
+    "ADMISSIONS": "Admissions / Sales",
+    "DISPATCH": "Practice Scheduler / Dispatch",
+    "VEHICLE_MANAGER": "Vehicle Manager",
+    "ACCOUNTANT": "Accountant",
+    "ADMIN": "Admin",
+    "OWNER": "Super Admin / Owner"
+  },
+
+  "form": {
+    "close": "Close",
+    "cancel": "Cancel",
+    "save": "Save",
+
+    "basicInfo": "Basic info",
+    "accountInfo": "Account",
+    "permissionsTitle": "Page permissions",
+    "selectAll": "Select all",
+    "clear": "Clear",
+    "singlePages": "Main pages",
+    "permHint": "Tip: Select one or more pages this account can access.",
+
+    "role": "Role",
+    "fullName": "Full name",
+    "dob": "Date of birth",
+    "gender": "Gender",
+    "genderMale": "Male",
+    "genderFemale": "Female",
+    "genderOther": "Other",
+
+    "phone": "Phone",
+    "cccd": "ID number",
+    "email": "Gmail",
+    "address": "Address",
+    "account": "Account",
+    "username": "Username",
+    "password": "Password",
+    "status": "Status",
+
+    "errors": {
+      "fullName": "Please enter full name.",
+      "dob": "Please choose date of birth.",
+      "phone": "Please enter phone.",
+      "cccd": "Please enter ID number.",
+      "email": "Please enter email.",
+      "address": "Please enter address.",
+      "username": "Please enter username.",
+      "password": "Please enter password.",
+      "allowedPages": "Please select at least one page."
     }
   }
+},
+  "Instructors": {
+    "filter": {
+      "title": "Filter",
+      "hint": "Select columns to apply search:",
+      "selectAll": "Select all",
+      "clear": "Clear",
+      "apply": "Apply"
+    },
+    "title": "Instructors",
+    "breadcrumb": "Management · Instructors",
+    "add": "Add instructor",
+
+    "createTitle": "Create instructor",
+    "editTitle": "Edit instructor",
+    "deleteTitle": "Delete instructor",
+    "deleteDesc": "Are you sure you want to delete {code} – {name}?",
+    "delete": "Delete",
+    "cancel": "Cancel",
+
+    "filterTitle": "Filter",
+
+    "cols": {
+      "code": "Code",
+      "name": "Full name",
+      "phone": "Phone",
+      "cccd": "National ID",
+      "address": "Address",
+      "email": "Email",
+      "rank": "Teaching rank",
+      "status": "Status",
+      "actions": "Actions"
+    },
+
+    "status": {
+      "ACTIVE": "Active",
+      "PAUSED": "Paused",
+      "DONE": "Stopped"
+    },
+
+    "form": {
+      "close": "Close",
+      "cancel": "Cancel",
+      "save": "Save",
+
+      "name": "Full name",
+      "namePh": "Nguyen Van A",
+      "phone": "Phone",
+      "phonePh": "0912345678",
+      "cccd": "National ID",
+      "cccdPh": "079123456789",
+      "email": "Email",
+      "emailPh": "abc@gmail.com",
+      "address": "Address",
+      "addressPh": "Ho Chi Minh City",
+
+      "rank": "Teaching rank",
+      "rankPh": "Select a rank",
+
+      "status": "Status",
+      "statusActive": "Active",
+      "statusPaused": "Paused",
+      "statusDone": "Stopped",
+
+      "errors": {
+        "name": "Please enter instructor name.",
+        "phone": "Please enter phone number.",
+        "cccd": "Please enter national ID.",
+        "address": "Please enter address.",
+        "email": "Please enter email.",
+        "rank": "Please choose a teaching rank."
+      }
+    }
+  },
+    "Students": {
+      "filter": {
+      "title": "Filter",
+      "hint": "Select columns to apply search:",
+      "selectAll": "Select all",
+      "clear": "Clear",
+      "apply": "Apply"
+    },
+        "title": "Students",
+        "breadcrumb": "Administration · Students",
+        "add": "Add student",
+
+        "createTitle": "Create student",
+        "editTitle": "Edit student",
+
+        "deleteTitle": "Delete student",
+        "deleteDesc": "Are you sure you want to delete student {code} – {name}?",
+        "delete": "Delete",
+        "cancel": "Cancel",
+
+        "cols": {
+          "code": "Student ID",
+          "name": "Full name",
+          "phone": "Phone number",
+          "cccd": "Citizen ID",
+          "address": "Address",
+          "email": "Email",
+          "course": "Course",
+          "status": "Status"
+        },
+
+        "status": {
+          "ACTIVE": "Active",
+          "PAUSED": "Paused",
+          "DONE": "Completed"
+        },
+
+        "form": {
+          "close": "Close",
+          "cancel": "Cancel",
+          "save": "Save",
+
+          "name": "Full name",
+          "namePh": "Nguyen Van A",
+
+          "phone": "Phone number",
+          "phonePh": "0912345678",
+
+          "cccd": "Citizen ID",
+          "cccdPh": "079123456789",
+
+          "email": "Email",
+          "emailPh": "abc@gmail.com",
+
+          "address": "Address",
+          "addressPh": "Ho Chi Minh City",
+
+          "course": "Course",
+          "coursePh": "B2 - 3 months",
+
+          "status": "Status",
+          "statusActive": "Active",
+          "statusPaused": "Paused",
+          "statusDone": "Completed",
+
+          "errors": {
+            "name": "Please enter full name.",
+            "phone": "Please enter phone number.",
+            "cccd": "Please enter citizen ID.",
+            "email": "Please enter email.",
+            "address": "Please enter address.",
+            "course": "Please enter course."
+          }
+        }
+      },
+        "CreateUser": {
+        "title": "Create User",
+        "breadcrumb": "Management · Users · Create",
+        "back": "Back",
+        "reset": "Reset",
+        "create": "Create",
+        "creating": "Creating...",
+        "success": "User created successfully.",
+        "errors": {
+          "fullName": "Please enter full name.",
+          "email": "Invalid Gmail address.",
+          "phone": "Please enter phone number.",
+          "dob": "Please choose date of birth.",
+          "address": "Please enter address.",
+          "roles": "Please select at least one role.",
+          "unknown": "Something went wrong while creating user."
+        },
+        "form": {
+          "sectionTitle": "Information",
+          "roleTitle": "Title",
+          "roleTitleHint": "Display title can be selected from the primary role.",
+          "status": "Status",
+          "statusActive": "Active",
+          "statusDisabled": "Disabled",
+          "fullName": "Full name",
+          "fullNamePh": "Nguyen Tan Phat",
+          "gender": "Gender",
+          "genderMale": "Male",
+          "genderFemale": "Female",
+          "genderOther": "Other",
+          "dob": "Date of birth",
+          "phone": "Phone",
+          "phonePh": "0369809077",
+          "email": "Gmail",
+          "emailPh": "nguyentanphat100102it@gmail.com",
+          "address": "Address",
+          "addressPh": "Ho Chi Minh City"
+        },
+        "roles": {
+          "title": "Roles (RBAC)",
+          "subtitle": "You can select multiple roles. Permissions are merged via RBAC.",
+          "previewTitle": "Permission groups (preview)",
+          "emptyPreview": "None.",
+          "previewNote": "* Preview is informational. Actual permissions come from role_permissions.",
+          "items": {
+            "student": {
+              "name": "Student",
+              "desc": "View schedule/progress, rentals, payments, AI chat (self)."
+            },
+            "instructor": {
+              "name": "Instructor",
+              "desc": "View assigned teaching schedule, attendance, update status."
+            },
+            "admissions": {
+              "name": "Admissions / Sales",
+              "desc": "Review admissions, create students, internal AI."
+            },
+            "training_officer": {
+              "name": "Training Officer",
+              "desc": "Manage courses/enrollments/theory schedule/assignments, training reports."
+            },
+            "dispatch": {
+              "name": "Dispatch",
+              "desc": "Manage practice schedules, confirm rentals, handle conflicts, scheduling reports."
+            },
+            "vehicle_manager": {
+              "name": "Vehicle Manager",
+              "desc": "Manage fleet, maintenance, lock vehicle status, fleet reports."
+            },
+            "accountant": {
+              "name": "Accountant",
+              "desc": "Manage payments/refunds, finance reports."
+            },
+            "hr_manager": {
+              "name": "HR Manager",
+              "desc": "Create users, activate/disable, assign roles by policy."
+            },
+            "admin": {
+              "name": "Administrator",
+              "desc": "RBAC, system settings, audit logs, business modules per policy."
+            },
+            "super_admin": {
+              "name": "Super Admin / Owner",
+              "desc": "Full system access (*)."
+            }
+          }
+        }
+      },
+        "Notifications": {
+        "title": "Notifications",
+        "breadcrumb": "Admin / Notifications",
+        "filters": "Filters",
+        "unread": "Unread",
+        "markAllRead": "Mark all read",
+        "empty": "No notifications yet",
+        "student": "Student",
+        "course": "Course",
+        "phone": "Phone",
+        "review": "Review result",
+        "type": {
+          "all": "All",
+          "course": "Course registrations",
+          "profile": "Profile reviews"
+        },
+        "status": {
+          "all": "All",
+          "unread": "Unread",
+          "read": "Read"
+        },
+        "reviewResult": {
+          "approved": "Approved",
+          "need_more": "Need more info",
+          "rejected": "Rejected"
+        }
+      },
+        "PostsAdmin": {
+          "title": "Posts",
+          "breadcrumb": "Management • Posts",
+          "listTitle": "Posts list",
+          "new": "New",
+          "search": "Search posts...",
+          "date": "Date",
+          "empty": "No posts yet",
+          "confirmDelete": "Delete this post?",
+          "newDefaultTitle": "New post",
+          "newDefaultContent": "Write your content...",
+          "status": {
+            "draft": "Draft",
+            "published": "Published"
+          }
+        },
+        "PostsEditor": {
+          "pickLeft": "Select a post on the left or create a new one.",
+          "editor": "Editor",
+          "title": "Title",
+          "date": "Publish date",
+          "slug": "Slug",
+          "cover": "Cover image",
+          "pickCover": "Pick cover",
+          "coverHint": "Cover shows at the top of the post.",
+          "content": "Content",
+          "insertImage": "Insert image",
+          "insertHint": "Image will be appended to the content.",
+          "contentHint": "You can type text or paste HTML (p, img...) to render like a news article.",
+          "publish": "Publish",
+          "saveDraft": "Save draft",
+          "preview": "Preview",
+          "ph": {
+            "title": "Enter title...",
+            "slug": "example-post",
+            "content": "<p>Content...</p>"
+          }
+        },
+        "PostsClient": {
+          "title": "News",
+          "empty": "No posts yet.",
+          "notFound": "Post not found."
+        },
+        "ChangePassword": {
+          "title": "Change password",
+          "breadcrumb": "Account • Change password",
+          "subtitle": "Update your password",
+          "hint": "New password must be at least 8 characters. Avoid reusing old passwords.",
+          "current": "Current password",
+          "new": "New password",
+          "confirm": "Confirm new password",
+          "save": "Save password",
+          "saving": "Saving...",
+          "reset": "Reset",
+          "success": "Password changed successfully!",
+          "placeholder": {
+            "current": "Enter current password",
+            "new": "Enter new password",
+            "confirm": "Re-enter new password"
+          },
+          "error": {
+            "required": "This field is required",
+            "min8": "New password must be at least 8 characters",
+            "notMatch": "Passwords do not match",
+            "invalid": "Invalid input"
+          }
+        },
+        "PersonalInformation": {
+          "title": "Personal information",
+          "breadcrumb": "Account • Personal information",
+          "edit": "Edit",
+          "save": "Save",
+          "cancel": "Cancel",
+          "avatar": "Avatar",
+          "avatarHint": "PNG/JPG only. Recommended 400x400.",
+          "changeAvatar": "Change avatar",
+          "info": "Information",
+          "roleLabel": "Role",
+          "fullName": "Full name",
+          "gender": "Gender",
+          "genderMale": "Male",
+          "genderFemale": "Female",
+          "genderOther": "Other",
+          "dob": "Date of birth",
+          "phone": "Phone",
+          "email": "Email",
+          "address": "Address",
+          "readOnlyHint": "Click “Edit” to update your info.",
+          "role": {
+            "admin": "Administrator"
+          }
+        },
+        "Chat": {
+        "title": "Messages",
+        "breadcrumb": "Manage • Messages",
+        "inbox": "Inbox",
+        "search": "Search name/phone/message...",
+        "empty": "No conversations",
+        "pickLeft": "Pick a conversation on the left.",
+        "placeholder": "Type a message... (Enter to send, Shift+Enter new line)",
+        "hintEnter": "Enter: send • Shift+Enter: new line",
+        "onlineMock": "Active",
+        "channel": {
+          "facebook": "Facebook",
+          "zalo": "Zalo",
+          "phone": "Phone"
+        }
+      },
+        "UserMenu": {
+          "name": "Nguyen Tan Phat",
+          "role": "Admin",
+          "profile": "Profile",
+          "changePassword": "Change password",
+          "logout": "Log out"
+        },
+        "Common": {
+          "appName": "Driving Center Admin",
+          "loading": "Loading...",
+          "search": "Search...",
+          "save": "Save",
+          "cancel": "Cancel",
+          "close": "Close"
+        },
+        "Nav": {
+          "ai": "AI",
+          "admissions_group": "Admissions",
+          "people": "People",
+          "training": "Training",
+          "practice": "Practice & Rentals",
+          "fleet": "Fleet & Maintenance",
+          "finance_reports": "Finance & Reports",
+          "system": "System",
+          "content": "Content",
+        "subtitle": "Driving Center Management",
+        "menu": "MENU",
+        "account": "Account",
+        "language": "Language",
+
+        "dashboard": "Dashboard",
+        "analytics": "Analytics",
+        "chat": "AI Chat",
+        "notifications": "Notifications",
+
+        "admissions": "Admissions (Applications)",
+
+        "users": "Users",
+        "users_create": "Create User",
+        "students": "Students",
+        "instructors": "Instructors",
+        "hr": "HR / Staff",
+
+        "courses": "Courses",
+        "enrollments": "Enrollments",
+
+        "theory_sessions": "Theory Schedule",
+        "teaching_assignments": "Teaching Assignments",
+        "attendance": "Attendance",
+
+        "practice_schedules": "Practice Schedule",
+        "rentals": "Private Vehicle Rental",
+        "rental_packages": "Rental Packages",
+
+        "vehicles": "Fleet",
+        "maintenance": "Maintenance",
+
+        "payments": "Payments",
+        "reports": "Reports",
+
+        "rbac": "Access Control (RBAC)",
+        "system_settings": "System Settings",
+        "audit_logs": "Audit Logs",
+
+        "posts": "Posts"
+      },
+        "Analytics": {
+          "title": "Analytics",
+          "breadcrumb": "Management • Analytics",
+          "desc": "Analytics page (you can add charts and daily/monthly reports here)."
+        },
+        "Topbar": {
+          "title": "Admin",
+          "center": "Driving Center",
+          "action": "Create"
+        },
+        "Dashboard": {
+          "title": "Dashboard",
+          "breadcrumb": "Management • Dashboard",
+          "card": {
+            "students": "Total students",
+            "instructors": "Total instructors",
+            "courses": "Total courses",
+            "revenue": "Monthly revenue"
+          },
+          "stats": {
+            "title": "Activity statistics",
+            "visits": "Visits",
+            "courseViews": "Course views",
+            "registrations": "Course registrations",
+            "filterCourse": "Filter by class",
+            "hint": "Data is shown for the selected class.",
+            "selected": "Selected"
+          }
+        },
+        "Courses": {
+          "title": "Courses",
+          "breadcrumb": "Management • Courses",
+          "add": "+ Add course",
+          "edit": "Edit",
+          "delete": "Delete",
+          "cols": {
+            "code": "Code",
+            "name": "Course name",
+            "duration": "Duration",
+            "fee": "Fee",
+            "status": "Status"
+          },
+          "status": {
+            "OPEN": "Open",
+            "LOCKED": "Locked"
+          }
+        },
+        "Table": {
+          "search": "Search...",
+          "filter": "Filter",
+          "reset": "Reset",
+          "empty": "No data",
+          "actions": "Actions",
+          "perPage": "Rows",
+          "of": "of"
+        },
+
+        "CourseC": {
+          "breadcrumb": { "home": "Home", "courses": "Courses", "c": "Class C" },
+          "imageAlt": "Class C driving course",
+          "title": "Class C Driving Course",
+          "intro": {
+            "p1": "A Class C driving license is issued for drivers of:",
+            "li1": "Trucks and specialized vehicles with a permitted gross weight over 7,500 kg;",
+            "li2": "Vehicles permitted under Class B and C1 that tow a trailer with permitted gross weight ≤ 750 kg;",
+            "li3": "Clear training program with pre-exam review support.",
+            "note": "Class C courses open every month."
+          },
+          "meta": { "updated": "Updated with latest announcements", "share": "Share" },
+          "category": { "label": "Category", "value": "Car Driving Courses" },
+          "cta": "Register now",
+          "descLabel": "Description",
+          "quick": {
+            "title": "Course summary",
+            "item1Label": "Schedule:",
+            "item1Value": "Monthly intake",
+            "item2Label": "Format:",
+            "item2Value": "Training + pre-exam review",
+            "item3Label": "Test:",
+            "item3Value": "At a standard testing ground"
+          },
+          "section": { "title": "CLASS C DRIVING COURSE", "subtitle1": "I. Duration:", "subtitle2": "II. Documents", "subtitle3": "III. Our commitments:" },
+          "time": {
+            "li1": "Opening schedule: Courses run continuously with monthly intake",
+            "li2": "Training duration: 3 months",
+            "li3": "Final course test: about 3 days after graduation",
+            "li4": "Official license test: 10–15 days after the final course test"
+          },
+          "table": {
+            "col1": "REQUIRED DOCUMENTS",
+            "col2": "NOTES",
+            "r1": { "c1": "01 copy of Citizen ID", "c2": "Two-sided photocopy, no notarization required" },
+            "r2": { "c1": "Health certificate", "c2": "From eligible hospital/clinic" },
+            "r3": { "c1": "Training & testing application form", "c2": "Download the application form" },
+            "r4": { "c1": "Testing application form", "c2": "Download the testing form" },
+            "r5": { "c1": "Digital photo", "c2": "03 photos taken at the center" },
+            "r6": { "c1": "Preliminary certificate", "c2": "May be required depending on the course" }
+          },
+          "commit": { "c1": "All-inclusive tuition, no hidden fees", "c2": "Free learning materials", "c3": "Fast training process", "c4": "Online registration support via Zalo" },
+          "location": {
+            "title": "IV. Test location:",
+            "name": "SONG TIEN DRIVING TRAINING & TESTING CENTER",
+            "addr": "Address: (update your real address here)",
+            "phone": "Hotline/Zalo: 0919.555.678",
+            "email": "Email: info@daylaixesongtien.vn",
+            "mapSrc": "https://www.google.com/maps?q=My%20Tho%20Tien%20Giang&output=embed"
+          }
+        },
+        "CourseC1": {
+          "breadcrumb": { "home": "Home", "courses": "Courses", "c1": "Class C1" },
+          "imageAlt": "C1 driving course",
+          "title": "C1 driving course",
+          "intro": {
+            "p1": "Class C1 license is issued for drivers of:",
+            "li1": "Trucks and specialized vehicles with gross design weight from 3,500 kg to 7,500 kg;",
+            "li2": "C1 vehicles towing a trailer with gross design weight ≤ 750 kg;",
+            "li3": "Vehicles under class B rules (passenger cars up to 8 seats excluding the driver);",
+            "li4": "Trucks/special vehicles with gross design weight ≤ 3,500 kg; trailers ≤ 750 kg;",
+            "note": "C1 course opens monthly."
+          },
+          "meta": { "updated": "Updated with the latest notice", "share": "Share" },
+          "category": { "label": "Category", "value": "Truck driving courses" },
+          "cta": "Register now",
+          "descLabel": "Description",
+          "quick": {
+            "title": "Quick info",
+            "item1Label": "Schedule:",
+            "item1Value": "Monthly opening",
+            "item2Label": "Format:",
+            "item2Value": "Learning + review before the test",
+            "item3Label": "Test:",
+            "item3Value": "At a certified test ground"
+          },
+          "section": { "title": "CLASS C1 DRIVING COURSE", "subtitle1": "I. Schedule:", "subtitle2": "II. Documents", "subtitle3": "III. Our commitment:" },
+          "time": {
+            "li1": "Opening schedule: Classes are organized continuously and open monthly",
+            "li2": "Training duration: 3 months",
+            "li3": "Final test: About 3 days after the closing session",
+            "li4": "License test: 10–15 days after graduation test"
+          },
+          "table": {
+            "col1": "REQUIRED DOCUMENTS",
+            "col2": "NOTES",
+            "r1": { "c1": "01 copy of national ID", "c2": "Photocopy both sides, no notarization needed" },
+            "r2": { "c1": "Health certificate", "c2": "At eligible hospitals/clinics" },
+            "r3": { "c1": "Training & test application form", "c2": "Download training & test form" },
+            "r4": { "c1": "Test application form", "c2": "Download test form" },
+            "r5": { "c1": "Digital photo", "c2": "03 photos taken at the center" }
+          },
+          "commit": { "c1": "All-inclusive tuition, no hidden fees", "c2": "Free learning materials", "c3": "Fast training timeline", "c4": "Online registration support via Zalo" },
+          "location": {
+            "title": "IV. Car license test location:",
+            "name": "SONG TIEN DRIVING TRAINING & TEST CENTER",
+            "addr": "Address: (replace with your real address here)",
+            "phone": "Hotline/Zalo: 0919.555.678",
+            "email": "Email: info@daylaixesongtien.vn",
+            "mapSrc": "https://www.google.com/maps?q=My%20Tho%20Tien%20Giang&output=embed"
+          }
+        },
+        "CourseB1": {
+          "breadcrumb": { "home": "Home", "courses": "Courses", "b1": "Class B (Manual)" },
+          "imageAlt": "B (Manual) driving course",
+          "title": "B (Manual) driving course",
+          "intro": {
+            "p1": "The B (manual) driving license allows you to drive:",
+            "li1": "Passenger cars up to 8 seats (excluding the driver’s seat);",
+            "li2": "Trucks and specialized vehicles with gross vehicle weight ≤ 3,500 kg;",
+            "li3": "Vehicles in the B class towing a trailer with design GVW ≤ 750 kg.",
+            "note": "This course opens monthly."
+          },
+          "meta": { "updated": "Updated via latest notice", "share": "Share" },
+          "category": { "label": "Category", "value": "Car driving course" },
+          "cta": "Register now",
+          "descLabel": "Description",
+          "section": { "title": "B (MANUAL) DRIVING COURSE", "subtitle1": "I. Schedule:", "subtitle2": "II. Documents", "subtitle3": "III. Our commitments:" },
+          "time": {
+            "li1": "Class opening: continuous enrollment, monthly openings",
+            "li2": "Training duration: 3 months",
+            "li3": "Final exam: about 3 days after course completion",
+            "li4": "Official license test: 10–15 days after graduation test"
+          },
+          "table": {
+            "col1": "DOCUMENTS",
+            "col2": "NOTES",
+            "r1": { "c1": "Copy of ID card", "c2": "Both sides, no notarization required" },
+            "r2": { "c1": "Health certificate", "c2": "From an eligible hospital/clinic" },
+            "r3": { "c1": "Training & testing application", "c2": "Download the form" },
+            "r4": { "c1": "Testing application", "c2": "Download the form" },
+            "r5": { "c1": "Digital photos", "c2": "3 photos taken at the center" }
+          },
+          "commit": { "c1": "All-inclusive tuition, no hidden fees", "c2": "Free learning materials", "c3": "Fast training timeline", "c4": "Online registration support via Zalo" },
+          "location": {
+            "title": "IV. Test location:",
+            "name": "SONG TIEN DRIVING TRAINING & TESTING CENTER",
+            "addr": "Address: (replace with your real address)",
+            "phone": "Hotline/Zalo: 0919.555.678",
+            "email": "Email: info@daylaixesongtien.vn",
+            "mapSrc": "https://www.google.com/maps?q=My%20Tho%20Tien%20Giang&output=embed"
+          },
+          "quick": {
+            "title": "Quick info",
+            "item1Label": "Schedule:",
+            "item1Value": "Monthly opening",
+            "item2Label": "Format:",
+            "item2Value": "Learning + review before the test",
+            "item3Label": "Test:",
+            "item3Value": "At a certified test ground"
+          }
+        },
+        "CourseB": {
+          "breadcrumb": { "home": "Home", "courses": "Courses", "b": "Class B (Automatic)" },
+          "imageAlt": "Class B automatic driving course",
+          "title": "Class B automatic driving course",
+          "intro": {
+            "p1": "Class B automatic driving license is issued for operating:",
+            "li1": "Automatic transmission cars (including electric cars);",
+            "li2": "Passenger cars up to 8 seats (excluding the driver’s seat);",
+            "li3": "Trucks and specialized vehicles with a design gross weight up to 3,500 kg.",
+            "note": "This course opens every month."
+          },
+          "meta": { "updated": "Updated by latest notice", "share": "Share" },
+          "category": { "label": "Category:", "value": "Car Driving Course" },
+          "cta": "Register now",
+          "quick": {
+            "title": "Quick info",
+            "item1Label": "Format:",
+            "item1Value": "Theory + Practice",
+            "item2Label": "Schedule:",
+            "item2Value": "Monthly intake",
+            "item3Label": "Test:",
+            "item3Value": "At a certified test yard"
+          },
+          "descriptionTag": "Description",
+          "section": { "title": "CLASS B AUTOMATIC DRIVING COURSE" },
+          "time": {
+            "title": "I. Duration:",
+            "li1": "Classes open continuously with monthly intake",
+            "li2": "Training duration: 3 months",
+            "li3": "Final course test: about 3 days after graduation",
+            "li4": "License exam: 10–15 days after the final test"
+          },
+          "docs": { "title": "II. Required documents:" },
+          "table": {
+            "col1": "DOCUMENT",
+            "col2": "NOTES",
+            "r1": { "c1": "Citizen ID copy", "c2": "Copy both sides / no notarization" },
+            "r2": { "c1": "Health certificate", "c2": "From hospital/clinic" },
+            "r3": { "c1": "Training & exam application form", "c2": "Provided at the center" },
+            "r4": { "c1": "3x4 photo (blue background)", "c2": "Can be taken at the center" },
+            "r5": { "c1": "Portrait photo", "c2": "Can be taken at the center" }
+          },
+          "commit": {
+            "title": "III. Our commitment:",
+            "c1": "All-inclusive tuition, no hidden fees",
+            "c2": "Free learning materials",
+            "c3": "Fast training schedule",
+            "c4": "Online support via Zalo"
+          },
+          "location": {
+            "title": "IV. Test location:",
+            "name": "SONG TIEN DRIVING TRAINING & TEST CENTER",
+            "addr": "My Tho City, Tien Giang",
+            "time": "07:30 - 18:00",
+            "phone": "Hotline/Zalo: 0919.555.678",
+            "email": "info@daylaixesongtien.vn"
+          }
+        },
+        "CourseA": {
+          "breadcrumb": { "home": "Home", "courses": "Courses", "a": "Class A" },
+          "title": "Class A Motorbike Driving Course",
+          "introBullet1": "Class A1 license applies to two-wheeled motorbikes up to under 125cc or electric motor power up to 11 kW.",
+          "introBullet2": "Class A license applies to two-wheeled motorbikes from 125cc or electric motor power over 11 kW, and vehicles allowed under the A1 category.",
+          "meta": { "updated": "Updated with latest notice", "share": "Share" },
+          "category": { "label": "Category", "value": "Motorbike driving course" },
+          "cta": "Register now",
+          "body": {
+            "descLabel": "Description",
+            "title": "CLASS A MOTORBIKE DRIVING COURSE",
+            "s1": { "title": "I. Schedule:", "li1": "Enrollment: Courses open continuously, with monthly intakes" },
+            "s2": { "title": "II. Documents" },
+            "table": {
+              "col1": "REQUIRED DOCUMENTS",
+              "col2": "NOTES",
+              "r1": { "c1": "01 copy of chip-based ID card", "c2": "Copy both sides, no corner cutting, notarized" },
+              "r2": { "c1": "Training & exam registration form", "c2": "Download the registration form" },
+              "r3": { "c1": "Exam request form", "c2": "Download the exam request form" },
+              "r4": { "c1": "02 photos 3x4 (blue background)", "c2": "Can be taken at the center" },
+              "r5": { "c1": "Exam photo capture", "c2": "Can be done at the center on the practice day (if enough registrations)" }
+            },
+            "s3": {
+              "title": "III. Our commitment:",
+              "li1": "All-inclusive tuition, no hidden fees",
+              "li2": "Free learning materials",
+              "li3": "Fast training timeline",
+              "li4": "Online support via Zalo"
+            },
+            "s4": { "title": "IV. Test location:" },
+            "location": {
+              "name": "SONG TIEN DRIVING TRAINING & TESTING CENTER",
+              "addr": "My Tho, Tien Giang",
+              "phone": "Hotline/Zalo: 0919.555.678",
+              "email": "info@daylaixesongtien.vn"
+            }
+          }
+        },
+        "CourseA1": {
+          "breadcrumb": { "home": "Home", "courses": "Courses", "a1": "Class A1" },
+          "title": "A1 Motorcycle Driving Course",
+          "intro": "The A1 driving license is for two-wheeled motorcycles with engine displacement from 50cc to under 125cc (manual/automatic). Study and take the test at Song Tien Center with a clear and transparent process.",
+          "meta": { "updated": "Updated with latest notice", "share": "Share" },
+          "cta": "Register now",
+          "quick": {
+            "title": "Students can choose manual or automatic scooters",
+            "item1Label": "Schedule:",
+            "item1Value": "Flexible based on the Center’s timetable",
+            "item2Label": "Training:",
+            "item2Value": "Learning + pre-exam practice",
+            "item3Label": "Test:",
+            "item3Value": "At a standardized test yard"
+          },
+          "section": {
+            "title": "A1 MOTORCYCLE DRIVING COURSE",
+            "p1": "Song Tien Driving Training & Testing Center provides structured training aligned with regulations. Students are guided step by step to build confidence before the exam.",
+            "subtitle1": "I. Schedule",
+            "li1": "Class opening schedule: based on the Center’s timetable (arranged by students’ needs).",
+            "li2": "Training & practice time: covers all required content with instructor support.",
+            "subtitle2": "II. Required documents",
+            "subtitle3": "III. Our commitments",
+            "c1": "All-inclusive listed tuition, no hidden fees.",
+            "c2": "Well-structured training and practice support.",
+            "c3": "Transparent, standard exam procedures.",
+            "c4": "Fast and clear administrative support."
+          },
+          "table": {
+            "col1": "Documents",
+            "col2": "Notes",
+            "r1": { "c1": "Registration form", "c2": "Provided by the Center" },
+            "r2": { "c1": "National ID copy", "c2": "Valid ID" },
+            "r3": { "c1": "Portrait photo (3x4 or 4x6)", "c2": "Bright background, clear face" },
+            "r4": { "c1": "Health certificate", "c2": "As required" },
+            "r5": { "c1": "Contact information", "c2": "Phone, address, email (if any)" }
+          },
+          "location": {
+            "title": "IV. Test location",
+            "name": "SONG TIEN DRIVING TRAINING & TESTING CENTER",
+            "addr": "Address: (replace with your real address)",
+            "phone": "Hotline: 09xx.xxx.xxx",
+            "email": "Email: info@daylaixesongtien.vn"
+          }
+        },
+        "Profile": {
+          "studentInfoTitle": "Student Information",
+          "personalProfileLink": "Personal Profile",
+          "fields": {
+            "fullName": "Full name:",
+            "phone": "Phone:",
+            "identityCard": "Citizen ID:",
+            "gender": "Gender:",
+            "birthday": "Date of birth:",
+            "address": "Address:",
+            "email": "Email:",
+            "course": "Course:"
+          }
+        },
+        "StudentQuickActions": {
+          "cta": "View details",
+          "registerSchedule": { "title": "Register Schedule", "desc": "Choose a suitable schedule" },
+          "viewSchedule": { "title": "View Schedule", "desc": "Track your weekly schedule" },
+          "notifications": { "title": "Notifications", "desc": "Reminders and latest updates", "mockAlert": "You can link a notifications page later 😄" }
+        },
+        "Schedule": {
+          "monthTitle": "Month {month} / {year}",
+          "viewTitle": "View Schedule",
+          "registerTitle": "Register Schedule",
+          "viewSubtitle": "Days with classes are highlighted. Click a day to view details.",
+          "registerSubtitle": "Available days are highlighted. Full days are marked in red.",
+          "legend": {
+            "hasClass": "Has class",
+            "noClass": "No class",
+            "available": "Available",
+            "full": "Full/Already booked",
+            "closed": "Closed"
+          },
+          "weekdays": { "mon": "Monday", "tue": "Tuesday", "wed": "Wednesday", "thu": "Thursday", "fri": "Friday", "sat": "Saturday", "sun": "Sunday" },
+          "hints": { "sessions": "{count} session(s)", "slots": "{count} slot(s)", "full": "Full" }
+        },
+        "SchedulePanel": {
+          "viewTitle": "Schedule Details",
+          "registerTitle": "Register Schedule",
+          "dateLabel": "Date:",
+          "empty": "No data for this day.",
+          "registerBtn": "Register",
+          "closeBtn": "Close"
+        },
+        "ScheduleDayDetail": {
+          "title": "Details for {date}",
+          "viewSubtitle": "List of sessions for this day.",
+          "registerSubtitle": "Choose a slot and register.",
+          "empty": "No data for this day.",
+          "registerBtn": "Register"
+        },
+        "WeeklySchedule": {
+          "headers": { "date": "Date", "time": "Time", "content": "Content", "roomPlatform": "Room/Platform", "mode": "Mode", "instructor": "Instructor", "status": "Status" },
+          "empty": "No schedule for this week.",
+          "status": { "upcoming": "Upcoming", "done": "Completed", "cancel": "Canceled" }
+        },
+        "RegistrationNopHoSo": {
+          "title": "Submit Registration Application",
+          "subtitle": "Please fill in all required information and upload the requested images to submit your application.",
+          "required_note": "indicates required fields",
+          "gender": { "male": "Male", "female": "Female", "other": "Other" },
+          "personal": {
+            "title": "Student Personal Information",
+            "fullName": "Full name",
+            "fullName_ph": "Enter full name",
+            "gender": "Gender",
+            "birthday": "Date of birth",
+            "phone": "Phone number",
+            "email": "Email",
+            "address": "Address",
+            "address_ph": "Enter address",
+            "identityCard": "ID Card Number",
+            "issuedDate": "Date of issue",
+            "issuedPlace": "Place of issue",
+            "issuedPlace_ph": "Example: Provincial Police Department"
+          },
+          "course": { "title": "Course Registration Information", "type": "License category", "expectedStart": "Expected start date", "note": "Note", "note_ph": "Example: prefer weekend classes..." },
+          "upload": {
+            "title": "Required Documents",
+            "cccdFront": "ID card (front side)",
+            "cccdBack": "ID card (back side)",
+            "portrait": "Portrait photo (3x4 or 4x6)",
+            "cccdHint": "Clear image, all corners visible, no glare.",
+            "portraitHint": "Bright background, clear face, no hat or sunglasses.",
+            "uploadAction": { "highlight": "Click to upload", "rest": "or drag and drop here" },
+            "changeImage": "Click to change",
+            "remove": "Remove"
+          },
+          "submit": { "label": "Submit application", "loading": "Submitting..." },
+          "success": "Application submitted successfully! Our staff will contact you shortly.",
+          "errors": {
+            "required": "This field is required.",
+            "invalid_email": "Invalid email address.",
+            "required_image": "Please upload the required image.",
+            "submit_failed": "Submission failed. Please try again."
+          }
+        },
+        "About": {
+          "title": "ABOUT",
+          "p1_bold": "Song Tien Driving Training & Testing Center",
+          "p1_rest": "covers over 22,000 m². The practice and testing area spans more than 11,000 m²—the largest in Tien Giang—meeting Vietnam’s National Level II testing standards. It is licensed to conduct driving tests for car licenses (B, C1, C) and motorbike licenses (A1, A). Located near My Tho city center, it is an ideal place for students from Tien Giang and neighboring provinces to study and take license exams.",
+          "p2": "We commit to a transparent, all-inclusive tuition fee—no hidden charges. Students receive free learning materials and a complete training program in accordance with regulations: Theory, Simulation, Cabin Simulation, On-yard practice, On-road practice, etc. In addition, students can practice with real test vehicles right on the official test yard and receive pre-exam coaching from instructors.",
+          "p3": "The center is professionally invested to make every exam smooth and convenient: the largest theory/simulation computer screens in the region; test vehicles are regularly renewed; the testing yard meets standards and is designed without tricky elements.",
+          "mission": "Our mission: Provide friendly and convenient services; Put students at the center; Use modern, high-tech facilities and vehicles; Always meet learners’ needs."
+        },
+        "FloatingRegister": { "label": "Register now", "aria": "Scroll to registration form" },
+        "Account": {
+          "profileTitle": "Profile",
+          "email": "Email",
+          "phone": "Phone number",
+          "active": "Active",
+          "inactive": "Inactive",
+          "goSettings": "Settings",
+          "reload": "Reload",
+          "logout": "Log out",
+          "loggingOut": "Logging out...",
+          "notLoggedIn": "You are not logged in. Please sign in to view your profile.",
+          "loadFailed": "Failed to load profile information.",
+          "backHome": "Back to home"
+        },
+        "Auth": {
+          "login": "Sign in",
+          "loggingIn": "Signing in...",
+          "logout": "Sign out",
+          "loggingOut": "Signing out...",
+          "account": "Account",
+          "settings": "Settings",
+          "email": "Email",
+          "password": "Password",
+          "forgotPassword": "Forgot password?",
+          "loginTitle": "Sign in",
+          "loginFailed": "Sign in failed",
+          "errorOccurred": "Something went wrong",
+          "placeholderEmail": "you@email.com",
+          "placeholderPassword": "••••••••",
+          "unknownUser": "Account"
+        },
+        "TopBar": { "email": "info@daylaixesongtien.vn", "hotline": "Hotline: 0919 555 678" },
+        "Header": {
+          "brand": { "line1": "Driving Training &", "line2": "Testing Center", "line3": "SONG TIEN" },
+          "Search": { "placeholder": "Search..." },
+          "floating": {
+            "help": "Support",
+            "close": "Close",
+            "open_help": "Open support menu",
+            "live_chat": "Live chat",
+            "online": "Online",
+            "close_chat": "Close chat",
+            "zalo": "Zalo",
+            "facebook": "Facebook",
+            "hotline": "Hotline",
+            "placeholder": "Type a message...",
+            "send": "Send",
+            "chat_welcome": "Hi! How can we help you?",
+            "chat_auto_reply": "Got it — please wait a moment!",
+            "register_now": "Register now"
+          },
+          "menu": {
+            "gioi-thieu": "Introduction",
+            "khoa-hoc": "Courses",
+            "dang-ky-hoc": "Register",
+            "tin-tuc": "News",
+            "hoc-vien": "Students",
+            "lien-he": "Contact",
+            "trang-cua-toi": "My page"
+          },
+          "dropdown": {
+            "khoa-hoc": {
+              "title": "All Courses",
+              "a1": "A1 – Motorcycle under 125cc (Automatic / Semi-automatic)",
+              "a": "A – Motorcycle over 125cc (Manual / Automatic)",
+              "b1": "B1 – Car up to 9 seats (Automatic / Non-professional)",
+              "b": "B – Car up to 8 seats + truck under 3.5 tons (Professional)",
+              "c1": "C1 – Truck under 7.5 tons",
+              "c": "C – Truck over 7.5 tons + Tractor unit"
+            },
+            "dang-ky-hoc": {
+              "nop-ho-so-truc-tuyen": "Online Application",
+              "hoi-dap": "FAQ",
+              "tra-cuu-thong-tin-hoc-vien": "Student Information Lookup"
+            },
+            "tin-tuc": { "thong-bao": "News & Announcements", "lich-thi": "Exam Schedule", "so-bao-danh": "Exam Candidate List" },
+            "hoc-vien": {
+              "on-tap-o-to": "Car Theory Review",
+              "on-tap-mo-to": "Motorcycle Theory Review",
+              "tai-lieu-phan-mem": "Materials & Software",
+              "dang-ky-cabin": "Cabin Registration",
+              "dang-ky-xe-cam-bien": "Sensor Car Registration"
+            },
+            "lien-he": { "lien-he": "Contact Us", "tuyen-dung": "Recruitment" }
+          }
+        },
+        "HeroBanner": { "san-thi-title": "Largest car driving test field in former Tien Giang province", "san-thi-desc": "Only 12km from Trung Luong" },
+        "FeaturesGrid": {
+          "title1": "FLEXIBLE SCHEDULE",
+          "desc1": "Learn and test right in Tien Giang",
+          "title2": "START LEARNING IMMEDIATELY",
+          "desc2": "New courses open regularly",
+          "title3": "CLEAR & TRANSPARENT",
+          "desc3": "All fees listed, no hidden costs",
+          "title4": "DEDICATED & ENTHUSIASTIC",
+          "desc4": "Experienced instructors help you learn quickly"
+        },
+        "EnrollmentTable": {
+          "title": "Enrollment Notice",
+          "motorcycle-title": "MOTORCYCLE CATEGORIES",
+          "tuition": "Tuition",
+          "exam-fee": "Exam fee",
+          "license-fee": "License fee",
+          "csgt": "collected by CSGT",
+          "total": "TOTAL",
+          "a1-title": "A1 (Under 125 cc)",
+          "a1-desc": "Automatic / Semi-automatic",
+          "a-title": "A (Over 125 cc)",
+          "a-desc": "Manual / Automatic",
+          "car-title": "CAR CATEGORIES",
+          "practice-in-office-hours": "Practice during office hours",
+          "mon-fri": "Monday to Friday",
+          "practice-outside-office-hours": "Practice outside office hours",
+          "sat-sun": "Saturday & Sunday",
+          "vip-package": "VIP Package",
+          "vip-desc": "Practice on demand & with pick-up/drop-off",
+          "b-auto": "B (Automatic)",
+          "b-manual": "B (Manual)",
+          "c1": "C1 (Truck under 7.5 tons)",
+          "upgrade-title": "CAR LICENSE UPGRADE",
+          "requirement": "Driving experience requirement",
+          "b-to-c": "B to C",
+          "req-b-2years": "B license for at least 2 years",
+          "c1-to-c": "C1 to C",
+          "req-c1-2years": "C1 license for at least 2 years",
+          "note": "*Car driving course fees do not include: Health check, Final test fee, Exam & license issuance fees"
+        },
+        "CarCourses": {
+          "title": "Car Driving Courses",
+          "view-detail": "View Details",
+          "b-auto-title": "B Automatic Transmission",
+          "b-auto-price": "19,000,000 VND",
+          "b-manual-title": "B Manual Transmission",
+          "b-manual-price": "19,000,000 VND",
+          "c1-title": "C1 – Truck Under 7.5 Tons",
+          "c1-price": "21,000,000 VND",
+          "c-upgrade-title": "Upgrade to C – Truck Over 7.5 Tons",
+          "c-upgrade-price": "8,500,000 – 10,500,000 VND"
+        },
+        "LatestPosts": { "title": "Latest Posts" },
+        "RegisterForm": { "title": "REGISTER FOR CONSULTATION", "subtitle": "Update promotional information", "name": "Full Name", "email": "Email", "phone": "Phone Number", "course": "Course", "submit": "REGISTER NOW" },
+        "LargeFieldInfo": {
+          "title": "Largest car driving test field in Tien Giang province",
+          "distance": "Only 12km from Trung Luong",
+          "studyCorner": "STUDY CORNER",
+          "car": "CAR B, C1",
+          "motorbike": "MOTORBIKE A1, A",
+          "videoTitle": "Song Tien Driving Training & Testing Center Introduction Video",
+          "imageAlt": "Song Tien Theory Classroom"
+        },
+        "footer": {
+          "main_office": {
+            "title": "MAIN OFFICE & DRIVING TEST CENTER (SONG TIEN)",
+            "address": "Lo Day Thep, Long Hoa B, Long Dinh, Dong Thap (former Tien Giang)",
+            "office_hours_label": "Enrollment office",
+            "office_hours": "07:30 - 17:00",
+            "practice_hours_label": "Practice yard",
+            "practice_hours": "07:30 - 18:00",
+            "phone": "0273.386.8888 - 0919.555.678",
+            "email": "info@daylaixesongtien.vn",
+            "map_title": "Main office map"
+          },
+          "my_tho_office": {
+            "title": "ENROLLMENT OFFICE IN MY THO CITY",
+            "address": "PG 02-10, Vincom area, 1A Hung Vuong, My Tho, Dong Thap (former Tien Giang)",
+            "hours": "07:30 - 17:00",
+            "phone": "0273.383.9999 - 0919.555.678",
+            "email": "info@daylaixesongtien.vn",
+            "map_title": "My Tho office map"
+          },
+          "social": { "facebook_link": "#", "youtube_link": "#" },
+          "copyright": "Song Tien Driving Training & Testing Center"
+        }
+      }
